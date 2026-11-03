@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingénieur Malin, tableau de bord</title>
+<style>
+  :root { --papier:#fcfaf4; --encre:#16161a; --gris:#5f5f64; --vert:#129664; --ligne:#d6dbea; --alerte:#b3261e; --carte:#ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --papier:#17181b; --encre:#ececea; --gris:#a2a2a8; --vert:#3cc48c; --ligne:#2c2f38; --alerte:#ff8a80; --carte:#1f2024; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--papier); color:var(--encre); font:16px/1.5 system-ui, sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:26px; margin:0 0 4px; } h1 b { color:var(--vert); }
+  .sous { color:var(--gris); margin:0 0 20px; }
+  .grille { display:grid; gap:14px; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); }
+  section { background:var(--carte); border:1px solid var(--ligne); border-radius:12px; padding:14px 16px; }
+  h2 { font-size:15px; text-transform:uppercase; letter-spacing:.04em; color:var(--gris); margin:0 0 8px; }
+  .pastille { display:inline-block; padding:2px 10px; border-radius:99px; font-weight:600; font-size:14px; }
+  .ok { background:color-mix(in srgb, var(--vert) 18%, transparent); color:var(--vert); }
+  .ko { background:color-mix(in srgb, var(--alerte) 15%, transparent); color:var(--alerte); }
+  ul { margin:0; padding-left:18px; } li { margin:2px 0; }
+  table { width:100%; border-collapse:collapse; font-size:14px; } td, th { text-align:left; padding:4px 6px; border-bottom:1px solid var(--ligne); vertical-align:top; }
+  a { color:var(--vert); word-break:break-all; }
+  .large { grid-column:1 / -1; }
+  .vide { color:var(--gris); font-style:italic; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Ingénieur <b>Malin</b> : tableau de bord</h1>
+  <p class="sous" id="maj">Chargement de etat.json…</p>
+  <div class="grille" id="grille"></div>
+</main>
+<script>
+const SOURCES = [
+  "https://raw.githubusercontent.com/lansimo31-del/ingenieur-malin-auto/claude/brave-hawking-nxc8u4/tableau-de-bord/etat.json",
+  "etat.json"
+];
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const lien = u => u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.split("/").pop())}</a>` : "";
+function carte(titre, html, large) { return `<section class="${large ? "large" : ""}"><h2>${titre}</h2>${html}</section>`; }
+function liste(a, f) { return a && a.length ? `<ul>${a.map(f).join("")}</ul>` : `<p class="vide">rien</p>`; }
+async function charger() {
+  for (const u of SOURCES) {
+    try { const r = await fetch(u + "?t=" + Date.now(), {cache:"no-store"}); if (r.ok) return await r.json(); } catch (e) {}
+  }
+  throw new Error("etat.json introuvable");
+}
+charger().then(e => {
+  document.getElementById("maj").textContent = "Mis à jour : " + (e.mis_a_jour || "?");
+  const p = e.derniere_production || {}, v = e.derniere_verification || {}, s = e.stats || {};
+  const html = [
+    carte("Validation", `<p><span class="pastille ${e.programmation_active ? "ok" : "ko"}">${e.programmation_active ? "Programmation Metricool active" : "En attente de validation d'Ilan"}</span></p>
+      <p><span class="pastille ${e.pipeline_actif ? "ok" : "ko"}">${e.pipeline_actif ? "Routines actives" : "Routines désactivées"}</span></p>
+      <p>Prochaine production : ${esc(e.prochaine_production || "–")}<br>Prochaine vérification : ${esc(e.prochaine_verification || "–")}</p>`),
+    carte("Alertes", liste(e.alertes, a => `<li style="color:var(--alerte)">${esc(a)}</li>`)),
+    carte("Dernière vérification", v.date ? `<p>${esc(v.date)} : <b>${esc(v.resultat)}</b></p><p>${esc(v.details || "")}</p>` : `<p class="vide">aucune</p>`),
+    carte("Dernière production" + (p.date ? " (" + esc(p.date) + ")" : ""), p.episodes && p.episodes.length ? `<table><tr><th>Ép.</th><th>Sujet</th><th>Créneau</th><th>Durée</th><th>Médias</th></tr>${
+      p.episodes.map(x => `<tr><td>${esc(x.numero)}</td><td>${esc(x.sujet)}<br><small>${esc(x.concept)}, voix ${esc(x.voix)}</small></td><td>${esc(x.creneau || "–")}</td><td>${esc(x.duree_s)} s<br><small>${esc(x.taille_mo)} Mo</small></td><td>${lien(x.video)}<br>${lien(x.miniature)}${(x.stories||[]).map(u => "<br>" + lien(u)).join("")}</td></tr>`).join("")}</table>` : `<p class="vide">aucune</p>`, true),
+    carte("Programmé dans Metricool", liste(e.programme_metricool, x => `<li>${esc(x.date)} ${esc(x.heure)} · ${esc(x.type)} · ${esc((x.reseaux||[]).join(" + "))} · ép. ${esc(x.episode)}</li>`)),
+    carte("Statistiques", s.periode ? `<p>${esc(s.periode)}</p><p>Instagram : ${esc(s.instagram?.vues_moy ?? "–")} vues moy.<br>TikTok : ${esc(s.tiktok?.vues_moy ?? "–")} vues moy.</p><p>Meilleur épisode : ${esc(s.meilleur_episode || "–")}<br>Meilleur concept : ${esc(s.meilleur_concept || "–")}</p>` : `<p class="vide">pas encore de publication</p>`),
+    carte("Historique", liste((e.historique || []).slice(-12).reverse(), h => `<li><b>${esc(h.date)}</b> · ${esc(h.tache)} : ${esc(h.resume)}</li>`), true)
+  ];
+  document.getElementById("grille").innerHTML = html.join("");
+}).catch(err => { document.getElementById("maj").textContent = "Erreur : " + err.message; });
+</script>
+</body>
+</html>

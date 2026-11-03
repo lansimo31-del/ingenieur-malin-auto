@@ -16,9 +16,9 @@ faits vérifiés et sourcés avant le script.
 
 ## Pourquoi c'est conçu comme ça ?
 - [x] Les cailloux sous les rails, ou ballast (ép. 1)
-- [ ] Les hublots d'avion ronds (**annoncé à la fin des ép. 1 et 2 : à faire en premier**)
-- [ ] Les plaques d'égout rondes
-- [ ] Le petit trou dans les hublots d'avion
+- [x] Les hublots d'avion ronds (ép. 3)
+- [ ] Les plaques d'égout rondes (**annoncé à la fin de l'ép. 3 : prochain créneau `pourquoi`**)
+- [x] Le petit trou dans les hublots d'avion (inclus dans l'ép. 3)
 - [ ] Les rainures sur la tranche des pièces
 - [ ] Le trou du capuchon de stylo
 - [ ] Les canettes au fond bombé

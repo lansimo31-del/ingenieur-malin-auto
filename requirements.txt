@@ -1,0 +1,5 @@
+# Dépendances Python du pipeline (render/engine/). Installer avec : pip install -r requirements.txt
+pillow
+numpy
+scipy        # alignement par pics de syllabes (méthode ép. 2) et effets d'encre (ndimage)
+pyyaml       # lecture des fiches episode.yaml

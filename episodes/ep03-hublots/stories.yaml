@@ -1,0 +1,16 @@
+# Stories Instagram liées à l'épisode 3 (question écrite dans l'image, pas de sticker : limite de l'API)
+stories:
+  - id: 1
+    heure: "12:00"
+    entete: "LA QUESTION DE L'INGÉNIEUR MALIN"
+    question: ["Pourquoi les", "HUBLOTS", "sont-ils ronds ?"]
+    mot_vert: "HUBLOTS"
+    choix: ["C'est plus joli", "Un coin pointu se fissure", "C'est moins cher"]
+    pied: "Réponse dans la vidéo de 18 h"
+  - id: 2
+    heure: "19:00"
+    entete: "LE DÉTAIL QUE PERSONNE NE VOIT"
+    question: ["À quoi sert le", "PETIT TROU", "en bas du hublot ?"]
+    mot_vert: "PETIT TROU"
+    choix: ["Équilibrer la pression", "Éviter la buée", "Les deux"]
+    pied: "Réponds en message !"

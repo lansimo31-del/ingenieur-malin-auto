@@ -10,6 +10,10 @@ metricool:
     instagram: ingenieur.malin
     tiktok: ingenieur.malin_off
 
+# Interrupteur de validation d'Ilan : tant qu'il vaut false, la tâche du soir produit et héberge,
+# mais ne programme RIEN dans Metricool. Le passer à true (et activer les 2 Routines) = validation en un geste.
+programmation_active: false
+
 cadence:
   videos_par_jour: 2          # Reel Instagram + vidéo TikTok (même montage)
   stories_par_jour: 2         # Instagram uniquement
@@ -24,6 +28,13 @@ creneaux:
   stories:
     - "12:00"   # 2e pic Instagram de la journée
     - "19:00"   # fin de soirée, encore forte sur Instagram
+
+# Programme type d'une journée (heure de Paris)
+journee:
+  - {heure: "10:00", type: video, reseaux: [instagram_reel, tiktok], episode: 1}
+  - {heure: "12:00", type: story, reseaux: [instagram], episode: 1}   # question liée à la vidéo de 10 h
+  - {heure: "18:00", type: video, reseaux: [instagram_reel, tiktok], episode: 2}
+  - {heure: "19:00", type: story, reseaux: [instagram], episode: 2}   # question liée à la vidéo de 18 h
 
 alternance_concepts:
   # Un concept différent à chaque créneau vidéo, en alternant
