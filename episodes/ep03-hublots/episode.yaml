@@ -10,5 +10,6 @@ voix_off: texte-voix-off-enzo-episode-03-hublots.txt
 faits: texte-faits-verifies-hublots.md
 description: texte-description-episode-03-hublots.txt
 couverture: "POURQUOI LES HUBLOTS SONT RONDS ?"
+couverture_lignes: ["POURQUOI LES", "HUBLOTS", "SONT RONDS ?"]
 mot_cle_vert: "HUBLOTS"
 metricool: {instagram_post_id: "", tiktok_post_id: ""}

@@ -1,6 +1,7 @@
 numero: 2
-sujet: "Le stylo"
-concept: pourquoi   # à confirmer
+sujet: "Le stylo à bille"
+concept: construction
 statut: publie
 role: reference_direction_artistique
-# À compléter dès réception : script, voix, rendu final, miniature.
+voix_off: texte-voix-off-enzo-episode-02-stylo-a-bille.txt
+duree: 53.4          # durée d'origine ; retirer pour la calculer d'après la voix
