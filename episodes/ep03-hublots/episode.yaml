@@ -1,0 +1,14 @@
+numero: 3
+sujet: "Les hublots d'avion"
+concept: pourquoi
+statut: script_pret          # attend la voix Enzo (clé GEMINI_API_KEY lue au démarrage d'une nouvelle session)
+role: episode_d_essai        # rien n'est programmé dans Metricool avant validation d'Ilan
+accroche: "Ces hublots sont arrondis parce qu'un angle droit peut faire céder un avion."
+question_ouverte: "Les 3 secrets : pression, angles, petit trou"
+script: texte-script-episode-03-hublots.md
+voix_off: texte-voix-off-enzo-episode-03-hublots.txt
+faits: texte-faits-verifies-hublots.md
+description: texte-description-episode-03-hublots.txt
+couverture: "POURQUOI LES HUBLOTS SONT RONDS ?"
+mot_cle_vert: "HUBLOTS"
+metricool: {instagram_post_id: "", tiktok_post_id: ""}
