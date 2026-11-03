@@ -1,0 +1,59 @@
+name: verify-media
+
+# Vérifie les URL publiques des médias déposés sur la branche `media`.
+# Les fichiers sont servis par le CDN jsDelivr, verrouillés sur le SHA du commit
+# (https://cdn.jsdelivr.net/gh/<repo>@<sha>/<fichier>) : l'URL est immuable, sans cache périmé,
+# et le Content-Type suit l'extension (video/mp4, image/png).
+# Déclenchement : workflow_dispatch, par la production du soir après le push sur `media`.
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branche contenant les médias"
+        default: media
+
+permissions:
+  contents: write   # uniquement pour supprimer l'ancienne Release de test
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: refs/heads/${{ inputs.branch }}
+
+      - name: Nettoyage de l'ancienne Release (les assets GitHub sont servis en octet-stream)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release delete media --cleanup-tag --yes --repo "${{ github.repository }}" || true
+
+      - name: Vérifier URL, Content-Type, taille et lecture partielle
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          set -uo pipefail
+          SHA=$(git rev-parse HEAD)
+          shopt -s nullglob
+          FILES=( *.mp4 *.png *.jpg )
+          echo "Commit $SHA, fichiers : ${FILES[*]:-aucun}"
+          : > urls.txt; rc=0
+          [ ${#FILES[@]} -eq 0 ] && { echo "Aucun média sur la branche"; rc=1; }
+          for f in "${FILES[@]}"; do
+            url="https://cdn.jsdelivr.net/gh/$REPO@$SHA/$f"
+            case "$f" in *.mp4) want=video/mp4;; *.png) want=image/png;; *.jpg) want=image/jpeg;; esac
+            ok=ECHEC
+            for try in 1 2 3 4 5 6; do   # jsDelivr peut mettre quelques secondes à voir un nouveau commit
+              hdr=$(curl -sIL --max-time 30 "$url")
+              code=$(echo "$hdr" | grep -i '^HTTP' | tail -1 | awk '{print $2}')
+              ct=$(echo "$hdr" | grep -i '^content-type:' | tail -1 | tr -d '\r' | awk '{print tolower($2)}' | cut -d';' -f1)
+              [ "$code" = 200 ] && break; sleep 10
+            done
+            size=$(echo "$hdr" | grep -i '^content-length:' | tail -1 | tr -d '\r' | awk '{print $2}')
+            rng=$(curl -s -o /dev/null -w '%{http_code}' -H 'Range: bytes=0-99' --max-time 30 "$url")
+            [ "$code" = 200 ] && [ "$ct" = "$want" ] && ok=OK || rc=1
+            echo "$ok | HTTP $code | $ct (attendu $want) | $size octets | Range $rng | $url" | tee -a urls.txt
+          done
+          { echo '### URL publiques'; echo '```'; cat urls.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          exit $rc
