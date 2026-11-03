@@ -142,7 +142,7 @@ Alternance : un créneau *construction* (« On construit un X pièce par pièce 
 | Un post pour deux réseaux | Vidéo envoyée en un seul `createScheduledPost` Instagram Reel + TikTok, miniature par `videoThumbnailUrl`, contenu déclaré généré par IA (`isAiGenerated`, `isAigc`) | Moins d'appels ; obligation de déclaration |
 | Hébergement | Chaque soir, la branche `media` ne garde que les 6 médias du lendemain (2 vidéos, 2 miniatures, 2 stories) | Les médias du jour sont tous sortis à 20 h 30 |
 | Routines | Créées sans horaire, désactivées, puis horaire ajouté (aucun risque de déclenchement). Nouvelle session à chaque déclenchement, notification push | Consigne : désactivées |
-| Vérification des URL | Le proxy de la session cloud renvoie 403 sur jsDelivr : les adresses sont vérifiées par le workflow , lancé depuis la branche de travail avec  (la branche  orpheline ne contient pas le workflow). Run 41655847774 : 4 × OK | Seule vérification fiable |
+| Vérification des URL | Le proxy de la session cloud renvoie 403 sur jsDelivr : les adresses sont vérifiées par le workflow `verify-media`, lancé depuis la branche de travail avec `branch=media` (la branche `media` orpheline ne contient pas le workflow). Run 41655847774 : 4 × OK | Seule vérification fiable |
 | Connecteurs | Les Routines créées depuis cette session ne portent **aucun connecteur** (option refusée pour l'organisation) | Voir § 8, étape 2 |
 
 ## 8. Valider l'automatisation (Ilan)
