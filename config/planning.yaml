@@ -11,8 +11,9 @@ metricool:
     tiktok: ingenieur.malin_off
 
 # Interrupteur de validation d'Ilan : tant qu'il vaut false, la tâche du soir produit et héberge,
-# mais ne programme RIEN dans Metricool. Le passer à true (et activer les 2 Routines) = validation en un geste.
-programmation_active: false
+# mais ne programme RIEN dans Metricool. Passé à true le 3 nov. 2026 à la demande d'Ilan (ép. 3 v2 validé et publié) :
+# la tâche du soir programme désormais les contenus du lendemain. Remettre à false pour tout suspendre.
+programmation_active: true
 
 cadence:
   videos_par_jour: 2          # Reel Instagram + vidéo TikTok (même montage)

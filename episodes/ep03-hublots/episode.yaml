@@ -1,7 +1,7 @@
 numero: 3
 sujet: "Les hublots d'avion"
 concept: pourquoi          # épisode d'essai antérieur aux 3 piliers (hors rotation)
-statut: termine              # v2 terminée le 3 nov. (fin refaite selon Ilan) ; prêt à publier, rien n'est programmé
+statut: publie               # v2 validée par Ilan, publiée le 3 nov. 2026 à 18 h 25 via Metricool
 role: episode_d_essai        # rien n'est programmé dans Metricool avant validation d'Ilan
 accroche: "Ces hublots sont arrondis parce qu'un angle droit peut faire céder un avion."
 question_ouverte: "Les 3 secrets : pression, angles, petit trou"
@@ -21,7 +21,12 @@ medias:   # v2 (fin refaite), branche media, commit e918c3b, vérifié par verif
   miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-miniature.png"
   story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-story-1.png"   # 12:00
   story_2: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-story-2.png"   # 19:00
-metricool: {instagram_post_id: "", tiktok_post_id: "", story_1_post_id: "", story_2_post_id: ""}
+date_publication: "2026-11-03"
+heure_publication: "18:25"
+metricool: {instagram_post_id: "415552706", tiktok_post_id: "415552744", story_1_post_id: "", story_2_post_id: ""}
+liens_publies:
+  instagram: "https://www.instagram.com/reel/DfSafwyO4ke/"
+  tiktok: "https://www.tiktok.com/@ingenieur.malin_off/video/7703997649396976918"
 version: 2
 historique_versions:
   - "v1 (3 nov.) : fin « Prochain objet : les plaques d'égout », sujet refusé par Ilan ; pic audio à +0,1 dBFS"

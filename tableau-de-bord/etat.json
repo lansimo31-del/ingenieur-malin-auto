@@ -1,7 +1,7 @@
 {
-  "mis_a_jour": "2026-11-03T16:30:00+01:00",
+  "mis_a_jour": "2026-11-03T18:40:00+01:00",
   "pipeline_actif": false,
-  "programmation_active": false,
+  "programmation_active": true,
   "prochaine_production": null,
   "prochaine_verification": null,
   "routines": {
@@ -33,7 +33,11 @@
           "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-story-1.png",
           "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-story-2.png"
         ],
-        "version": "v2 (fin refaite)"
+        "version": "v2 (fin refaite)",
+        "statut": "publié",
+        "publication": "2026-11-03 18:25",
+        "instagram": "https://www.instagram.com/reel/DfSafwyO4ke/",
+        "tiktok": "https://www.tiktok.com/@ingenieur.malin_off/video/7703997649396976918"
       }
     ]
   },
@@ -42,11 +46,26 @@
     "resultat": "OK",
     "details": "verify-media (run 41671308449) : v2, 4 URL en HTTP 200, video/mp4 et image/png, lecture partielle 206"
   },
-  "programme_metricool": [],
+  "programme_metricool": [
+    {
+      "date": "2026-11-03",
+      "heure": "18:25",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 3,
+      "post_id": {
+        "instagram": "415552706",
+        "tiktok": "415552744"
+      },
+      "statut": "publié"
+    }
+  ],
   "stats": {},
   "alertes": [
-    "Épisode 3 (v2) terminé, prêt à publier : rien n'est programmé dans Metricool.",
-    "Les 2 Routines n'ont aucun connecteur : ajouter Metricool dans claude.ai > Routines avant de les activer.",
+    "Programmation Metricool activée le 3 nov. : vérifier que les 2 Routines sont activées et portent le connecteur Metricool (claude.ai > Routines).",
     "Veille : TikTok bloqué ; autoriser www.tiktok.com dans Network access (README § 8)."
   ],
   "historique": [
@@ -64,6 +83,11 @@
       "date": "2026-11-03",
       "tache": "décisions d'Ilan",
       "resume": "3 piliers officiels en rotation, veille automatique en première étape du soir, capuchon Bic refusé, banque d'idées complétée. Ép. 3 terminé."
+    },
+    {
+      "date": "2026-11-03",
+      "tache": "validation d'Ilan",
+      "resume": "Ép. 3 v2 publié à 18 h 25 (Instagram 415552706, TikTok 415552744). programmation_active passé à true ; Ilan active les 2 Routines."
     }
   ],
   "dernier_pilier": "forme_contre_intuitive",

@@ -29,7 +29,7 @@ dans le cloud. L'ordinateur d'Ilan n'est jamais nécessaire.
 | Rendu | Moteur Python d'Ilan (Pillow + ffmpeg) dans [`render/`](render/HOWTO.md) |
 | Objectif | **Zéro intervention manuelle** d'Ilan une fois le pipeline validé |
 
-> ⚠️ Tant qu'Ilan n'a pas validé l'épisode d'essai, **rien n'est programmé dans Metricool** (`programmation_active: false` dans `config/planning.yaml`, Routines désactivées). Marche à suivre : § 8.
+> ✅ **Programmation continue activée le 3 nov. 2026** (`programmation_active: true` dans `config/planning.yaml`) après la validation et la publication de l'ép. 3 v2. La tâche du soir programme désormais les contenus du lendemain dans Metricool. Pour tout suspendre : remettre `programmation_active: false` et/ou désactiver les Routines.
 
 **Limites connues** (voir [`docs/sources/texte-plan-automatisation-cloud.md`](docs/sources/texte-plan-automatisation-cloud.md)) :
 - Les stories TikTok ne sont pas programmables via Metricool : **stories sur Instagram seulement**.
@@ -126,8 +126,8 @@ forme contre-intuitive : 10 h = le pilier suivant le dernier publié, 18 h = le 
 - [x] **5. Miniature, légendes et stories** de l'ép. 3 (`episodes/ep03-hublots/`)
 - [x] **6. Hébergement des médias** : branche `media` + jsDelivr, vérifié (`verify-media`)
 - [x] **7. Tableau de bord** : `tableau-de-bord/index.html`, alimenté par `etat.json`
-- [x] **8. Essai à blanc** (ép. 3, hublots) : voix, alignement, rendu, export, miniature, 2 stories, hébergement faits le 3 nov. **Attend la validation d'Ilan** (adresses dans `tableau-de-bord/etat.json`)
-- [ ] **9. Activation** : les 2 Routines existent, **désactivées** (voir § 8). Rien n'est programmé dans Metricool
+- [x] **8. Essai à blanc** (ép. 3, hublots) : v2 validée par Ilan et **publiée le 3 nov. à 18 h 25** via Metricool ([Instagram](https://www.instagram.com/reel/DfSafwyO4ke/), id 415552706 ; [TikTok](https://www.tiktok.com/@ingenieur.malin_off/video/7703997649396976918), id 415552744)
+- [x] **9. Activation** : `programmation_active: true` le 3 nov. ; Ilan active lui-même les 2 Routines (soir 20 h 30, matin 7 h 30) et leur ajoute le connecteur Metricool (§ 8)
 
 ## 7. Journal des choix (session autonome du 3 nov. 2026)
 
@@ -152,13 +152,14 @@ forme contre-intuitive : 10 h = le pilier suivant le dernier publié, 18 h = le 
 | Piliers | Trois piliers officiels en rotation stricte (`rotation` dans `config/planning.yaml`, `dernier_pilier` dans `etat.json`, initialisé à `forme_contre_intuitive` pour que la serrure sorte en premier) ; plus d'annonce de prochain objet ; refusés : plaques d'égout, capuchon Bic ; non retenus : rondelle, gratte-ciel | Décisions d'Ilan du 3 nov. |
 | Veille | Étape 1 du soir. Métriques Metricool vérifiées : TikTok `TKPO02/05/06/07/10/13/15`, Reels `IGRE02/03/23/21/12/24/27`, abonnés `IGEV43`, `TKEV16`. Premier relevé : ballast 1 873 vues et 19,4 s sur Instagram, stylo 134 vues et 9,2 s ; TikTok 53 vues chacun | Lecture réelle le 3 nov. |
 | TikTok | `www.tiktok.com`, `tiktok.com` et `m.tiktok.com` refusés par le proxy (403). La recherche web n'indexe presque pas TikTok | Domaine à autoriser par Ilan (§ 8, étape 5) |
+| Activation | `programmation_active: true` le 3 nov., à la demande d'Ilan, après publication de l'ép. 3 v2 (18 h 25, ids Metricool 415552706 et 415552744). Activation des Routines faite par Ilan | Validation d'Ilan |
 | Connecteurs | Les Routines créées depuis cette session ne portent **aucun connecteur** (option refusée pour l'organisation) | Voir § 8, étape 2 |
 
 ## 8. Valider l'automatisation (Ilan)
 
 1. **Regarder** la vidéo, la miniature et les 2 stories de l'ép. 3 (adresses dans `tableau-de-bord/etat.json` → `derniere_production`).
 2. **Connecteurs des Routines** : sur claude.ai → Routines, ouvrir « Ingénieur Malin : production du soir (20 h 30) » et « Ingénieur Malin : vérification du matin (7 h 30) », ajouter le connecteur **Metricool** (et GitHub si proposé). Sans lui, la tâche du soir ne peut pas programmer et celle du matin ne peut pas vérifier.
-3. **Le geste de validation** : passer `programmation_active: true` dans `config/planning.yaml` (commit), puis **activer** les 2 Routines.
+3. **Le geste de validation** : ~~passer `programmation_active: true`~~ fait le 3 nov. ; reste à **activer** les 2 Routines (Ilan).
 4. Facultatif : ajouter `pip install -r requirements.txt` au script d'installation de l'environnement cloud.
 5. **TikTok pour la veille** : dans les réglages de l'environnement cloud (menu de l'environnement dans la barre de titre de la session, puis Edit), section **Network access**, ajouter **`www.tiktok.com`** aux domaines autorisés (et `tiktok.com`, qui y redirige), en laissant cochée « Allow package managers ». Même ainsi, la page de recherche de TikTok se charge en JavaScript et demande souvent une connexion : si elle reste illisible, la veille l'écrit dans son rapport et n'invente aucun chiffre. Les relevés faits à la main par Ilan restent alors la référence.
 
