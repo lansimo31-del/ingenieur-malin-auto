@@ -1,5 +1,8 @@
 {
-  "modele": "auto",
-  "voix_gemini": "A_CONFIRMER",
-  "style": "Lis ce texte en français, d'une voix calme et claire, ton posé de vulgarisateur, avec une courte pause à la fin de chaque phrase :"
+  "modele": "gemini-3.8-flash-tts",
+  "voix_bibliotheque": "Enzo",
+  "voix_bibliotheque_description": "Crisp and eager, Low pitch (bibliothèque de voix Google AI Studio)",
+  "voix_gemini": "Enzo",
+  "voix_secours": ["Charon", "Algenib", "Orus", "Iapetus", "Rasalgethi", "Alnilam", "Gacrux", "Algieba"],
+  "style": "Voix masculine française calme, posée, légèrement maligne et complice. Phrases courtes, diction claire, rythme tranquille avec de petites pauses naturelles entre les phrases."
 }

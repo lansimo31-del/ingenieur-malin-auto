@@ -30,10 +30,20 @@ def synth(text, out, cfg=None):
     if cfg["voix_gemini"] == "A_CONFIRMER":
         raise SystemExit("config/voix.json : nom de la voix Gemini à confirmer par Ilan (voix « Enzo » = quelle voix prédéfinie ?)")
     model = cfg["modele"] if cfg["modele"] != "auto" else pick_model(key)
-    body = {"contents": [{"parts": [{"text": f'{cfg["style"]}\n\n{text}'}]}],
-            "generationConfig": {"responseModalities": ["AUDIO"],
-                                 "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": cfg["voix_gemini"]}}}}}
-    r = call(f"/models/{model}:generateContent", body, key)
+    # Voix « Enzo » d'abord ; si l'API refuse ce nom, voix prédéfinies graves de secours (config/voix.json)
+    voices = [cfg["voix_gemini"]] + [v for v in cfg.get("voix_secours", []) if v != cfg["voix_gemini"]]
+    r = None
+    for v in voices:
+        body = {"contents": [{"parts": [{"text": f'{cfg["style"]}\n\n{text}'}]}],
+                "generationConfig": {"responseModalities": ["AUDIO"],
+                                     "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": v}}}}}
+        try:
+            r = call(f"/models/{model}:generateContent", body, key); break
+        except SystemExit as e:
+            if "HTTP 400" not in str(e) or "oice" not in str(e): raise   # seule une voix inconnue fait passer à la suivante
+            print(f"voix {v} refusée par l'API, essai suivant")
+    if r is None: raise SystemExit("aucune voix acceptée")
+    print(f"voix retenue : {v}")
     part = r["candidates"][0]["content"]["parts"][0]["inlineData"]
     pcm = base64.b64decode(part["data"])
     with wave.open(str(out), "wb") as w:

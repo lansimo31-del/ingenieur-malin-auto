@@ -117,7 +117,7 @@ Alternance : un créneau *construction* (« On construit un X pièce par pièce 
 - [x] **0. Structure du dépôt et plan** (ce commit)
 - [x] **1. Récupérer les sources** : docs, scripts, faits vérifiés, moteur de rendu et polices
 - [x] **2. Analyse du marché** v1 → `analyse-marche/comptes.md`
-- [ ] **3. Voix** : Gemini TTS (`render/engine/tts.py`, `config/voix.json`). **Bloqué** : (a) la clé `GEMINI_API_KEY` n'est lue qu'au démarrage d'une session, donc il faut une nouvelle session ; (b) le nom de la voix prédéfinie Gemini qui correspond à « Enzo » reste à confirmer
+- [ ] **3. Voix** : Gemini TTS, modèle `gemini-3.8-flash-tts`, voix « Enzo » de la bibliothèque AI Studio (« Crisp and eager, Low pitch »), consigne de style dans `config/voix.json`. `render/engine/tts.py` essaie Enzo, puis Charon et les autres voix graves si l'API refuse le nom. **Bloqué (3 nov.)** : `GEMINI_API_KEY` absente de la session (ni variable d'environnement, ni secret réseau injecté par le proxy). Ilan doit l'ajouter dans les réglages de l'environnement, puis ouvrir une nouvelle session
 - [x] **4. Rendu** : moteur générique `render/engine/` (testé sur l'ép. 2 : environ 0,5 s par image sur 4 cœurs, soit environ 15 min par vidéo d'une minute)
 - [x] **5. Miniature et légendes** de l'ép. 3 (`episodes/ep03-hublots/`)
 - [x] **6. Hébergement des médias** : branche `media` + jsDelivr, vérifié (`verify-media`)

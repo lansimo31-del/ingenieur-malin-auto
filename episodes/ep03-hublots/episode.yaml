@@ -1,7 +1,7 @@
 numero: 3
 sujet: "Les hublots d'avion"
 concept: pourquoi
-statut: script_pret          # attend la voix Enzo (clé GEMINI_API_KEY lue au démarrage d'une nouvelle session)
+statut: miniature_prete     # miniature OK le 3 nov. ; attend la voix Enzo (GEMINI_API_KEY absente de la session)
 role: episode_d_essai        # rien n'est programmé dans Metricool avant validation d'Ilan
 accroche: "Ces hublots sont arrondis parce qu'un angle droit peut faire céder un avion."
 question_ouverte: "Les 3 secrets : pression, angles, petit trou"
