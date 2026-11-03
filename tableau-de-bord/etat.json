@@ -2,7 +2,6 @@
   "mis_a_jour": "2026-11-03T16:30:00+01:00",
   "pipeline_actif": false,
   "programmation_active": false,
-  "dernier_concept": "pourquoi",
   "prochaine_production": null,
   "prochaine_verification": null,
   "routines": {
@@ -46,8 +45,9 @@
   "programme_metricool": [],
   "stats": {},
   "alertes": [
-    "Épisode d'essai 3 (v2) : fin refaite à la demande d'Ilan, à revoir ; rien n'est programmé dans Metricool.",
-    "Les 2 Routines n'ont aucun connecteur : ajouter Metricool dans claude.ai > Routines avant de les activer."
+    "Épisode 3 (v2) terminé, prêt à publier : rien n'est programmé dans Metricool.",
+    "Les 2 Routines n'ont aucun connecteur : ajouter Metricool dans claude.ai > Routines avant de les activer.",
+    "Veille : TikTok bloqué ; autoriser www.tiktok.com dans Network access (README § 8)."
   ],
   "historique": [
     {
@@ -59,6 +59,24 @@
       "date": "2026-11-03",
       "tache": "retours d'Ilan",
       "resume": "Ép. 3 v2 : fin sans annonce de prochain objet, pic audio corrigé (-2,5 dBFS), 61,4 s. Plaques d'égout refusées. Banque d'idées réécrite (10 h « c'est fait exprès » / forme contre-intuitive, 18 h « devine ce que je construis »)."
+    },
+    {
+      "date": "2026-11-03",
+      "tache": "décisions d'Ilan",
+      "resume": "3 piliers officiels en rotation, veille automatique en première étape du soir, capuchon Bic refusé, banque d'idées complétée. Ép. 3 terminé."
     }
-  ]
+  ],
+  "dernier_pilier": "forme_contre_intuitive",
+  "piliers": [
+    "devine_construction",
+    "fait_expres",
+    "forme_contre_intuitive"
+  ],
+  "derniere_veille": {
+    "date": "2026-11-03",
+    "metricool": "lu : ép. 1 IG 1873 vues / 19,4 s, ép. 2 IG 134 vues / 9,2 s, TikTok 53 vues chacun",
+    "web": "lu (peu de résultats TikTok indexés)",
+    "tiktok": "illisible : www.tiktok.com refusé par le proxy (403)",
+    "decisions": "3 piliers en rotation ; serrure à goupilles en tête"
+  }
 }

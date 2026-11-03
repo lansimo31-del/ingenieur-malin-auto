@@ -19,7 +19,8 @@ dans le cloud. L'ordinateur d'Ilan n'est jamais nécessaire.
 | Rythme | **Production chaque soir**, **vérification chaque matin** |
 | Suivi | Un **tableau de bord** du projet |
 | Direction artistique | La même que les **épisodes 1 (ballast)** et **2 (stylo)** |
-| Concepts | Un par créneau (3 nov., [analyse](analyse-marche/concepts-qui-marchent.md)) : **10 h** *pourquoi c'est conçu comme ça* (« c'est fait exprès » ou « forme contre-intuitive ») ; **18 h** *devine ce que je construis* (pièce par pièce, objet révélé à la fin) |
+| **Piliers** | **Exactement trois** (3 nov.) : ① **« Devine ce que je construis »** (pièce par pièce, réponse à la fin) ; ② **« Ce n'est pas un défaut, c'est fait exprès »** ; ③ **« Les formes contre-intuitives »**. Rotation : jamais deux fois le même d'affilée, deux piliers différents chaque jour. Tout sujet hors piliers (dont les « pourquoi c'est rond ») est écarté, sauf accord d'Ilan |
+| Veille | Automatique avant chaque production : statistiques Metricool, recherche web, TikTok s'il est accessible ([analyse](analyse-marche/concepts-qui-marchent.md)) |
 | Fin des vidéos | Un simple appel à s'abonner, **jamais d'annonce du prochain objet** (3 nov.) |
 | Rétention | Des vidéos qui gardent en haleine jusqu'à la fin |
 | Veille | Une **analyse du marché** des comptes similaires → [`analyse-marche/comptes.md`](analyse-marche/comptes.md) |
@@ -112,8 +113,8 @@ Les créneaux sont recalculés chaque semaine à partir de Metricool et mis à j
 5. **Chute.** La réponse complète, puis une dernière phrase qui renvoie au début (boucle) et un simple « Abonne-toi », sans annoncer de prochain objet.
 6. Sous-titres incrustés et format vertical 1080×1920, entre 30 et 60 s.
 
-Créneaux : **10 h** *pourquoi* (accroche « Ce n'est pas un défaut. » ou forme contre-intuitive), **18 h** *devine ce que je
-construis* (l'objet n'est nommé qu'à la fin). Détails : [`analyse-marche/concepts-qui-marchent.md`](analyse-marche/concepts-qui-marchent.md).
+Les **trois piliers** (`config/planning.yaml` → `piliers`) tournent dans l'ordre devine ce que je construis → c'est fait exprès →
+forme contre-intuitive : 10 h = le pilier suivant le dernier publié, 18 h = le suivant. Détails : [`analyse-marche/concepts-qui-marchent.md`](analyse-marche/concepts-qui-marchent.md).
 
 ## 6. Feuille de route
 
@@ -148,7 +149,9 @@ construis* (l'objet n'est nommé qu'à la fin). Détails : [`analyse-marche/conc
 | Rendu partiel | Seules les images 1600 à 1842 sont refaites ; images 0 à 1599 vérifiées identiques au pixel près. La barre de progression garde son tracé jusqu'à 53,33 s puis rejoint la nouvelle fin | Consigne : refaire seulement la fin |
 | Pic audio | Limiteur à -3 dBFS après `loudnorm` (master et export), 48 kHz : pic réel +0,1 → **-2,5 dBFS**. Sonie -17,6 LUFS (v1 : -17,1) | Le pic touchait 0 dB |
 | Contrôle de la voix | `tts.py` transcrit le début de chaque voix (Gemini `gemini-3.8-flash`, `config/voix.json` → `modele_controle`) et régénère si la consigne a été lue (cas observé le 3 nov. sur une voix complète) ; réessais sur 429/5xx | Défaut intermittent du modèle TTS |
-| Concepts | 10 h *pourquoi* (« c'est fait exprès » / forme contre-intuitive), 18 h *devine ce que je construis* ; plus d'annonce de prochain objet ; plaques d'égout refusées | Analyse TikTok d'Ilan |
+| Piliers | Trois piliers officiels en rotation stricte (`rotation` dans `config/planning.yaml`, `dernier_pilier` dans `etat.json`, initialisé à `forme_contre_intuitive` pour que la serrure sorte en premier) ; plus d'annonce de prochain objet ; refusés : plaques d'égout, capuchon Bic ; non retenus : rondelle, gratte-ciel | Décisions d'Ilan du 3 nov. |
+| Veille | Étape 1 du soir. Métriques Metricool vérifiées : TikTok `TKPO02/05/06/07/10/13/15`, Reels `IGRE02/03/23/21/12/24/27`, abonnés `IGEV43`, `TKEV16`. Premier relevé : ballast 1 873 vues et 19,4 s sur Instagram, stylo 134 vues et 9,2 s ; TikTok 53 vues chacun | Lecture réelle le 3 nov. |
+| TikTok | `www.tiktok.com`, `tiktok.com` et `m.tiktok.com` refusés par le proxy (403). La recherche web n'indexe presque pas TikTok | Domaine à autoriser par Ilan (§ 8, étape 5) |
 | Connecteurs | Les Routines créées depuis cette session ne portent **aucun connecteur** (option refusée pour l'organisation) | Voir § 8, étape 2 |
 
 ## 8. Valider l'automatisation (Ilan)
@@ -157,5 +160,6 @@ construis* (l'objet n'est nommé qu'à la fin). Détails : [`analyse-marche/conc
 2. **Connecteurs des Routines** : sur claude.ai → Routines, ouvrir « Ingénieur Malin : production du soir (20 h 30) » et « Ingénieur Malin : vérification du matin (7 h 30) », ajouter le connecteur **Metricool** (et GitHub si proposé). Sans lui, la tâche du soir ne peut pas programmer et celle du matin ne peut pas vérifier.
 3. **Le geste de validation** : passer `programmation_active: true` dans `config/planning.yaml` (commit), puis **activer** les 2 Routines.
 4. Facultatif : ajouter `pip install -r requirements.txt` au script d'installation de l'environnement cloud.
+5. **TikTok pour la veille** : dans les réglages de l'environnement cloud (menu de l'environnement dans la barre de titre de la session, puis Edit), section **Network access**, ajouter **`www.tiktok.com`** aux domaines autorisés (et `tiktok.com`, qui y redirige), en laissant cochée « Allow package managers ». Même ainsi, la page de recherche de TikTok se charge en JavaScript et demande souvent une connexion : si elle reste illisible, la veille l'écrit dans son rapport et n'invente aucun chiffre. Les relevés faits à la main par Ilan restent alors la référence.
 
-Le premier soir après l'activation, la tâche du soir produit les ép. 4 et 5 pour le lendemain : à 10 h, le trou du capuchon de stylo Bic (`pourquoi`, « c'est fait exprès ») ; à 18 h, la serrure à goupilles en « devine ce que je construis ». L'ép. 3 lui-même n'est pas programmé automatiquement : à programmer à la main ou à demander dans une session.
+Le premier soir après l'activation, la tâche du soir fait d'abord sa veille, puis produit les ép. 4 et 5 pour le lendemain : à 10 h, la serrure à goupilles (« devine ce que je construis ») ; à 18 h, le crochet du mètre ruban (« c'est fait exprès »), sauf si la veille les reclasse. L'ép. 3 lui-même n'est pas programmé automatiquement : à programmer à la main ou à demander dans une session.

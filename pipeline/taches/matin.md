@@ -24,7 +24,7 @@ Metricool, marque `7844668`, fuseau `Europe/Paris`.
 ## 2. Statistiques J+1 et J+7
 1. `getAnalyticsAvailableMetrics` (une fois, pour trouver les identifiants Instagram Reels et TikTok : vues, portée, likes, commentaires, partages, enregistrements, durée moyenne de visionnage).
 2. `getAnalyticsDataByMetrics` sur les publications d'hier (J+1) et d'il y a 7 jours (J+7). Écris les valeurs dans `stats_j1` / `stats_j7` de chaque `episode.yaml`.
-3. Calcule pour le tableau de bord : vues moyennes des 7 derniers jours par réseau, meilleur épisode de la semaine, concept qui marche le mieux (construction ou pourquoi).
+3. Calcule pour le tableau de bord : vues moyennes des 7 derniers jours par réseau, meilleur épisode de la semaine, pilier qui marche le mieux (`devine_construction`, `fait_expres` ou `forme_contre_intuitive`, champ `concept` des `episode.yaml`).
 
 ## 3. Le lundi seulement : créneaux de la semaine
 `getBestTimeToPostByNetwork` pour `instagram` et `tiktok`, du lundi au dimanche de la semaine en cours. Si les deux meilleurs créneaux vidéo ne sont plus 10:00 et 18:00, ou si les stories ont un meilleur créneau que 12:00 et 19:00, mets à jour `config/planning.yaml` (avec la date de lecture en commentaire) et ajoute une ligne dans `etat.json` → `historique`.

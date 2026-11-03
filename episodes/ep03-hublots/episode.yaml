@@ -1,7 +1,7 @@
 numero: 3
 sujet: "Les hublots d'avion"
-concept: pourquoi
-statut: pret                 # validé par Ilan le 3 nov. sauf la fin, refaite (v2) ; rien n'est programmé
+concept: pourquoi          # épisode d'essai antérieur aux 3 piliers (hors rotation)
+statut: termine              # v2 terminée le 3 nov. (fin refaite selon Ilan) ; prêt à publier, rien n'est programmé
 role: episode_d_essai        # rien n'est programmé dans Metricool avant validation d'Ilan
 accroche: "Ces hublots sont arrondis parce qu'un angle droit peut faire céder un avion."
 question_ouverte: "Les 3 secrets : pression, angles, petit trou"

@@ -12,7 +12,8 @@
 | `mis_a_jour` | date et heure ISO de la dernière écriture |
 | `pipeline_actif` | `true` quand les deux Routines sont activées |
 | `programmation_active` | copie de `config/planning.yaml` |
-| `dernier_concept` | `construction` ou `pourquoi` (sert à l'alternance) |
+| `dernier_pilier` | `devine_construction`, `fait_expres` ou `forme_contre_intuitive` (sert à la rotation) |
+| `derniere_veille` | `{date, metricool, web, tiktok, decisions}` ; `tiktok` vaut « illisible (raison) » quand TikTok n'est pas accessible |
 | `prochaine_production` / `prochaine_verification` | date et heure ISO |
 | `derniere_production` | `{date, episodes: [{numero, sujet, concept, creneau, duree_s, taille_mo, voix, video, miniature, story}]}` |
 | `derniere_verification` | `{date, resultat, details}` |

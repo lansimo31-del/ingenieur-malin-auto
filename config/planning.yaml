@@ -36,11 +36,30 @@ journee:
   - {heure: "18:00", type: video, reseaux: [instagram_reel, tiktok], episode: 2}
   - {heure: "19:00", type: story, reseaux: [instagram], episode: 2}   # question liée à la vidéo de 18 h
 
-# Un concept fixe par créneau (décision d'Ilan du 3 nov., voir analyse-marche/concepts-qui-marchent.md) :
-# les deux concepts alternent donc chaque jour, matin puis soir.
-concepts_par_creneau:
-  "10:00": pourquoi       # « Pourquoi c'est conçu comme ça ? » : angle « c'est fait exprès » ou « forme contre-intuitive »
-  "18:00": construction   # « Devine ce que je construis » : pièce par pièce, objet révélé à la fin
+# Les TROIS piliers officiels du compte (décision d'Ilan du 3 nov.). Aucun autre concept sans son accord.
+piliers:
+  devine_construction:
+    nom: "Devine ce que je construis"
+    principe: "construction pièce par pièce avec mystère, l'objet n'est nommé qu'à la fin"
+    accroche: "Devine ce que je construis. Réponse à la fin."
+    couverture_entete: "DEVINE CE QUE JE CONSTRUIS"
+    modele: ep02-stylo
+  fait_expres:
+    nom: "Ce n'est pas un défaut, c'est fait exprès"
+    principe: "un défaut apparent qui est en fait voulu"
+    accroche: "Ce n'est pas un défaut."
+    couverture_entete: "CE N'EST PAS UN DÉFAUT"
+    modele: ep01-ballast
+  forme_contre_intuitive:
+    nom: "Les formes contre-intuitives"
+    principe: "une forme qui surprend, justifiée par un chiffre fort ou une expérience simple"
+    accroche: "Cette forme a l'air absurde."
+    couverture_entete: "FORME CONTRE-INTUITIVE"
+    modele: ep03-hublots
+
+# Rotation : 10:00 = pilier suivant le dernier pilier publié (tableau-de-bord/etat.json → dernier_pilier),
+# 18:00 = le suivant. Jamais deux fois le même pilier d'affilée, jamais deux fois le même dans la journée.
+rotation: [devine_construction, fait_expres, forme_contre_intuitive]
 
 taches_cloud:
   production_soir: "20:30"     # produit et programme les contenus du lendemain
