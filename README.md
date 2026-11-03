@@ -23,7 +23,7 @@ dans le cloud. L'ordinateur d'Ilan n'est jamais nécessaire.
 | Rétention | Des vidéos qui gardent en haleine jusqu'à la fin |
 | Veille | Une **analyse du marché** des comptes similaires → [`analyse-marche/comptes.md`](analyse-marche/comptes.md) |
 | Voix | **Enzo**, Google Gemini TTS, style calme et clair. Clé API Gemini enregistrée par Ilan dans les secrets de l'environnement (jamais dans le dépôt) |
-| Médias | **Supabase Storage**, bucket public, suppression des anciens fichiers une fois publiés |
+| Médias | **GitHub** (ce dépôt public) : branche `media` + CDN jsDelivr, anciens fichiers supprimés à chaque mise en ligne. **Pas de Supabase** (le connecteur sert un autre projet) |
 | Rendu | Moteur Python d'Ilan (Pillow + ffmpeg) dans [`render/`](render/HOWTO.md) |
 | Objectif | **Zéro intervention manuelle** d'Ilan une fois le pipeline validé |
 
@@ -56,9 +56,14 @@ idees/banque.md │ 01 idée → 02 script → 03 voix → 04 rendu →    │
 - **Rendu** : dans le conteneur cloud (Python, Pillow, ffmpeg), avec le moteur des épisodes 1 et 2
   (`render/`), rendu par segments de 200 images avec reprise possible.
 - **Voix** : Gemini TTS, voix Enzo, via la clé API placée dans les secrets de l'environnement.
-- **Hébergement des médias** : Metricool demande une URL publique pour chaque vidéo et chaque
-  image. Les fichiers sont déposés dans un bucket public Supabase Storage, puis supprimés une
-  fois publiés.
+- **Hébergement des médias** : Metricool demande une URL publique pour chaque vidéo et chaque image.
+  `scripts/publish_media.sh` remplace la branche `media` par **un seul commit orphelin** (push forcé) : les
+  anciens fichiers disparaissent et le dépôt ne grossit pas. Les fichiers sont servis par jsDelivr, verrouillés
+  sur le SHA du commit : `https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@<sha>/<fichier>`.
+  Le workflow `verify-media` contrôle ces URL depuis un vrai serveur (HTTP 200, `video/mp4`, `image/png`, lecture
+  partielle). Testé le 3 nov. 2026. Les adresses `raw.githubusercontent.com` (mp4 en `application/octet-stream`)
+  et les assets de Release (tout en `octet-stream`) ne conviennent pas. Limite connue de jsDelivr : 20 Mo par fichier ;
+  les vidéos d'envoi font moins de 10 Mo.
 - **Publication** : connecteur Metricool (`createScheduledPost`). Instagram et TikTok sont tous
   deux reliés à la marque 7844668.
 - **Mémoire** : chaque épisode a sa fiche `episodes/epNN-sujet/episode.yaml`, et chaque exécution
@@ -112,10 +117,11 @@ Alternance : un créneau *construction* (« On construit un X pièce par pièce 
 - [x] **0. Structure du dépôt et plan** (ce commit)
 - [x] **1. Récupérer les sources** : docs, scripts, faits vérifiés, moteur de rendu et polices
 - [x] **2. Analyse du marché** v1 → `analyse-marche/comptes.md`
-- [ ] **3. Voix** : Gemini TTS, voix Enzo (en attente de la clé API dans les secrets)
-- [ ] **4. Rendu** : rendre le moteur générique (chemins, timeline par épisode) et le faire tourner dans le cloud
-- [ ] **5. Miniatures et légendes** selon les règles du doc dédié
-- [ ] **6. Hébergement des médias** : bucket public Supabase Storage
+- [ ] **3. Voix** : Gemini TTS (`render/engine/tts.py`, `config/voix.json`). **Bloqué** : (a) la clé `GEMINI_API_KEY` n'est lue qu'au démarrage d'une session, donc il faut une nouvelle session ; (b) le nom de la voix prédéfinie Gemini qui correspond à « Enzo » reste à confirmer
+- [x] **4. Rendu** : moteur générique `render/engine/` (testé sur l'ép. 2 : environ 0,5 s par image sur 4 cœurs, soit environ 15 min par vidéo d'une minute)
+- [x] **5. Miniature et légendes** de l'ép. 3 (`episodes/ep03-hublots/`)
+- [x] **6. Hébergement des médias** : branche `media` + jsDelivr, vérifié (`verify-media`)
 - [ ] **7. Tableau de bord** (page publiée, alimentée par `tableau-de-bord/etat.json`)
-- [ ] **8. Essai à blanc** : un épisode complet produit, **validé par Ilan**, sans programmation
+- [ ] **8. Essai à blanc** (ép. 3, hublots) : faits, script, miniature, légendes, scène et hébergement prêts ; reste voix → alignement → rendu → export → validation d'Ilan, sans programmation
+  - Commande : `python render/engine/build.py episodes/ep03-hublots` (puis `scripts/publish_media.sh` et le workflow `verify-media`)
 - [ ] **9. Activation** des Routines du soir et du matin, puis première programmation Metricool
