@@ -1,0 +1,17 @@
+Ce n'est pas un défaut.
+
+Regarde le bout d'un pistolet à essence : il y a un trou minuscule. On dirait une erreur de fabrication.
+
+Pourtant, c'est lui qui coupe le plein.
+
+Quand l'essence coule, elle aspire de l'air par ce petit trou, dans un tube, jusqu'à une membrane. Tant que l'air passe, il ne se passe rien.
+
+Mais quand le réservoir est plein, l'essence monte et bouche le trou. Plus d'air. L'aspiration devient forte, la membrane bascule, un levier tombe, et clac : le clapet se ferme.
+
+Aucun capteur, aucune électronique. Juste de l'air et une aspiration.
+
+Ça explique aussi les arrêts trop tôt : une éclaboussure ou de la mousse suffit à boucher le trou.
+
+Ce n'est pas un défaut : c'est le frein du plein.
+
+Abonne-toi : il y a un secret d'ingénieur dans chaque objet.

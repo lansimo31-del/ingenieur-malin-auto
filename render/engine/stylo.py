@@ -74,4 +74,4 @@ if __name__ == "__main__":
         def mk():
             exec(t, g); return g['OUTIM']
         imW, imB = run_layers(g, mk)
-    composite(imW, imB).save(f"/tmp/claude-0/work/pal/stylo{__import__("os").environ.get("TAG","")}_{which}.png")
+    composite(imW, imB).save(f"/tmp/claude-0/work/pal/stylo{__import__('os').environ.get('TAG','')}_{which}.png")

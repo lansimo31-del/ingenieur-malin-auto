@@ -1,0 +1,9 @@
+# Story Instagram liée à l'épisode 5 (19:00, après la vidéo de 18 h). Question écrite dans l'image.
+stories:
+  - id: 1
+    heure: "19:00"
+    entete: "LA QUESTION DE L'INGÉNIEUR MALIN"
+    question: ["Qu'est-ce qui", "COUPE LE PLEIN", "à la pompe ?"]
+    mot_vert: "COUPE LE PLEIN"
+    choix: ["Un capteur électronique", "Le petit trou et l'air", "Un minuteur"]
+    pied: "Réponse dans la vidéo de 18 h"

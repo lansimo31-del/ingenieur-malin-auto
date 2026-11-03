@@ -1,0 +1,26 @@
+numero: 4
+sujet: "La serrure à goupilles"
+concept: devine_construction
+statut: pret   # 10:00 NON programmé : création Metricool refusée (classifieur d'autorisation de la session) ; à programmer à la main
+creneau: "10:00"
+date_publication: "2026-11-04"
+accroche: "Devine ce que je construis. Réponse à la fin."
+question_ouverte: "Quel objet se cache derrière ce cylindre, ces ressorts et ces goupilles ?"
+script: texte-script-episode-04-serrure.md
+voix_off: texte-voix-off-enzo-episode-04-serrure.txt
+faits: texte-faits-verifies-serrure.md
+description: texte-description-episode-04-serrure.txt
+couverture: "DEVINE CE QUE JE CONSTRUIS"
+couverture_entete: "DEVINE CE QUE JE CONSTRUIS"
+couverture_lignes: ["DEVINE CE QUE JE", "CONSTRUIS", "RÉPONSE À LA FIN"]
+mot_cle_vert: "CONSTRUIS"
+stories: stories.yaml
+voix_retenue: "Enzo (gemini-3.8-flash-tts)"
+duree_s: 48.0
+taille_mo: 8.82
+medias:   # branche media, commit 424755203412a9994c4e088dd7a35ed3011f0761, verify-media OK (run 41708619663)
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep04-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep04-miniature.png"
+  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep04-story.png"
+heure_publication: "10:00"
+metricool: {video_post_id: "", story_post_id: "415733408"}

@@ -24,7 +24,7 @@ Mentions possibles après un sujet : `saturé (JJ/MM)`, `fait par <compte> (JJ/M
 L'objet n'est **jamais nommé** avant la chute, ni dans la couverture, ni dans les légendes. Une pièce = un indice,
 « Tu as deviné ? » vers les deux tiers, puis la réponse et une boucle sur la première pièce.
 
-- [ ] **La serrure à goupilles** · en premier et vite. Angle : le mystère, le dessin papier, et la chute « c'est la serrure de ta porte d'entrée »
+- [x] **La serrure à goupilles** (ép. 4, 4 nov. 10 h) · en premier et vite. Angle : le mystère, le dessin papier, et la chute « c'est la serrure de ta porte d'entrée »
 - [ ] La chasse d'eau (le flotteur, la cloche, le clapet)
 - [ ] Le briquet à pierre (la molette, la pierre, la valve)
 - [ ] L'agrafeuse (le ressort, l'enclume qui replie les pattes)
@@ -38,8 +38,7 @@ L'objet n'est **jamais nommé** avant la chute, ni dans la couverture, ni dans l
 ## Pilier 2 · `fait_expres` : « Ce n'est pas un défaut, c'est fait exprès »
 Accroche : « Ce n'est pas un défaut. » On montre le « défaut », on laisse croire à une erreur, puis on révèle la raison.
 
-- [ ] **Le crochet du mètre ruban qui bouge** (il coulisse de sa propre épaisseur : mesure juste en poussant comme en tirant)
-- [ ] **Le trou minuscule au bout du pistolet de la pompe à essence** (effet Venturi : il coupe le plein quand le réservoir est plein)
+- [x] **Le trou minuscule au bout du pistolet de la pompe à essence** (ép. 5, 4 nov. 18 h) (effet Venturi : il coupe le plein quand le réservoir est plein)
 - [ ] Les points noirs sur le bord du pare-brise (bande de céramique : collage, protection de la colle contre les UV)
 - [ ] Le petit trou sous le cadenas (laisser sortir l'eau, qui gèlerait dans le mécanisme)
 - [ ] Les petites bosses des touches F et J du clavier (repères pour les index, sans regarder)
@@ -47,6 +46,7 @@ Accroche : « Ce n'est pas un défaut. » On montre le « défaut », on laisse 
 - [ ] Les stries sur la tranche de certaines pièces de monnaie (contre le rognage, et pour reconnaître la pièce au toucher)
 - [ ] Les bandes rugueuses au bord des autoroutes (réveiller le conducteur qui dévie)
 - [ ] Les joints de dilatation des ponts (les « trous » qui empêchent le pont de se fissurer quand il fait chaud)
+- [ ] Le crochet du mètre ruban qui bouge · descendu le 03/11 : très répandu en anglais (TikTok viral, articles) ; à reprendre seulement avec un angle différent (il coulisse de sa propre épaisseur : mesure juste en poussant comme en tirant)
 
 ## Pilier 3 · `forme_contre_intuitive` : « Les formes contre-intuitives »
 Une forme qui a l'air absurde, une fausse piste, puis un chiffre fort ou une expérience simple.

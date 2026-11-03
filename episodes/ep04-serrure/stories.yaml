@@ -1,0 +1,9 @@
+# Story Instagram liée à l'épisode 4 (12:00, après la vidéo de 10 h). Question écrite dans l'image.
+stories:
+  - id: 1
+    heure: "12:00"
+    entete: "LA QUESTION DE L'INGÉNIEUR MALIN"
+    question: ["Que doit aligner", "LA CLÉ", "pour tourner ?"]
+    mot_vert: "LA CLÉ"
+    choix: ["La coupure des goupilles", "Les cinq ressorts", "Les dents entre elles"]
+    pied: "Réponse dans la vidéo de 10 h"

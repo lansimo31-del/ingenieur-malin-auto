@@ -1,0 +1,26 @@
+numero: 5
+sujet: "Le trou du pistolet à essence"
+concept: fait_expres
+statut: programme
+creneau: "18:00"
+date_publication: "2026-11-04"
+accroche: "Ce n'est pas un défaut."
+question_ouverte: "À quoi sert ce trou minuscule au bout du pistolet ?"
+script: texte-script-episode-05-pistolet.md
+voix_off: texte-voix-off-enzo-episode-05-pistolet.txt
+faits: texte-faits-verifies-pistolet.md
+description: texte-description-episode-05-pistolet.txt
+couverture: "CE N'EST PAS UN DÉFAUT"
+couverture_entete: "CE N'EST PAS UN DÉFAUT"
+couverture_lignes: ["CE N'EST PAS", "UN DÉFAUT", "LE TROU DU PISTOLET"]
+mot_cle_vert: "UN DÉFAUT"
+stories: stories.yaml
+voix_retenue: "Enzo (gemini-3.8-flash-tts)"
+duree_s: 56.3
+taille_mo: 8.86
+medias:   # branche media, commit 424755203412a9994c4e088dd7a35ed3011f0761, verify-media OK (run 41708619663)
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep05-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep05-miniature.png"
+  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep05-story.png"
+heure_publication: "18:00"
+metricool: {video_post_id: "415733444", story_post_id: "415733468"}

@@ -4,6 +4,16 @@
 > de recherche**, en ordre de grandeur (ni vues, ni rétention). À recouper chaque mois.
 > Complète [`comptes.md`](comptes.md) (comptes similaires).
 
+## Veille du 03/11 (soir, tâche automatique)
+
+**Nos chiffres** (Metricool, 4 oct. – 3 nov., lus le 3 nov. au soir) : inchangés. Ballast 1 873 vues Instagram / 19,4 s ; stylo 134 vues / 9,2 s ; TikTok 53 vues chacun, 0 partage. Ép. 3 (hublots) publié à 18 h 25 : pas encore de ligne. `TKPO13`, `TKPO15`, `IGRE27`, `IGEV43`/`TKEV16` : vides ou 0. Trop peu de publications (aucun pilier n'a 3 publications) pour reclasser par performance.
+
+**Web** : le crochet de mètre ruban qui bouge est très répandu (article Mental Floss, SlashGear, Hunker, This Old House, et un TikTok viral de @dorisroseart cité par la presse ; vues non lues). Je ne peux pas dire qu'il soit saturé en français, mais il est omniprésent en anglais : il descend dans la file. Le trou du pistolet à essence (effet Venturi) : sources d'explication nombreuses (Caradisiac, Mental Floss, Jalopnik) mais aucune vidéo TikTok ou Reel trouvée ; il passe en tête du pilier `fait_expres`. Serrure à goupilles : nombreuses animations (Blender, Carlo Clerici) ; aucune vidéo « pièce par pièce avec mystère » trouvée par la recherche, l'angle mystère reste libre.
+
+**TikTok** : illisible depuis le cloud le 03/11 (la page de recherche répond 200 mais n'est qu'une coquille JavaScript : Chromium ne charge aucun résultat, aucun like lisible). Aucun chiffre TikTok relevé.
+
+**Décisions** : rotation : 10 h `devine_construction` (serrure, ép. 4), 18 h `fait_expres` (pistolet, ép. 5). Mètre ruban reclassé en bas de file.
+
 ## Veille du 03/11/2026 (première veille, faite à la main dans la session cloud)
 
 **Nos chiffres** (Metricool, publications du 4 oct. au 3 nov., lus le 3 nov.) :

@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-03T18:40:00+01:00",
+  "mis_a_jour": "2026-11-03T21:10:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -20,24 +20,34 @@
     "date": "2026-11-03",
     "episodes": [
       {
-        "numero": 3,
-        "sujet": "Les hublots d'avion",
-        "concept": "pourquoi",
-        "creneau": null,
-        "duree_s": 61.4,
-        "taille_mo": 9.08,
+        "numero": 4,
+        "sujet": "La serrure à goupilles",
+        "concept": "devine_construction",
+        "creneau": "10:00",
+        "duree_s": 48.0,
+        "taille_mo": 8.82,
         "voix": "Enzo (gemini-3.8-flash-tts)",
-        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-video.mp4",
-        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-miniature.png",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep04-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep04-miniature.png",
         "stories": [
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-story-1.png",
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-story-2.png"
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep04-story.png"
         ],
-        "version": "v2 (fin refaite)",
-        "statut": "publié",
-        "publication": "2026-11-03 18:25",
-        "instagram": "https://www.instagram.com/reel/DfSafwyO4ke/",
-        "tiktok": "https://www.tiktok.com/@ingenieur.malin_off/video/7703997649396976918"
+        "statut": "pret (vidéo 10:00 non programmée)"
+      },
+      {
+        "numero": 5,
+        "sujet": "Le trou du pistolet à essence",
+        "concept": "fait_expres",
+        "creneau": "18:00",
+        "duree_s": 56.3,
+        "taille_mo": 8.86,
+        "voix": "Enzo (gemini-3.8-flash-tts)",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep05-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep05-miniature.png",
+        "stories": [
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep05-story.png"
+        ],
+        "statut": "programmé"
       }
     ]
   },
@@ -61,12 +71,54 @@
         "tiktok": "415552744"
       },
       "statut": "publié"
+    },
+    {
+      "date": "2026-11-04",
+      "heure": "12:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 4,
+      "post_id": {
+        "instagram": "415733408"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-04",
+      "heure": "18:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 5,
+      "post_id": {
+        "instagram+tiktok": "415733444"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-04",
+      "heure": "19:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 5,
+      "post_id": {
+        "instagram": "415733468"
+      },
+      "statut": "programmé"
     }
   ],
   "stats": {},
   "alertes": [
     "Programmation Metricool activée le 3 nov. : vérifier que les 2 Routines sont activées et portent le connecteur Metricool (claude.ai > Routines).",
-    "Veille : TikTok bloqué ; autoriser www.tiktok.com dans Network access (README § 8)."
+    "ALERTE : la vidéo de 10:00 (ép. 4, serrure) n'est PAS programmée : la création Metricool a été refusée par le classifieur d'autorisation de la session. Médias hébergés et vérifiés ; à programmer à la main ou à relancer.",
+    "Veille : TikTok illisible depuis le cloud (coquille JavaScript sans résultat) ; relevés manuels d'Ilan seuls fiables.",
+    "Moteur : render/engine/stylo.py corrigé (f-string incompatible avec Python 3.11)."
   ],
   "historique": [
     {
@@ -88,19 +140,24 @@
       "date": "2026-11-03",
       "tache": "validation d'Ilan",
       "resume": "Ép. 3 v2 publié à 18 h 25 (Instagram 415552706, TikTok 415552744). programmation_active passé à true ; Ilan active les 2 Routines."
+    },
+    {
+      "date": "2026-11-03",
+      "tache": "production du soir",
+      "resume": "Ép. 4 serrure (10 h, 48,0 s) et ép. 5 pistolet (18 h, 56,3 s), voix Enzo, jsDelivr vérifié ; stories 12 h et 19 h et vidéo 18 h programmées, vidéo 10 h refusée par la session."
     }
   ],
-  "dernier_pilier": "forme_contre_intuitive",
+  "dernier_pilier": "fait_expres",
   "piliers": [
     "devine_construction",
     "fait_expres",
     "forme_contre_intuitive"
   ],
   "derniere_veille": {
-    "date": "2026-11-03",
-    "metricool": "lu : ép. 1 IG 1873 vues / 19,4 s, ép. 2 IG 134 vues / 9,2 s, TikTok 53 vues chacun",
-    "web": "lu (peu de résultats TikTok indexés)",
-    "tiktok": "illisible : www.tiktok.com refusé par le proxy (403)",
-    "decisions": "3 piliers en rotation ; serrure à goupilles en tête"
+    "date": "2026-11-03 (soir)",
+    "metricool": "lu : aucun nouveau chiffre (ballast 1873 vues IG, stylo 134, TikTok 53)",
+    "web": "lu : mètre ruban très répandu, pistolet sans vidéo trouvée",
+    "tiktok": "illisible : page de recherche = coquille JS, aucun like lisible",
+    "decisions": "serrure (10h) + pistolet (18h) ; mètre ruban reclassé en bas"
   }
 }
