@@ -1,11 +1,7 @@
 # Analyse du marché
 
-À produire (étape 0, avant le lancement du pipeline) puis à mettre à jour chaque mois.
+- `comptes.md` : comptes similaires, ce que montre le marché, structures à reprendre dans notre DA,
+  créneaux libres et sources (v1 du 3 nov. 2026).
 
-- `comptes.md` : comptes similaires FR et EN (vulgarisation ingénierie, « how it's made »,
-  explications d'objets du quotidien), avec abonnés, rythme, formats, durées, accroches.
-- `formats-gagnants.md` : structures de vidéos qui retiennent (accroche, boucle, révélation finale).
-- `ecarts.md` : ce que personne ne fait et qu'Ingénieur Malin peut occuper.
-
-Sources : les profils publics, la fonction concurrents de Metricool (Instagram) et
-la lecture manuelle des meilleures vidéos. Aucune donnée inventée.
+Mise à jour mensuelle, à partir des données concurrents de Metricool (Instagram) et de nos
+propres statistiques. Aucun chiffre inventé : tout chiffre est sourcé ou marqué « à relever ».

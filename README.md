@@ -21,9 +21,19 @@ dans le cloud. L'ordinateur d'Ilan n'est jamais nécessaire.
 | Direction artistique | La même que les **épisodes 1 (ballast)** et **2 (stylo)** |
 | Concepts | En **alternance** : ① *construction* d'un objet pièce par pièce, ② *pourquoi c'est conçu comme ça* |
 | Rétention | Des vidéos qui gardent en haleine jusqu'à la fin |
-| Veille | Une **analyse du marché** des comptes similaires |
+| Veille | Une **analyse du marché** des comptes similaires → [`analyse-marche/comptes.md`](analyse-marche/comptes.md) |
+| Voix | **Enzo**, Google Gemini TTS, style calme et clair. Clé API Gemini enregistrée par Ilan dans les secrets de l'environnement (jamais dans le dépôt) |
+| Médias | **Supabase Storage**, bucket public, suppression des anciens fichiers une fois publiés |
+| Rendu | Moteur Python d'Ilan (Pillow + ffmpeg) dans [`render/`](render/HOWTO.md) |
+| Objectif | **Zéro intervention manuelle** d'Ilan une fois le pipeline validé |
 
-> ⚠️ Tant qu'Ilan n'a pas validé le pipeline, **rien n'est programmé dans Metricool**.
+> ⚠️ Tant qu'Ilan n'a pas validé l'épisode d'essai, **rien n'est programmé dans Metricool**.
+
+**Limites connues** (voir [`docs/sources/texte-plan-automatisation-cloud.md`](docs/sources/texte-plan-automatisation-cloud.md)) :
+- Les stories TikTok ne sont pas programmables via Metricool : **stories sur Instagram seulement**.
+- Les stickers « question » d'Instagram ne passent pas par l'API : la question est **écrite dans l'image** de la story.
+- Instagram ne permet plus de changer la couverture depuis un ordinateur : la bonne miniature est envoyée **dès la programmation**.
+- 2 vidéos par jour représentent beaucoup de rendu : la durée et le coût sont à surveiller la première semaine.
 
 ---
 
@@ -43,11 +53,12 @@ idees/banque.md │ 01 idée → 02 script → 03 voix → 04 rendu →    │
 
 - **Déclencheurs** : deux Routines Claude Code planifiées (cron, fuseau Europe/Paris), chacune
   ouvre une session cloud sur ce dépôt. Rien ne tourne en local.
-- **Rendu** : dans le conteneur cloud (ffmpeg et Chromium disponibles), avec le code de rendu
-  des épisodes 1 et 2 (à fournir).
+- **Rendu** : dans le conteneur cloud (Python, Pillow, ffmpeg), avec le moteur des épisodes 1 et 2
+  (`render/`), rendu par segments de 200 images avec reprise possible.
+- **Voix** : Gemini TTS, voix Enzo, via la clé API placée dans les secrets de l'environnement.
 - **Hébergement des médias** : Metricool demande une URL publique pour chaque vidéo et chaque
-  image. Les fichiers rendus seront déposés sur un stockage cloud (au choix : Supabase Storage
-  ou Vercel Blob, connecteurs déjà disponibles).
+  image. Les fichiers sont déposés dans un bucket public Supabase Storage, puis supprimés une
+  fois publiés.
 - **Publication** : connecteur Metricool (`createScheduledPost`). Instagram et TikTok sont tous
   deux reliés à la marque 7844668.
 - **Mémoire** : chaque épisode a sa fiche `episodes/epNN-sujet/episode.yaml`, et chaque exécution
@@ -57,9 +68,11 @@ idees/banque.md │ 01 idée → 02 script → 03 voix → 04 rendu →    │
 
 | Dossier | Rôle |
 |---|---|
-| `docs/sources/` | Docs de référence : `texte-plan-automatisation-cloud.md`, `texte-regles-miniature-et-publication.md` |
+| `docs/sources/` | Plan d'automatisation et règles miniature/publication |
+| `docs/reference/` | Scripts, voix off, faits vérifiés et légendes des ép. 1 et 2 |
+| `render/` | Moteur de rendu Python des ép. 1 et 2, polices, miniature ([HOWTO](render/HOWTO.md)) |
 | `config/planning.yaml` | Marque Metricool, cadence, créneaux, alternance des concepts, heures des tâches |
-| `direction-artistique/` | Charte reprise des ép. 1 et 2 : couleurs, polices, sons, rendus de référence |
+| `direction-artistique/` | Charte des ép. 1 et 2 (Seyès, encre noire, vert 18,150,100) |
 | `episodes/` | Une fiche par épisode (modèle dans `_modele/`), ép. 1 et 2 comme référence |
 | `idees/banque.md` | Réserve de sujets, classés par concept |
 | `pipeline/01…07` | Les 7 étapes de production, avec un README pour chacune |
@@ -97,12 +110,12 @@ Alternance : un créneau *construction* (« On construit un X pièce par pièce 
 ## 6. Feuille de route
 
 - [x] **0. Structure du dépôt et plan** (ce commit)
-- [ ] **1. Récupérer les sources** : les deux docs texte, les rendus des ép. 1 et 2, la DA
-- [ ] **2. Analyse du marché** des comptes similaires → `analyse-marche/`
-- [ ] **3. Voix** : brancher le moteur choisi et tester sur le script de l'ép. 1
-- [ ] **4. Rendu** : reprendre le code des ép. 1 et 2 et le faire tourner dans le cloud
+- [x] **1. Récupérer les sources** : docs, scripts, faits vérifiés, moteur de rendu et polices
+- [x] **2. Analyse du marché** v1 → `analyse-marche/comptes.md`
+- [ ] **3. Voix** : Gemini TTS, voix Enzo (en attente de la clé API dans les secrets)
+- [ ] **4. Rendu** : rendre le moteur générique (chemins, timeline par épisode) et le faire tourner dans le cloud
 - [ ] **5. Miniatures et légendes** selon les règles du doc dédié
-- [ ] **6. Hébergement des médias** (URL publiques pour Metricool)
+- [ ] **6. Hébergement des médias** : bucket public Supabase Storage
 - [ ] **7. Tableau de bord** (page publiée, alimentée par `tableau-de-bord/etat.json`)
 - [ ] **8. Essai à blanc** : un épisode complet produit, **validé par Ilan**, sans programmation
 - [ ] **9. Activation** des Routines du soir et du matin, puis première programmation Metricool
