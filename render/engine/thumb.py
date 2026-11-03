@@ -35,7 +35,7 @@ im = Image.fromarray((np.clip(paper, 0, 1) * 255).astype(np.uint8)); d = ImageDr
 def ctext(t, y, size, fill, font=CAV):
     f = ImageFont.truetype(font, size); w = d.textlength(t, font=f); d.text(((W_ - w) / 2, y), t, font=f, fill=fill)
 ink = (20, 20, 24); gr = (18, 150, 100); gy = (95, 95, 100)
-ctext("POURQUOI C'EST CONÇU COMME ÇA ?", 295, 44, gy, PAT)
+ctext(cfg.get("couverture_entete", "POURQUOI C'EST CONÇU COMME ÇA ?"), 295, 44, gy, PAT)   # « DEVINE CE QUE JE CONSTRUIS » pour le créneau de 18 h
 d.line([(150, 360), (930, 360)], fill=(150, 160, 190), width=4)
 ctext(lines[0], 440, 125, ink); ctext(lines[1], 545, 200, gr); ctext(lines[2], 770, 125, ink)
 ctext("L'INGÉNIEUR MALIN EXPLIQUE", 1530, 44, gy, PAT)

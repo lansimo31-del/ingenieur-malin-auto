@@ -19,7 +19,8 @@ dans le cloud. L'ordinateur d'Ilan n'est jamais nécessaire.
 | Rythme | **Production chaque soir**, **vérification chaque matin** |
 | Suivi | Un **tableau de bord** du projet |
 | Direction artistique | La même que les **épisodes 1 (ballast)** et **2 (stylo)** |
-| Concepts | En **alternance** : ① *construction* d'un objet pièce par pièce, ② *pourquoi c'est conçu comme ça* |
+| Concepts | Un par créneau (3 nov., [analyse](analyse-marche/concepts-qui-marchent.md)) : **10 h** *pourquoi c'est conçu comme ça* (« c'est fait exprès » ou « forme contre-intuitive ») ; **18 h** *devine ce que je construis* (pièce par pièce, objet révélé à la fin) |
+| Fin des vidéos | Un simple appel à s'abonner, **jamais d'annonce du prochain objet** (3 nov.) |
 | Rétention | Des vidéos qui gardent en haleine jusqu'à la fin |
 | Veille | Une **analyse du marché** des comptes similaires → [`analyse-marche/comptes.md`](analyse-marche/comptes.md) |
 | Voix | **Enzo**, Google Gemini TTS, style calme et clair. Clé API Gemini enregistrée par Ilan dans les secrets de l'environnement (jamais dans le dépôt) |
@@ -76,7 +77,7 @@ idees/banque.md │ 01 idée → 02 script → 03 voix → 04 rendu →    │
 | `docs/sources/` | Plan d'automatisation et règles miniature/publication |
 | `docs/reference/` | Scripts, voix off, faits vérifiés et légendes des ép. 1 et 2 |
 | `render/` | Moteur de rendu Python des ép. 1 et 2, polices, miniature ([HOWTO](render/HOWTO.md)) |
-| `config/planning.yaml` | Marque Metricool, cadence, créneaux, alternance des concepts, heures des tâches |
+| `config/planning.yaml` | Marque Metricool, interrupteur de validation, cadence, créneaux, concept de chaque créneau, heures des tâches |
 | `direction-artistique/` | Charte des ép. 1 et 2 (Seyès, encre noire, vert 18,150,100) |
 | `episodes/` | Une fiche par épisode (modèle dans `_modele/`), ép. 1 et 2 comme référence |
 | `idees/banque.md` | Réserve de sujets, classés par concept |
@@ -108,11 +109,11 @@ Les créneaux sont recalculés chaque semaine à partir de Metricool et mis à j
 2. **Promesse.** Ce qu'on va comprendre, sans le dire tout de suite.
 3. **Révélations par étapes.** Une nouvelle info toutes les 3 à 5 s, avec une relance visuelle à chaque fois.
 4. **Fausse piste ou détail surprenant** à mi-parcours, pour relancer l'attention.
-5. **Chute.** La réponse complète, puis une dernière phrase qui renvoie au début (boucle).
+5. **Chute.** La réponse complète, puis une dernière phrase qui renvoie au début (boucle) et un simple « Abonne-toi », sans annoncer de prochain objet.
 6. Sous-titres incrustés et format vertical 1080×1920, entre 30 et 60 s.
 
-Alternance : un créneau *construction* (« On construit un X pièce par pièce »), le suivant
-*pourquoi* (« Pourquoi c'est conçu comme ça ? »).
+Créneaux : **10 h** *pourquoi* (accroche « Ce n'est pas un défaut. » ou forme contre-intuitive), **18 h** *devine ce que je
+construis* (l'objet n'est nommé qu'à la fin). Détails : [`analyse-marche/concepts-qui-marchent.md`](analyse-marche/concepts-qui-marchent.md).
 
 ## 6. Feuille de route
 
@@ -134,7 +135,7 @@ Alternance : un créneau *construction* (« On construit un X pièce par pièce 
 | Clé Gemini | Lue dans `GEMINI_API_KEY` (présence et longueur vérifiées, valeur jamais affichée ni écrite) | Consigne d'Ilan |
 | Voix | Enzo acceptée par `gemini-3.8-flash-tts`, 61,0 s de voix | Pas besoin du repli |
 | Alignement | Méthode de l'ép. 2 : pics de syllabes et programmation dynamique (`peak_align`), faster-whisper non installé | Consigne ; 140 mots, débuts croissants, dernier mot à 60,1 s |
-| Durée | 63,2 s (voix + 2,2 s de respiration finale), soit un peu plus que les 60 s visés | Script validé tel quel ; la tâche du soir raccourcit au-delà de 62 s |
+| Durée | v1 : 63,2 s ; **v2 : 61,4 s** (fin plus courte) | La tâche du soir raccourcit au-delà de 62 s |
 | scipy | Ajouté à `requirements.txt` et installé dans la session | Nécessaire à l'alignement et aux effets d'encre |
 | Installation auto | Le hook de démarrage `.claude/settings.json` n'a pas été ajouté (refusé par le contrôle de sécurité de la session). Les prompts des Routines lancent `pip install -r requirements.txt`. Pour l'avoir dans **toutes** les sessions, Ilan peut ajouter cette ligne au script d'installation de l'environnement (réglages de l'environnement cloud) | Ne pas contourner un refus |
 | Stories | 2 par jour, Instagram seulement : 12:00 (question sur la vidéo de 10 h), 19:00 (question sur la vidéo de 18 h). Question et 3 choix écrits dans l'image, même papier, même encre, même vert, dessin de la miniature au centre ; rien au-dessus de y = 250 ni sous y = 1700 (interface Instagram) | API sans stickers |
@@ -143,6 +144,11 @@ Alternance : un créneau *construction* (« On construit un X pièce par pièce 
 | Hébergement | Chaque soir, la branche `media` ne garde que les 6 médias du lendemain (2 vidéos, 2 miniatures, 2 stories) | Les médias du jour sont tous sortis à 20 h 30 |
 | Routines | Créées sans horaire, désactivées, puis horaire ajouté (aucun risque de déclenchement). Nouvelle session à chaque déclenchement, notification push | Consigne : désactivées |
 | Vérification des URL | Le proxy de la session cloud renvoie 403 sur jsDelivr : les adresses sont vérifiées par le workflow `verify-media`, lancé depuis la branche de travail avec `branch=media` (la branche `media` orpheline ne contient pas le workflow). Run 41655847774 : 4 × OK | Seule vérification fiable |
+| Fin de l'ép. 3 (v2, retour d'Ilan) | « Prochain objet : les plaques d'égout » remplacé par « Abonne-toi : il y a un secret d'ingénieur dans chaque objet. ». Seule la dernière phrase change : découpée dans une voix Enzo complète régénérée (transcription Gemini vérifiée), collée dans le silence après « fenêtre » (55,6 s) | Sur une phrase isolée, le modèle TTS lisait la consigne de style à voix haute |
+| Rendu partiel | Seules les images 1600 à 1842 sont refaites ; images 0 à 1599 vérifiées identiques au pixel près. La barre de progression garde son tracé jusqu'à 53,33 s puis rejoint la nouvelle fin | Consigne : refaire seulement la fin |
+| Pic audio | Limiteur à -3 dBFS après `loudnorm` (master et export), 48 kHz : pic réel +0,1 → **-2,5 dBFS**. Sonie -17,6 LUFS (v1 : -17,1) | Le pic touchait 0 dB |
+| Contrôle de la voix | `tts.py` transcrit le début de chaque voix (Gemini `gemini-3.8-flash`, `config/voix.json` → `modele_controle`) et régénère si la consigne a été lue (cas observé le 3 nov. sur une voix complète) ; réessais sur 429/5xx | Défaut intermittent du modèle TTS |
+| Concepts | 10 h *pourquoi* (« c'est fait exprès » / forme contre-intuitive), 18 h *devine ce que je construis* ; plus d'annonce de prochain objet ; plaques d'égout refusées | Analyse TikTok d'Ilan |
 | Connecteurs | Les Routines créées depuis cette session ne portent **aucun connecteur** (option refusée pour l'organisation) | Voir § 8, étape 2 |
 
 ## 8. Valider l'automatisation (Ilan)
@@ -152,4 +158,4 @@ Alternance : un créneau *construction* (« On construit un X pièce par pièce 
 3. **Le geste de validation** : passer `programmation_active: true` dans `config/planning.yaml` (commit), puis **activer** les 2 Routines.
 4. Facultatif : ajouter `pip install -r requirements.txt` au script d'installation de l'environnement cloud.
 
-Le premier soir après l'activation, la tâche du soir produit les ép. 4 et 5 pour le lendemain (concept `construction` à 10 h, le cadenas à goupilles ; `pourquoi` à 18 h, les plaques d'égout annoncées à la fin de l'ép. 3). L'ép. 3 lui-même n'est pas programmé automatiquement : à programmer à la main ou à demander dans une session.
+Le premier soir après l'activation, la tâche du soir produit les ép. 4 et 5 pour le lendemain : à 10 h, le trou du capuchon de stylo Bic (`pourquoi`, « c'est fait exprès ») ; à 18 h, la serrure à goupilles en « devine ce que je construis ». L'ép. 3 lui-même n'est pas programmé automatiquement : à programmer à la main ou à demander dans une session.

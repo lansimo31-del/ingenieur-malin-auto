@@ -1,7 +1,7 @@
 numero: 3
 sujet: "Les hublots d'avion"
 concept: pourquoi
-statut: pret                 # rendu complet le 3 nov. ; attend la validation d'Ilan
+statut: pret                 # validé par Ilan le 3 nov. sauf la fin, refaite (v2) ; rien n'est programmé
 role: episode_d_essai        # rien n'est programmé dans Metricool avant validation d'Ilan
 accroche: "Ces hublots sont arrondis parce qu'un angle droit peut faire céder un avion."
 question_ouverte: "Les 3 secrets : pression, angles, petit trou"
@@ -14,11 +14,15 @@ couverture_lignes: ["POURQUOI LES", "HUBLOTS", "SONT RONDS ?"]
 mot_cle_vert: "HUBLOTS"
 stories: stories.yaml
 voix_retenue: "Enzo (gemini-3.8-flash-tts)"
-duree_s: 63.2
-taille_mo: 8.89
-medias:   # branche media, commit bd82e2c, vérifié par verify-media le 3 nov.
-  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bd82e2cd0769b403aaa26f25c3bb234ddbd981db/ep03-video.mp4"
-  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bd82e2cd0769b403aaa26f25c3bb234ddbd981db/ep03-miniature.png"
-  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bd82e2cd0769b403aaa26f25c3bb234ddbd981db/ep03-story-1.png"   # 12:00
-  story_2: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bd82e2cd0769b403aaa26f25c3bb234ddbd981db/ep03-story-2.png"   # 19:00
+duree_s: 61.4
+taille_mo: 9.08
+medias:   # v2 (fin refaite), branche media, commit e918c3b, vérifié par verify-media le 3 nov.
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-miniature.png"
+  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-story-1.png"   # 12:00
+  story_2: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-story-2.png"   # 19:00
 metricool: {instagram_post_id: "", tiktok_post_id: "", story_1_post_id: "", story_2_post_id: ""}
+version: 2
+historique_versions:
+  - "v1 (3 nov.) : fin « Prochain objet : les plaques d'égout », sujet refusé par Ilan ; pic audio à +0,1 dBFS"
+  - "v2 (3 nov.) : fin « Abonne-toi : il y a un secret d'ingénieur dans chaque objet. », seule la dernière phrase remplacée (découpée dans une voix Enzo complète régénérée, transcription vérifiée), images 1600 à 1842 refaites, pic -2,5 dBFS, 61,4 s"

@@ -1,32 +1,64 @@
 {
-  "mis_a_jour": "2026-11-03T15:40:00+01:00",
+  "mis_a_jour": "2026-11-03T16:30:00+01:00",
   "pipeline_actif": false,
   "programmation_active": false,
   "dernier_concept": "pourquoi",
   "prochaine_production": null,
   "prochaine_verification": null,
   "routines": {
-    "production_soir": {"id": "trig_01LvzKg6NDFcKrZwkUfJP2ZN", "horaire": "20:30 Europe/Paris", "active": false},
-    "verification_matin": {"id": "trig_01T6hoMaseT8oC3fuxL4LHDo", "horaire": "07:30 Europe/Paris", "active": false}
+    "production_soir": {
+      "id": "trig_01LvzKg6NDFcKrZwkUfJP2ZN",
+      "horaire": "20:30 Europe/Paris",
+      "active": false
+    },
+    "verification_matin": {
+      "id": "trig_01T6hoMaseT8oC3fuxL4LHDo",
+      "horaire": "07:30 Europe/Paris",
+      "active": false
+    }
   },
   "derniere_production": {
     "date": "2026-11-03",
     "episodes": [
-      {"numero": 3, "sujet": "Les hublots d'avion", "concept": "pourquoi", "creneau": null, "duree_s": 63.2, "taille_mo": 8.89,
-       "voix": "Enzo (gemini-3.8-flash-tts)",
-       "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bd82e2cd0769b403aaa26f25c3bb234ddbd981db/ep03-video.mp4",
-       "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bd82e2cd0769b403aaa26f25c3bb234ddbd981db/ep03-miniature.png",
-       "stories": ["https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bd82e2cd0769b403aaa26f25c3bb234ddbd981db/ep03-story-1.png", "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bd82e2cd0769b403aaa26f25c3bb234ddbd981db/ep03-story-2.png"]}
+      {
+        "numero": 3,
+        "sujet": "Les hublots d'avion",
+        "concept": "pourquoi",
+        "creneau": null,
+        "duree_s": 61.4,
+        "taille_mo": 9.08,
+        "voix": "Enzo (gemini-3.8-flash-tts)",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-miniature.png",
+        "stories": [
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-story-1.png",
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@e918c3b2b18db082aed834c33d5874bd55591b07/ep03-story-2.png"
+        ],
+        "version": "v2 (fin refaite)"
+      }
     ]
   },
-  "derniere_verification": {"date": "2026-11-03", "resultat": "OK", "details": "verify-media (run 41655847774) : 4 URL en HTTP 200, video/mp4 et image/png, lecture partielle 206"},
+  "derniere_verification": {
+    "date": "2026-11-03",
+    "resultat": "OK",
+    "details": "verify-media (run 41671308449) : v2, 4 URL en HTTP 200, video/mp4 et image/png, lecture partielle 206"
+  },
   "programme_metricool": [],
   "stats": {},
   "alertes": [
-    "Épisode d'essai 3 en attente de validation d'Ilan : rien n'est programmé dans Metricool.",
+    "Épisode d'essai 3 (v2) : fin refaite à la demande d'Ilan, à revoir ; rien n'est programmé dans Metricool.",
     "Les 2 Routines n'ont aucun connecteur : ajouter Metricool dans claude.ai > Routines avant de les activer."
   ],
   "historique": [
-    {"date": "2026-11-03", "tache": "essai à blanc", "resume": "Ép. 3 (hublots) : voix Enzo, alignement par pics, rendu 63,2 s, export 8,89 Mo, miniature, 2 stories, hébergement jsDelivr vérifié. Routines créées désactivées."}
+    {
+      "date": "2026-11-03",
+      "tache": "essai à blanc",
+      "resume": "Ép. 3 (hublots) : voix Enzo, alignement par pics, rendu 63,2 s, export 8,89 Mo, miniature, 2 stories, hébergement jsDelivr vérifié. Routines créées désactivées."
+    },
+    {
+      "date": "2026-11-03",
+      "tache": "retours d'Ilan",
+      "resume": "Ép. 3 v2 : fin sans annonce de prochain objet, pic audio corrigé (-2,5 dBFS), 61,4 s. Plaques d'égout refusées. Banque d'idées réécrite (10 h « c'est fait exprès » / forme contre-intuitive, 18 h « devine ce que je construis »)."
+    }
   ]
 }

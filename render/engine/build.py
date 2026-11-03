@@ -37,6 +37,9 @@ if step("son"):
     run(PY, ENG / "mix.py", voice, WORK / "music.wav", D, EP / "cues.json", WORK / "mix.wav")
 
 NF = int(round(D * 30))
+# Son : loudnorm (cible -14 LUFS), puis 48 kHz et limiteur à -3 dBFS (le pic touchait 0 dB après l'encodage AAC, 3 nov.)
+LIM = "alimiter=limit=0.708:attack=2:release=60:level=false"
+AF_MASTER = f"loudnorm=I=-14:TP=-2:LRA=11,aresample=48000,{LIM}"
 if step("rendu"):
     src = WORK / "ep.py"
     src.write_text((ENG / "head.py").read_text() + "\n" + (EP / "scene.py").read_text())
@@ -50,7 +53,7 @@ if step("rendu"):
     run("ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", WORK / "list.txt",
         "-c", "copy", WORK / "silent.mp4")
     run("ffmpeg", "-y", "-loglevel", "error", "-i", WORK / "silent.mp4", "-i", WORK / "mix.wav",
-        "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
+        "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", AF_MASTER,
         "-c:a", "aac", "-b:a", "192k", "-shortest", WORK / "video.mp4")
 
 if step("export"):
@@ -58,6 +61,6 @@ if step("export"):
     vb = int((9.4e6 * 8) / D - 128_000)
     run("ffmpeg", "-y", "-loglevel", "error", "-i", WORK / "video.mp4", "-c:v", "libx264", "-preset", "slow",
         "-b:v", str(vb), "-maxrate", str(int(vb * 1.4)), "-bufsize", str(vb * 2), "-pix_fmt", "yuv420p",
-        "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", WORK / "video-instagram.mp4")
+        "-af", LIM, "-ar", "48000", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", WORK / "video-instagram.mp4")
     mo = (WORK / "video-instagram.mp4").stat().st_size / 1e6
     print(f"video-instagram.mp4 : {mo:.2f} Mo"); assert mo < 10, "dépasse 10 Mo"

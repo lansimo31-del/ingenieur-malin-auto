@@ -21,7 +21,8 @@ T_A = wt("deux")                                  # « Deux : les angles »
 T_F = wt("une")                                   # « Une fissure minuscule… »
 T_H = WORDS[widx("petit") - 1][1]                 # « Trois : le petit trou… »
 T_R = WORDS[widx("simple") - 4][1]                # « Trois secrets, pour une simple fenêtre »
-T_N = wt("prochain")                              # « Prochain objet… »
+T_N = wt("abonnetoi")                             # « Abonne-toi : il y a un secret d'ingénieur dans chaque objet. »
+T_CK = we("abonnetoi") + 0.1                      # clic sur le bouton
 BEATS = [0.0, T_Q, T_P, T_A, T_F, T_H, T_R, T_N, 999.0]
 ROLE_T = [T_P, T_A, T_H]                          # les trois secrets
 
@@ -32,7 +33,7 @@ while i < len(WORDS):
     while j < len(WORDS) - 1 and j - i < 3 and not re.search(r"[.,?:]$", WORDS[j][0]) and sum(len(WORDS[k][0]) + 1 for k in range(i, j + 2)) <= 22: j += 1
     CHUNKS.append((i, j)); i = j + 1
 EMPH = {nrm(x) for x in ["arrondis", "céder", "trois", "secrets", "pression", "ballon", "angles", "concentre", "pointu,", "fissure",
-                          "fatigue", "1954", "cinquante-quatre,", "Comet", "petit", "trou", "extérieure", "secours,", "buée.", "simple", "rondes.", "Abonne-toi."]}
+                          "fatigue", "1954", "cinquante-quatre,", "Comet", "petit", "trou", "extérieure", "secours,", "buée.", "simple", "secret", "objet.", "Abonne-toi"]}
 
 # ---------- éléments dessinés ----------
 def label(c, x, y, s, size=64, col=None, a=1.0, font_=None):
@@ -205,27 +206,23 @@ def sc_recap(c, t):           # trois secrets, retour au hublot arrondi (boucle)
             label(c, x, 690, nme, 34, GREY, 1.0, FM)
     label(c, CX, 1262, "3 SECRETS · UNE FENÊTRE", 60, INK, eo(prog(t, t0 + 0.8, t0 + 1.2)))
 
-def sc_next(c, t):            # prochain objet : plaque d'égout + bouton « abonne-toi »
-    t0 = T_N; ta = wt("abonnetoi")
-    label(c, CX, 540, "PROCHAIN OBJET", 66, GREY, eo(prog(t, t0, t0 + 0.4)))
-    p = prog(t, t0 + 0.4, t0 + 1.3)
-    pen_poly(c, circ_pts(CX, 800, 150, 80, -math.pi / 2, 1.5 * math.pi), p, 9, INK)
-    pen_poly(c, circ_pts(CX, 800, 112, 80, -math.pi / 2, 1.5 * math.pi), prog(t, t0 + 0.8, t0 + 1.4), 6, INK)
-    for k in range(-2, 3):
-        pen_poly(c, [(CX - 100, 800 + k * 36), (CX + 100, 800 + k * 36)], prog(t, t0 + 1.2, t0 + 1.6), 4, mix(BG, GM, 1)) if abs(k) < 2 else None
-    tl = t0 + 1.5
-    if t > tl:
-        label(c, CX, 1060, "LES PLAQUES D'ÉGOUT", 66, INK, eo(prog(t, tl, tl + 0.4)))
-        c.text((CX + 250, 850), "?", FA, int(160 * max(0.02, eob(prog(t, tl, tl + 0.35)))), mix(BG, RED, 1), anchor="ms")
-    tb = max(t0 + 1.9, ta - 0.4); clicked = t >= ta + 0.3
+def sc_next(c, t):            # fin : retour au hublot du début + bouton « abonne-toi » (aucun prochain objet annoncé)
+    t0 = T_N
+    window(c, CX, 735, 300, 352, 110, eo(prog(t, t0 - 0.1, t0 + 0.4)), hole=True)
+    if t > t0 + 0.4: checkmark(c, CX + 190, 615, eob(prog(t, t0 + 0.4, t0 + 0.7)) * 1.2)
+    last = lambda w: WORDS[max(i for i, x in enumerate(NW) if x == nrm(w))][1]   # dernière occurrence (« dans » existe plus tôt)
+    ts, td = last("secret"), last("dans")
+    label(c, CX, 990, "UN SECRET D'INGÉNIEUR", 58, INK, eo(prog(t, ts - 0.1, ts + 0.3)))
+    label(c, CX, 1085, "DANS CHAQUE OBJET", 58, RED, eo(prog(t, td - 0.1, td + 0.3)))
+    tb = t0 + 0.05; clicked = t >= T_CK
     if t > tb:
         pp = eob(prog(t, tb, tb + 0.35)); pulse = 1.0
-        if clicked: pulse = 1 + 0.08 * math.exp(-(t - ta - 0.3) * 9) * math.cos((t - ta - 0.3) * 25)
-        if ta + 0.3 <= t < ta + 0.42: pulse = 0.93
+        if clicked: pulse = 1 + 0.08 * math.exp(-(t - T_CK) * 9) * math.cos((t - T_CK) * 25)
+        if T_CK <= t < T_CK + 0.12: pulse = 0.93
         w, h = (500 if not clicked else 400) * pp * pulse, 84 * pp * pulse
         if w > 4:
-            c.d.rounded_rectangle([(CX - w / 2) * S, (1170 - h / 2) * S, (CX + w / 2) * S, (1170 + h / 2) * S], radius=h / 2 * S, fill=INK if clicked else RED)
-            if pp > 0.6: c.text((CX, 1184), "ABONNÉ  ✓" if clicked else "@ingenieur.malin", FM, 38, (255, 255, 255), anchor="ms")
+            c.d.rounded_rectangle([(CX - w / 2) * S, (1205 - h / 2) * S, (CX + w / 2) * S, (1205 + h / 2) * S], radius=h / 2 * S, fill=INK if clicked else RED)
+            if pp > 0.6: c.text((CX, 1219), "ABONNÉ  ✓" if clicked else "@ingenieur.malin", FM, 38, (255, 255, 255), anchor="ms")
 
 SCENES = [sc_hook, sc_q, sc_pressure, sc_angles, sc_fatigue, sc_hole, sc_recap, sc_next]
 def beat_of(t):
@@ -237,8 +234,8 @@ def beat_of(t):
 CUR = [(0.0, 540, 1300), (1.2, 700, 800), (T_Q * 0.55, 560, 980), (T_Q + 0.4, 540, 900), (T_Q + 1.0, 240, 930), (T_Q + 1.6, 840, 930),
        (T_P + 0.6, 540, 700), (wt("ballon"), 700, 930), (T_A + 0.9, 150, 930), (wt("trois", 1), 540, 870), (wt("pointu"), 470, 860),
        (T_F + 0.5, 520, 740), (wt("cinquantequatre"), 540, 980), (T_H + 0.5, 540, 900), (wt("lextérieure"), 400, 880), (wt("milieu"), 540, 1060),
-       (T_R + 0.5, 240, 560), (T_R + 1.1, 840, 560), (T_N + 1.0, 540, 800), (wt("abonnetoi") - 0.3, 540, 1170), (DUR, 540, 1170)]
-CLICKS = [T_R + 0.6, T_R + 0.8, T_R + 1.0, wt("abonnetoi") + 0.3]
+       (T_R + 0.5, 240, 560), (T_R + 1.1, 840, 560), (T_N - 0.2, 700, 900), (T_CK - 0.25, 540, 1205), (DUR, 540, 1205)]
+CLICKS = [T_R + 0.6, T_R + 0.8, T_R + 1.0, T_CK]
 def cursor_pos(t):
     for a, b in zip(CUR[:-1], CUR[1:]):
         if a[0] <= t <= b[0]:
@@ -269,7 +266,14 @@ def header(c, t):
     c.text((80, Y), "ÉPISODE 3", FM, 34, RED)
     c.text((80 + tw("ÉPISODE 3  ", FM, 34), Y), "· HUBLOTS", FM, 34, GREY)
     c.line([(80, Y + 38), (1000, Y + 38)], 4, GM)
-    c.line([(80, Y + 38), (80 + 920 * min(1, t / (DUR - 0.5)), Y + 38)], 8, RED)
+    c.line([(80, Y + 38), (80 + 920 * bar(t), Y + 38)], 8, RED)
+# Barre de progression. La fin a été refaite seule (3 nov., retour d'Ilan) : avant l'image 1600 (53,33 s), la barre suit
+# exactement l'ancienne durée (63,2 s) pour que les segments déjà rendus restent valables, puis rejoint la nouvelle fin.
+DUR_V1, T_RACCORD = 63.2, 1600 / 30
+def bar(t):
+    v0 = T_RACCORD / (DUR_V1 - 0.5)
+    if t < T_RACCORD: return t / (DUR_V1 - 0.5)
+    return min(1, v0 + (1 - v0) * prog(t, T_RACCORD, DUR - 0.5))
 def roles(c, t):
     if t < T_Q: return
     a = eo(prog(t, T_Q, T_Q + 0.4)) * (1 - eo(prog(t, T_N - 0.2, T_N + 0.1)))

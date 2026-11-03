@@ -36,10 +36,11 @@ journee:
   - {heure: "18:00", type: video, reseaux: [instagram_reel, tiktok], episode: 2}
   - {heure: "19:00", type: story, reseaux: [instagram], episode: 2}   # question liée à la vidéo de 18 h
 
-alternance_concepts:
-  # Un concept différent à chaque créneau vidéo, en alternant
-  - construction    # "On construit un X pièce par pièce"
-  - pourquoi        # "Pourquoi c'est conçu comme ça ?"
+# Un concept fixe par créneau (décision d'Ilan du 3 nov., voir analyse-marche/concepts-qui-marchent.md) :
+# les deux concepts alternent donc chaque jour, matin puis soir.
+concepts_par_creneau:
+  "10:00": pourquoi       # « Pourquoi c'est conçu comme ça ? » : angle « c'est fait exprès » ou « forme contre-intuitive »
+  "18:00": construction   # « Devine ce que je construis » : pièce par pièce, objet révélé à la fin
 
 taches_cloud:
   production_soir: "20:30"     # produit et programme les contenus du lendemain
