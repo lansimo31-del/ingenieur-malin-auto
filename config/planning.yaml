@@ -1,0 +1,35 @@
+# Planning de publication — Ingénieur Malin
+# Source des créneaux : Metricool getBestTimeToPostByNetwork, lu le 2026-11-03
+# (semaine du 4 au 10 nov. 2026, fuseau Europe/Paris). À relire chaque semaine.
+
+metricool:
+  marque: ingenieur.malin
+  brand_id: 7844668
+  fuseau: Europe/Paris
+  reseaux:
+    instagram: ingenieur.malin
+    tiktok: ingenieur.malin_off
+
+cadence:
+  videos_par_jour: 2          # Reel Instagram + vidéo TikTok (même montage)
+  stories_par_jour: 2         # Instagram uniquement
+  avance_programmation_h: 24  # tout ce qui sort le jour J est programmé la veille
+
+# Créneaux actuels (heure de Paris). Pics Metricool : 10 h et 18 h, tous les jours,
+# sur les deux réseaux. Le samedi et le dimanche, l'audience est environ deux fois plus basse.
+creneaux:
+  videos:
+    - "10:00"
+    - "18:00"
+  stories:
+    - "12:00"   # 2e pic Instagram de la journée
+    - "19:00"   # fin de soirée, encore forte sur Instagram
+
+alternance_concepts:
+  # Un concept différent à chaque créneau vidéo, en alternant
+  - construction    # "On construit un X pièce par pièce"
+  - pourquoi        # "Pourquoi c'est conçu comme ça ?"
+
+taches_cloud:
+  production_soir: "20:30"     # produit et programme les contenus du lendemain
+  verification_matin: "07:30"  # vérifie que les publications du jour sont en place

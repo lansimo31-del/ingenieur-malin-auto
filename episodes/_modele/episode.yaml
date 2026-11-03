@@ -1,0 +1,21 @@
+# Fiche d'un épisode — à copier dans episodes/epNN-sujet/
+numero: 0
+sujet: ""
+concept: pourquoi        # pourquoi | construction
+statut: idee             # idee > script > voix > rendu > miniature > programme > publie
+date_publication: ""     # AAAA-MM-JJ
+creneau: ""              # 10:00 | 18:00
+accroche: ""             # la phrase des 2 premières secondes
+question_ouverte: ""     # ce qui fait rester jusqu'au bout
+script: script.md
+voix: voix.mp3
+video: video.mp4
+miniature: miniature.png
+legende_instagram: ""
+legende_tiktok: ""
+hashtags: []
+metricool:
+  instagram_post_id: ""
+  tiktok_post_id: ""
+stats_j1: {}
+stats_j7: {}
