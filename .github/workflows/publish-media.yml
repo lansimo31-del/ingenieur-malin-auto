@@ -1,0 +1,67 @@
+name: publish-media
+
+# Publie en assets de Release les fichiers déposés sur la branche `media`,
+# supprime ceux qui n'y sont plus, puis vérifie les URL publiques et leur Content-Type.
+# Déclenchement : workflow_dispatch (par la production du soir, après le push sur `media`).
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branche contenant les médias à publier"
+        default: media
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch }}
+
+      - name: Synchroniser les assets de la Release « media »
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          TAG=media
+          gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1 || \
+            gh release create "$TAG" --repo "$REPO" --title "Médias à publier" \
+              --notes "Fichiers temporaires servis à Metricool. Supprimés dès qu'ils ne sont plus sur la branche media."
+
+          shopt -s nullglob
+          FILES=( *.mp4 *.png *.jpg )
+          echo "Fichiers à publier : ${FILES[*]:-aucun}"
+
+          # 1) envoi (remplace s'il existe)
+          for f in "${FILES[@]}"; do
+            gh release upload "$TAG" "$f" --repo "$REPO" --clobber
+          done
+
+          # 2) suppression des assets qui ne sont plus sur la branche
+          for a in $(gh release view "$TAG" --repo "$REPO" --json assets -q '.assets[].name'); do
+            if [ ! -f "$a" ]; then
+              echo "Suppression de l'ancien asset $a"
+              gh release delete-asset "$TAG" "$a" --repo "$REPO" --yes
+            fi
+          done
+
+          # 3) contrôle des URL publiques et du Content-Type
+          : > urls.txt; rc=0
+          for f in "${FILES[@]}"; do
+            url="https://github.com/$REPO/releases/download/$TAG/$f"
+            ct=$(curl -sIL -o /dev/null -w '%{content_type}' "$url")
+            case "$f" in
+              *.mp4) want="video/mp4" ;;
+              *.png) want="image/png" ;;
+              *.jpg) want="image/jpeg" ;;
+            esac
+            if [ "$ct" = "$want" ]; then s=OK; else s="ECHEC (attendu $want)"; rc=1; fi
+            echo "$s | $ct | $url" | tee -a urls.txt
+          done
+          { echo '### URL publiques'; echo '```'; cat urls.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          exit $rc
