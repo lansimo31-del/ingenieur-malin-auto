@@ -43,7 +43,7 @@ Tu travailles **en totale autonomie** : aucune question à Ilan. Tu résous les 
 ## 4. Hébergement des médias
 1. Copie dans un dossier temporaire, en les **renommant** `epNN-video.mp4`, `epNN-miniature.png`, `epNN-story.png`, les fichiers des 2 épisodes (6 fichiers).
 2. `scripts/publish_media.sh <les 6 fichiers>` : la branche `media` ne contient plus que ces 6 fichiers (les médias d'aujourd'hui sont déjà publiés à 20 h 30, la dernière story sortant à 19:00).
-3. Lance le workflow `verify-media` (outil GitHub `actions_run_trigger`, `workflow_id: verify-media.yml`, `ref: media`), attends sa fin et vérifie que les 6 lignes sont `OK` (HTTP 200, video/mp4 ou image/png). Sinon : 3 réessais à 1 min d'intervalle, puis alerte.
+3. Lance le workflow `verify-media` (outil GitHub `actions_run_trigger`, `workflow_id: verify-media.yml`, `ref: claude/brave-hawking-nxc8u4`, `inputs: {"branch": "media"}` ; la branche `media` orpheline ne contient pas le workflow. Le proxy de la session renvoie 403 sur jsDelivr : seul ce workflow fait foi), attends sa fin et vérifie que les 6 lignes sont `OK` (HTTP 200, video/mp4 ou image/png). Sinon : 3 réessais à 1 min d'intervalle, puis alerte.
 
 ## 5. Programmation Metricool (J+1)
 **Garde-fou** : ne programme **que si** `config/planning.yaml` contient `programmation_active: true`. Sinon, écris dans `etat.json` « programmation en attente de validation d'Ilan » et passe à l'étape 6. Ne crée jamais de brouillon ni de post « for review » à la place.

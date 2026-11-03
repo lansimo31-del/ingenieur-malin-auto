@@ -16,7 +16,7 @@ Tu travailles **en totale autonomie** : aucune question à Ilan. Tu ne modifies 
 Metricool, marque `7844668`, fuseau `Europe/Paris`.
 1. `getScheduledPosts` d'aujourd'hui 00:00 à 23:59 (`timezone: Europe/Paris`).
 2. Attendu (si `programmation_active: true` dans `config/planning.yaml`) : vidéo 10:00 sur Instagram (Reel) **et** TikTok, story Instagram 12:00, vidéo 18:00 sur Instagram **et** TikTok, story Instagram 19:00. Pour chacun, vérifie : présent, bonne heure, média présent, miniature présente pour les vidéos.
-3. Pour chaque URL de média (dans les posts ou les `episode.yaml`) : `curl -sIL` → HTTP 200 et `content-type` video/mp4 ou image/png.
+3. URL des médias : le proxy de la session renvoie 403 sur jsDelivr, donc lance le workflow `verify-media` (outil GitHub `actions_run_trigger`, `workflow_id: verify-media.yml`, `ref: claude/brave-hawking-nxc8u4`, `inputs: {"branch": "media"}`), attends sa fin et lis ses lignes (`OK` = HTTP 200 et bon `content-type`).
 4. Fichiers des épisodes du jour : `episode.yaml` statut `programme`, vidéo entre 30 et 62 s.
 5. Si `programmation_active` est `false` : vérifie seulement que les épisodes du jour sont `pret`, avec des URL valides, et note « en attente de validation d'Ilan ».
 6. Tout manque devient une **alerte** précise dans `etat.json` (quoi, quel créneau, quelle action proposée). Tu ne programmes rien toi-même : la production du soir rattrape, ou Ilan corrige à la main.
