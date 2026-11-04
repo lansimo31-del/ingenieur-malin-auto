@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-03T21:10:00+01:00",
+  "mis_a_jour": "2026-11-04T07:45:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -52,9 +52,9 @@
     ]
   },
   "derniere_verification": {
-    "date": "2026-11-03",
+    "date": "2026-11-04",
     "resultat": "OK",
-    "details": "verify-media (run 41671308449) : v2, 4 URL en HTTP 200, video/mp4 et image/png, lecture partielle 206"
+    "details": "Programme du jour complet dans Metricool (10:00 Reel IG + TikTok ép.4 id 415789556, story 12:00 id 415733408, 18:00 IG+TikTok ép.5 id 415733444, story 19:00 id 415733468), médias et miniatures présents ; verify-media run 41787032476 : 6 URL en HTTP 200, bon content-type, Range 206."
   },
   "programme_metricool": [
     {
@@ -71,6 +71,20 @@
         "tiktok": "415552744"
       },
       "statut": "publié"
+    },
+    {
+      "date": "2026-11-04",
+      "heure": "10:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 4,
+      "post_id": {
+        "instagram+tiktok": "415789556"
+      },
+      "statut": "programmé"
     },
     {
       "date": "2026-11-04",
@@ -113,12 +127,26 @@
       "statut": "programmé"
     }
   ],
-  "stats": {},
+  "stats": {
+    "periode": "2026-10-28 au 2026-11-04 (lecture 04/11 07:30)",
+    "instagram": {
+      "vues_moy": 1003.5,
+      "detail": "ballast 1873 vues (portée 1652, 33 likes), stylo 134 vues (portée 13, 2 likes)"
+    },
+    "tiktok": {
+      "vues_moy": 0,
+      "detail": "2 vidéos remontées par Metricool à 0 vue"
+    },
+    "meilleur_episode": "ép.1 ballast (1873 vues IG)",
+    "meilleur_concept": "indéterminé (1 seule publication par pilier, données insuffisantes)",
+    "j1": "ép.3 hublots (publié 03/11 18:25) pas encore remonté dans Metricool analytics",
+    "j7": "aucune publication le 28/10"
+  },
   "alertes": [
-    "Programmation Metricool activée le 3 nov. : vérifier que les 2 Routines sont activées et portent le connecteur Metricool (claude.ai > Routines).",
-    "ALERTE : la vidéo de 10:00 (ép. 4, serrure) n'est PAS programmée : la création Metricool a été refusée par le classifieur d'autorisation de la session. Médias hébergés et vérifiés ; à programmer à la main ou à relancer.",
     "Veille : TikTok illisible depuis le cloud (coquille JavaScript sans résultat) ; relevés manuels d'Ilan seuls fiables.",
-    "Moteur : render/engine/stylo.py corrigé (f-string incompatible avec Python 3.11)."
+    "Moteur : render/engine/stylo.py corrigé (f-string incompatible avec Python 3.11).",
+    "Info : la vidéo 10:00 (ép.4) est finalement programmée (post 415789556, créée le 03/11 à 21:59). Pas d'alerte sur le programme du jour.",
+    "Les stats J+1 de l'ép.3 ne sont pas encore disponibles dans Metricool ; TikTok remonte 0 vue."
   ],
   "historique": [
     {
@@ -145,6 +173,11 @@
       "date": "2026-11-03",
       "tache": "production du soir",
       "resume": "Ép. 4 serrure (10 h, 48,0 s) et ép. 5 pistolet (18 h, 56,3 s), voix Enzo, jsDelivr vérifié ; stories 12 h et 19 h et vidéo 18 h programmées, vidéo 10 h refusée par la session."
+    },
+    {
+      "date": "2026-11-04",
+      "tache": "vérification du matin",
+      "resume": "Programme du jour complet et conforme (4 créneaux, médias et miniatures OK, 6 URL en 200). Stats J+1 ép.3 pas encore remontées ; IG : ballast 1873 vues, stylo 134."
     }
   ],
   "dernier_pilier": "fait_expres",
