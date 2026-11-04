@@ -4,6 +4,27 @@
 > de recherche**, en ordre de grandeur (ni vues, ni rétention). À recouper chaque mois.
 > Complète [`comptes.md`](comptes.md) (comptes similaires).
 
+## Veille du 04/11 (soir, tâche automatique)
+
+**Nos chiffres** (Metricool, 5 oct. – 4 nov., lus le 4 nov. au soir ; aucun chiffre estimé) :
+
+| Épisode (pilier) | Instagram : vues | Durée moy. regardée | Partages | Enregistrements | TikTok : vues |
+|---|---|---|---|---|---|
+| Ép. 1 ballast (`fait_expres`, a posteriori) | 1 931 | 19,2 s | 2 | 2 | 53 |
+| Ép. 2 stylo (construction sans mystère) | 1 521 | 14,0 s | 0 | 1 | 53 |
+| Ép. 3 hublots (hors piliers, saturé) | 192 | 8,4 s | 0 | 0 | non remonté |
+| Ép. 4 serrure (`devine_construction`, publié le 4/11 vers 10 h) | 198 | 6,5 s | 0 | 0 | non remonté |
+
+- Aucun pilier n'a 3 publications : **pas de reclassement par performance** (règle des 3 publications). Les vues des ép. 1 et 2 ont beaucoup monté depuis la veille (ballast 1 873 → 1 931, stylo 134 → 1 521) : le chiffre du stylo de la veille était un relevé trop précoce, ne pas le comparer à celui-ci.
+- Ép. 3 et 4 : publiés depuis moins de 24 h au moment de la lecture, chiffres immatures.
+- `TKPO13`, `TKPO15`, `IGRE27` : vides. Abonnés gagnés (`IGEV43`, `TKEV16`) : 4 abonnés Instagram sur la période (0, 3, 0, 1 selon les jours remontés), 0 TikTok. TikTok remonte toujours 0 vue pour l'ép. 3 et l'ép. 4.
+
+**Web** : aucune vidéo « poutre en I » ni « devine ce que je construis : chasse d'eau » trouvée par la recherche (elle n'indexe presque pas TikTok ni Instagram). La poutre en I est donc non saturée pour ce que l'on a pu lire ; le « 29 fois » relevé par Ilan n'a pas été retrouvé en ligne, mais le calcul (profilé IPE 200 contre barre carrée de même section) donne 28,7. La tendance « Can you build it ? / What's he building in there ? » (mème TikTok, > 207 000 vues en 11 jours selon Know Your Meme) confirme l'appétit pour le mystère de construction. Le fond bombé des canettes : aucune source utilisable trouvée (les résultats parlent des bouteilles PET) : il reste en file mais devra être sourcé.
+
+**TikTok** : illisible depuis le cloud le 04/11 (la page de recherche répond 200 mais n'est qu'une coquille JavaScript avec captcha et demande de connexion ; aucun like lisible). Aucun chiffre TikTok relevé. Seuls les relevés d'Ilan, datés, font foi.
+
+**Décisions** : rotation : 10 h `forme_contre_intuitive` (la poutre en I, ép. 6, angle règle à plat puis sur la tranche, puis comparaison avec une barre pleine), 18 h `devine_construction` (la chasse d'eau, ép. 7). Aucun sujet refusé automatiquement : poutre et chasse d'eau ne sont ni publiées ni annoncées. Reclassement de la banque : pas de changement d'ordre, sujets utilisés cochés.
+
 ## Veille du 03/11 (soir, tâche automatique)
 
 **Nos chiffres** (Metricool, 4 oct. – 3 nov., lus le 3 nov. au soir) : inchangés. Ballast 1 873 vues Instagram / 19,4 s ; stylo 134 vues / 9,2 s ; TikTok 53 vues chacun, 0 partage. Ép. 3 (hublots) publié à 18 h 25 : pas encore de ligne. `TKPO13`, `TKPO15`, `IGRE27`, `IGEV43`/`TKEV16` : vides ou 0. Trop peu de publications (aucun pilier n'a 3 publications) pour reclasser par performance.

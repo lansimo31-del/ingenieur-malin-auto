@@ -1,0 +1,26 @@
+numero: 7
+sujet: "La chasse d'eau"
+concept: devine_construction
+statut: programme
+creneau: "18:00"
+date_publication: "2026-11-05"
+accroche: "Devine ce que je construis. Réponse à la fin."
+question_ouverte: "Quel objet se cache derrière ce réservoir, ce clapet et ce flotteur ?"
+script: texte-script-episode-07-chasse.md
+voix_off: texte-voix-off-enzo-episode-07-chasse.txt
+faits: texte-faits-verifies-chasse.md
+description: texte-description-episode-07-chasse.txt
+couverture: "DEVINE CE QUE JE CONSTRUIS"
+couverture_entete: "DEVINE CE QUE JE CONSTRUIS"
+couverture_lignes: ["DEVINE CE QUE JE", "CONSTRUIS", "RÉPONSE À LA FIN"]
+mot_cle_vert: "CONSTRUIS"
+stories: stories.yaml
+voix_retenue: "Enzo (gemini-3.8-flash-tts)"
+duree_s: 57.3
+taille_mo: 8.91
+medias:   # branche media, commit 37ac55c399a97cb34527aa926b39c6a77e8160c3, verify-media OK (run 41903720635)
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep07-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep07-miniature.png"
+  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep07-story.png"
+heure_publication: "18:00"
+metricool: {video_post_id: "416968929", story_post_id: "416968977"}

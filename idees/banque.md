@@ -25,7 +25,7 @@ L'objet n'est **jamais nommé** avant la chute, ni dans la couverture, ni dans l
 « Tu as deviné ? » vers les deux tiers, puis la réponse et une boucle sur la première pièce.
 
 - [x] **La serrure à goupilles** (ép. 4, 4 nov. 10 h) · en premier et vite. Angle : le mystère, le dessin papier, et la chute « c'est la serrure de ta porte d'entrée »
-- [ ] La chasse d'eau (le flotteur, la cloche, le clapet)
+- [x] **La chasse d'eau** (ép. 7, 5 nov. 18 h) (le flotteur, le clapet, le trop-plein ; aucune vidéo concurrente trouvée le 04/11)
 - [ ] Le briquet à pierre (la molette, la pierre, la valve)
 - [ ] L'agrafeuse (le ressort, l'enclume qui replie les pattes)
 - [ ] Le robinet mitigeur (la cartouche à disques céramique)
@@ -51,9 +51,9 @@ Accroche : « Ce n'est pas un défaut. » On montre le « défaut », on laisse 
 ## Pilier 3 · `forme_contre_intuitive` : « Les formes contre-intuitives »
 Une forme qui a l'air absurde, une fausse piste, puis un chiffre fort ou une expérience simple.
 
-- [ ] **La poutre en I** (moins de matière, beaucoup plus rigide ; vérifier le « 29 fois » avant de le dire ; angle : la règle à plat puis sur la tranche)
+- [x] **La poutre en I** (ép. 6, 5 nov. 10 h) (« 29 fois » retrouvé par le calcul IPE 200 contre barre carrée de même section, 28,7 ; angle : la règle à plat puis sur la tranche)
 - [ ] Le fond à cinq pieds des bouteilles de soda (la pression, et une bouteille qui tient debout)
-- [ ] Le fond bombé des canettes (la pression, moins de métal)
+- [ ] Le fond bombé des canettes (la pression, moins de métal ; 04/11 : aucune source trouvée par la recherche, à sourcer avant script)
 - [ ] Le carton ondulé (une feuille ondulée entre deux feuilles plates)
 - [ ] Le nid d'abeille dans les portes et les avions (plein de vide, très rigide)
 - [ ] Les tours de refroidissement en forme de diabolo (forme hyperbolique : droite, solide, économe en béton)

@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-04T07:45:00+01:00",
+  "mis_a_jour": "2026-11-04T21:15:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -17,35 +17,35 @@
     }
   },
   "derniere_production": {
-    "date": "2026-11-03",
+    "date": "2026-11-04",
     "episodes": [
       {
-        "numero": 4,
-        "sujet": "La serrure à goupilles",
-        "concept": "devine_construction",
+        "numero": 6,
+        "sujet": "La poutre en I",
+        "concept": "forme_contre_intuitive",
         "creneau": "10:00",
-        "duree_s": 48.0,
-        "taille_mo": 8.82,
+        "duree_s": 47.4,
+        "taille_mo": 8.67,
         "voix": "Enzo (gemini-3.8-flash-tts)",
-        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep04-video.mp4",
-        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep04-miniature.png",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep06-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep06-miniature.png",
         "stories": [
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep04-story.png"
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep06-story.png"
         ],
-        "statut": "pret (vidéo 10:00 non programmée)"
+        "statut": "programmé"
       },
       {
-        "numero": 5,
-        "sujet": "Le trou du pistolet à essence",
-        "concept": "fait_expres",
+        "numero": 7,
+        "sujet": "La chasse d'eau",
+        "concept": "devine_construction",
         "creneau": "18:00",
-        "duree_s": 56.3,
-        "taille_mo": 8.86,
+        "duree_s": 57.3,
+        "taille_mo": 8.91,
         "voix": "Enzo (gemini-3.8-flash-tts)",
-        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep05-video.mp4",
-        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep05-miniature.png",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep07-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep07-miniature.png",
         "stories": [
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep05-story.png"
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep07-story.png"
         ],
         "statut": "programmé"
       }
@@ -125,28 +125,80 @@
         "instagram": "415733468"
       },
       "statut": "programmé"
+    },
+    {
+      "date": "2026-11-05",
+      "heure": "10:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 6,
+      "post_id": {
+        "instagram+tiktok": "416968718"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-05",
+      "heure": "12:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 6,
+      "post_id": {
+        "instagram": "416968733"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-05",
+      "heure": "18:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 7,
+      "post_id": {
+        "instagram+tiktok": "416968929"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-05",
+      "heure": "19:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 7,
+      "post_id": {
+        "instagram": "416968977"
+      },
+      "statut": "programmé"
     }
   ],
   "stats": {
-    "periode": "2026-10-28 au 2026-11-04 (lecture 04/11 07:30)",
+    "periode": "2026-10-05 au 2026-11-04 (lecture 04/11 soir)",
     "instagram": {
-      "vues_moy": 1003.5,
-      "detail": "ballast 1873 vues (portée 1652, 33 likes), stylo 134 vues (portée 13, 2 likes)"
+      "vues_moy": 961,
+      "detail": "ballast 1931 vues (19,2 s), stylo 1521 (14,0 s), hublots 192 (8,4 s), serrure 198 (6,5 s, immature)"
     },
     "tiktok": {
-      "vues_moy": 0,
-      "detail": "2 vidéos remontées par Metricool à 0 vue"
+      "vues_moy": 53,
+      "detail": "ép.1 et ép.2 : 53 vues chacun ; ép.3 et ép.4 pas remontés"
     },
-    "meilleur_episode": "ép.1 ballast (1873 vues IG)",
-    "meilleur_concept": "indéterminé (1 seule publication par pilier, données insuffisantes)",
-    "j1": "ép.3 hublots (publié 03/11 18:25) pas encore remonté dans Metricool analytics",
-    "j7": "aucune publication le 28/10"
+    "meilleur_episode": "ép.1 ballast (1931 vues IG)",
+    "meilleur_concept": "indéterminé (aucun pilier à 3 publications)"
   },
   "alertes": [
-    "Veille : TikTok illisible depuis le cloud (coquille JavaScript sans résultat) ; relevés manuels d'Ilan seuls fiables.",
-    "Moteur : render/engine/stylo.py corrigé (f-string incompatible avec Python 3.11).",
-    "Info : la vidéo 10:00 (ép.4) est finalement programmée (post 415789556, créée le 03/11 à 21:59). Pas d'alerte sur le programme du jour.",
-    "Les stats J+1 de l'ép.3 ne sont pas encore disponibles dans Metricool ; TikTok remonte 0 vue."
+    "Veille : TikTok illisible depuis le cloud (coquille JavaScript, captcha, connexion) ; relevés manuels d'Ilan seuls fiables.",
+    "Environnement : numpy et pillow installés dans Python 3.11 pour le rendu (le pillow système était cassé).",
+    "Faits : pages lues par résumé de moteur de recherche (WebFetch refusé hors liste de domaines) ; sources secondaires, voir les fichiers de faits.",
+    "Stats : TikTok remonte 0 vue pour ép.3 et ép.4 ; ép.3 et ép.4 encore immatures."
   ],
   "historique": [
     {
@@ -178,19 +230,24 @@
       "date": "2026-11-04",
       "tache": "vérification du matin",
       "resume": "Programme du jour complet et conforme (4 créneaux, médias et miniatures OK, 6 URL en 200). Stats J+1 ép.3 pas encore remontées ; IG : ballast 1873 vues, stylo 134."
+    },
+    {
+      "date": "2026-11-04",
+      "tache": "production du soir",
+      "resume": "Ép. 6 poutre en I (10 h, 47,4 s) et ép. 7 chasse d'eau (18 h, 57,3 s), voix Enzo, jsDelivr vérifié (run 41903720635), 2 vidéos et 2 stories programmées pour le 05/11."
     }
   ],
-  "dernier_pilier": "fait_expres",
+  "dernier_pilier": "devine_construction",
   "piliers": [
     "devine_construction",
     "fait_expres",
     "forme_contre_intuitive"
   ],
   "derniere_veille": {
-    "date": "2026-11-03 (soir)",
-    "metricool": "lu : aucun nouveau chiffre (ballast 1873 vues IG, stylo 134, TikTok 53)",
-    "web": "lu : mètre ruban très répandu, pistolet sans vidéo trouvée",
-    "tiktok": "illisible : page de recherche = coquille JS, aucun like lisible",
-    "decisions": "serrure (10h) + pistolet (18h) ; mètre ruban reclassé en bas"
+    "date": "2026-11-04 (soir)",
+    "metricool": "lu : ballast 1931 vues IG / 19,2 s, stylo 1521 / 14,0 s, hublots 192, serrure 198 (immatures) ; TikTok 53 vues sur ép.1 et 2, 0 remonté pour ép.3 et 4 ; aucun pilier à 3 publications, pas de reclassement",
+    "web": "lu : aucune vidéo concurrente trouvée sur la poutre en I ni sur la chasse d'eau en mystère ; mème 'can you build it' confirme l'appétit pour le mystère ; canette : aucune source",
+    "tiktok": "illisible : coquille JavaScript avec captcha et connexion, aucun like lisible",
+    "decisions": "poutre en I (10h, forme contre-intuitive) + chasse d'eau (18h, devine ce que je construis) ; banque : sujets cochés, canette à sourcer"
   }
 }

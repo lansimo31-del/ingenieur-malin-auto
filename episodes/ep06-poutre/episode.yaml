@@ -1,0 +1,26 @@
+numero: 6
+sujet: "La poutre en I"
+concept: forme_contre_intuitive
+statut: programme
+creneau: "10:00"
+date_publication: "2026-11-05"
+accroche: "Cette forme a l'air absurde."
+question_ouverte: "Pourquoi enlever de l'acier au milieu d'une poutre ?"
+script: texte-script-episode-06-poutre.md
+voix_off: texte-voix-off-enzo-episode-06-poutre.txt
+faits: texte-faits-verifies-poutre.md
+description: texte-description-episode-06-poutre.txt
+couverture: "CETTE FORME EST ABSURDE ?"
+couverture_entete: "FORME CONTRE-INTUITIVE"
+couverture_lignes: ["CETTE FORME EST", "ABSURDE ?", "LA POUTRE EN I"]
+mot_cle_vert: "ABSURDE ?"
+stories: stories.yaml
+voix_retenue: "Enzo (gemini-3.8-flash-tts)"
+duree_s: 47.4
+taille_mo: 8.67
+medias:   # branche media, commit 37ac55c399a97cb34527aa926b39c6a77e8160c3, verify-media OK (run 41903720635)
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep06-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep06-miniature.png"
+  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@37ac55c399a97cb34527aa926b39c6a77e8160c3/ep06-story.png"
+heure_publication: "10:00"
+metricool: {video_post_id: "416968718", story_post_id: "416968733"}
