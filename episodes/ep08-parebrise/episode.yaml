@@ -1,0 +1,26 @@
+numero: 8
+sujet: "Les points noirs du pare-brise"
+concept: fait_expres
+statut: programme
+creneau: "10:00"
+date_publication: "2026-11-06"
+accroche: "Ce n'est pas un défaut."
+question_ouverte: "À quoi servent ces points noirs au bord du pare-brise ?"
+script: texte-script-episode-08-parebrise.md
+voix_off: texte-voix-off-enzo-episode-08-parebrise.txt
+faits: texte-faits-verifies-parebrise.md
+description: texte-description-episode-08-parebrise.txt
+couverture: "CE N'EST PAS UN DÉFAUT"
+couverture_entete: "CE N'EST PAS UN DÉFAUT"
+couverture_lignes: ["CE N'EST PAS", "UN DÉFAUT", "LE PARE-BRISE"]
+mot_cle_vert: "UN DÉFAUT"
+stories: stories.yaml
+voix_retenue: "Enzo (gemini-3.8-flash-tts)"
+duree_s: 50.7
+taille_mo: 8.92
+medias:   # branche media, commit cd977ac87dc17566cd2154c016d9f4e5337b966b
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep08-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep08-miniature.png"
+  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep08-story.png"
+heure_publication: "10:00"
+metricool: {video_post_id: "418179125", story_post_id: "418178758"}

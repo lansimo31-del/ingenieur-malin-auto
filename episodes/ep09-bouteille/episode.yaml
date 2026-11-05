@@ -1,0 +1,26 @@
+numero: 9
+sujet: "Le fond à pieds des bouteilles de soda"
+concept: forme_contre_intuitive
+statut: programme
+creneau: "18:00"
+date_publication: "2026-11-06"
+accroche: "Cette forme a l'air absurde."
+question_ouverte: "Pourquoi le fond d'une bouteille de soda a-t-il des pieds ?"
+script: texte-script-episode-09-bouteille.md
+voix_off: texte-voix-off-enzo-episode-09-bouteille.txt
+faits: texte-faits-verifies-bouteille.md
+description: texte-description-episode-09-bouteille.txt
+couverture: "CETTE FORME EST ABSURDE ?"
+couverture_entete: "FORME CONTRE-INTUITIVE"
+couverture_lignes: ["CETTE FORME EST", "ABSURDE ?", "LA BOUTEILLE"]
+mot_cle_vert: "ABSURDE ?"
+stories: stories.yaml
+voix_retenue: "Enzo (gemini-3.8-flash-tts)"
+duree_s: 53.2
+taille_mo: 8.85
+medias:   # branche media, commit cd977ac87dc17566cd2154c016d9f4e5337b966b
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep09-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep09-miniature.png"
+  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep09-story.png"
+heure_publication: "18:00"
+metricool: {video_post_id: "418178803", story_post_id: "418178827"}

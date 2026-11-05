@@ -39,7 +39,7 @@ L'objet n'est **jamais nommé** avant la chute, ni dans la couverture, ni dans l
 Accroche : « Ce n'est pas un défaut. » On montre le « défaut », on laisse croire à une erreur, puis on révèle la raison.
 
 - [x] **Le trou minuscule au bout du pistolet de la pompe à essence** (ép. 5, 4 nov. 18 h) (effet Venturi : il coupe le plein quand le réservoir est plein)
-- [ ] Les points noirs sur le bord du pare-brise (bande de céramique : collage, protection de la colle contre les UV)
+- [x] **Les points noirs sur le bord du pare-brise** (ép. 8, 6 nov. 10 h) (bande de céramique : protection de la colle contre les UV, cordon caché, dégradé ; très couvert par la presse française le 05/11, angle : la colle et le dégradé de points)
 - [ ] Le petit trou sous le cadenas (laisser sortir l'eau, qui gèlerait dans le mécanisme)
 - [ ] Les petites bosses des touches F et J du clavier (repères pour les index, sans regarder)
 - [ ] Les carrés de couleur au bout des tubes de dentifrice (repères pour la machine qui coupe et soude ; démonte une rumeur)
@@ -52,7 +52,7 @@ Accroche : « Ce n'est pas un défaut. » On montre le « défaut », on laisse 
 Une forme qui a l'air absurde, une fausse piste, puis un chiffre fort ou une expérience simple.
 
 - [x] **La poutre en I** (ép. 6, 5 nov. 10 h) (« 29 fois » retrouvé par le calcul IPE 200 contre barre carrée de même section, 28,7 ; angle : la règle à plat puis sur la tranche)
-- [ ] Le fond à cinq pieds des bouteilles de soda (la pression, et une bouteille qui tient debout)
+- [x] **Le fond à cinq pieds des bouteilles de soda** (ép. 9, 6 nov. 18 h) (fond rond qui résiste à la pression + pieds pour tenir debout ; aucune vidéo concurrente trouvée le 05/11)
 - [ ] Le fond bombé des canettes (la pression, moins de métal ; 04/11 : aucune source trouvée par la recherche, à sourcer avant script)
 - [ ] Le carton ondulé (une feuille ondulée entre deux feuilles plates)
 - [ ] Le nid d'abeille dans les portes et les avions (plein de vide, très rigide)

@@ -4,6 +4,28 @@
 > de recherche**, en ordre de grandeur (ni vues, ni rétention). À recouper chaque mois.
 > Complète [`comptes.md`](comptes.md) (comptes similaires).
 
+## Veille du 05/11 (soir, tâche automatique)
+
+**Nos chiffres** (Metricool, 6 oct. – 5 nov., lus le 5 nov. au soir ; aucun chiffre estimé) :
+
+| Épisode (pilier) | Instagram : vues | Durée moy. regardée | Partages | Enregistrements | TikTok |
+|---|---|---|---|---|---|
+| Ép. 1 ballast (`fait_expres`, a posteriori) | 1 940 | 19,2 s | 2 | 2 | 0 vue remontée |
+| Ép. 2 stylo (construction sans mystère) | 1 535 | 13,9 s | 0 | 1 | 0 vue remontée |
+| Ép. 3 hublots (hors piliers, saturé) | 197 | 8,8 s | 0 | 0 | 0 |
+| Ép. 4 serrure (`devine_construction`) | 215 | 6,5 s | 0 | 0 | 0 |
+| Ép. 5 pistolet (`fait_expres`) | 287 | 7,4 s | 0 | 1 | 0 |
+| Ép. 6 poutre en I (`forme_contre_intuitive`, publié le 5/11 vers 9 h) | 545 | 16,2 s | 0 | 4 | 0 |
+
+- Par pilier (aucun n'atteint 3 publications : pas de reclassement par performance) : `fait_expres` 2 publications (ballast, pistolet), 1 114 vues en moyenne, 13,3 s de durée moyenne regardée, 0,9 partage et 1,3 enregistrement pour 1 000 vues ; `devine_construction` 1 publication (serrure, 215 vues, 6,5 s) ; `forme_contre_intuitive` 1 publication (poutre, 545 vues en quelques heures, 16,2 s, 4 enregistrements : à suivre).
+- Les ép. 6 et 7 sont trop récents pour conclure. `TKPO13`, `TKPO15`, `IGRE27` : vides. Abonnés gagnés : Instagram 8 sur la période (0, 1, 0, 0, 3, 4 selon les jours remontés), TikTok 0. Metricool remonte toujours 0 vue et 0 partage TikTok pour toutes les vidéos.
+
+**Web** : le sujet « points noirs du pare-brise » est très couvert par la presse française (Presse-Citron, Démotivateur, Roole, Neozone, Tribunal du Net), sans qu'aucune vidéo avec ses likes ait pu être lue : il n'est pas déclaré saturé faute de chiffre, mais l'angle est choisi pour se distinguer (colle, UV et pourquoi des points, pas la seule liste de raisons). Le fond à pieds des bouteilles est expliqué par Tribunal du Net et Geopop, aucune vidéo trouvée. Aucun compte similaire nouveau repéré par la recherche. Pas de mots-clés « tiktok / reel » exploitables : la recherche n'indexe presque pas ces réseaux.
+
+**TikTok** : illisible depuis le cloud le 05/11 (la page de recherche répond 200 mais n'est qu'une coquille JavaScript avec captcha ; aucun like lisible). Aucun chiffre TikTok relevé.
+
+**Décisions** : rotation : 10 h `fait_expres` (les points noirs du pare-brise, ép. 8), 18 h `forme_contre_intuitive` (le fond à pieds des bouteilles de soda, ép. 9). Aucun refus automatique (ni publiés, ni annoncés, ni refusés par Ilan). Reclassement : la file `forme_contre_intuitive` garde le fond de canette à sourcer ; le fond à pieds, premier sujet, est pris.
+
 ## Veille du 04/11 (soir, tâche automatique)
 
 **Nos chiffres** (Metricool, 5 oct. – 4 nov., lus le 4 nov. au soir ; aucun chiffre estimé) :
