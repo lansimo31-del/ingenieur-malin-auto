@@ -23,4 +23,5 @@ medias:   # branche media, commit 424755203412a9994c4e088dd7a35ed3011f0761, veri
   miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep04-miniature.png"
   story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@424755203412a9994c4e088dd7a35ed3011f0761/ep04-story.png"
 heure_publication: "10:00"
+stats_j1: {instagram_vues: 198, instagram_portee: 169, likes: 3, commentaires: 0, partages: 0, enregistrements: 0, duree_moy_visionnage_s: 6.5, lecture: "2026-11-05"}
 metricool: {video_post_id: "415789556", story_post_id: "415733408"}
