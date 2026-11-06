@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-05T21:05:00+01:00",
+  "mis_a_jour": "2026-11-06T07:45:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -52,9 +52,9 @@
     ]
   },
   "derniere_verification": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "resultat": "OK",
-    "details": "Programme du jour complet dans Metricool (10:00 Reel IG + TikTok ép.6 id 416968718, story 12:00 id 416968733, 18:00 IG+TikTok ép.7 id 416968929, story 19:00 id 416968977), heures conformes, médias et miniatures présents ; verify-media run 41981308489 : 6 URL en HTTP 200, bon content-type, Range 206."
+    "details": "Programme du jour complet dans Metricool (10:00 Reel IG + TikTok ép.8 id 418179125, story 12:00 id 418178758, 18:00 IG+TikTok ép.9 id 418178803, story 19:00 id 418178827), heures conformes, médias et miniatures présents ; verify-media run 42175203974 : 6 URL en HTTP 200, bon content-type, Range 206 ; episode.yaml ép.8 et 9 statut programme, vidéos 50,7 s et 53,2 s."
   },
   "programme_metricool": [
     {
@@ -236,26 +236,22 @@
     }
   ],
   "stats": {
-    "periode": "2026-10-29 au 2026-11-05 (lecture 05/11 matin)",
+    "periode": "2026-10-30 au 2026-11-06 (lecture 06/11 matin)",
     "instagram": {
-      "vues_moy": 961,
-      "detail": "ballast 1931 vues (19,2 s), stylo 1521 (14,0 s), hublots 192 (8,4 s), serrure 198 J+1 (6,5 s) ; ép.5 pistolet pas encore remonté ; aucun épisode à J+7"
+      "vues_moy": 786,
+      "detail": "ballast 1940 vues (19,2 s), stylo 1535 (13,9 s), poutre 545 J+1 (16,2 s, 4 enreg.), pistolet 287, serrure 215, hublots 197 ; ép.7 chasse d'eau (publiée hier 18 h) pas encore remontée ; aucun épisode à J+7 (J+7 = 30/10, aucune publication)"
     },
     "tiktok": {
       "vues_moy": 0,
-      "detail": "ép.1 et ép.2 : 0 vue remontée par l'API Metricool ; ép.3 à 5 absents"
+      "detail": "0 vue remontée par l'API Metricool pour les 6 vidéos publiées (ép.7 absent)"
     },
-    "meilleur_episode": "ép.1 ballast (1931 vues IG)",
+    "meilleur_episode": "ép.1 ballast (1940 vues IG)",
     "meilleur_concept": "indéterminé (aucun pilier à 3 publications)"
   },
   "alertes": [
     "Veille : TikTok illisible depuis le cloud (coquille JavaScript, captcha, connexion) ; relevés manuels d'Ilan seuls fiables.",
-    "Environnement : numpy et pillow installés dans Python 3.11 pour le rendu (le pillow système était cassé).",
-    "Faits : pages lues par résumé de moteur de recherche (WebFetch refusé hors liste de domaines) ; sources secondaires, voir les fichiers de faits.",
     "Production du 05/11 : TikTok illisible depuis le cloud (captcha) ; Metricool remonte 0 vue TikTok pour toutes les vidéos.",
-    "Environnement : pillow système cassé et numpy absent de /usr/local/bin/python ; réparé par `python -m pip install --ignore-installed pillow` et `python -m pip install -r requirements.txt` (la commande pip du prompt n'installait pas dans le bon Python).",
-    "Faits : sources secondaires (résumés de moteur de recherche, patents.google.com et motor1 non joignables) ; voir les fichiers de faits des ép. 8 et 9.",
-    "Metricool : la 1re tentative de programmation de la vidéo de 10 h (ép. 8) a été refusée par le classificateur de la session ; la 2e, identique, est passée."
+    "Stats TikTok : 0 vue remontée par Metricool sur toutes les vidéos publiées ; vérifier à la main dans l'app TikTok."
   ],
   "historique": [
     {
@@ -302,6 +298,11 @@
       "date": "2026-11-05",
       "tache": "production du soir",
       "resume": "Ép. 8 points noirs du pare-brise (10 h, 50,7 s) et ép. 9 fond à pieds des bouteilles de soda (18 h, 53,2 s), voix Enzo, jsDelivr vérifié (run 42099224748), 2 vidéos et 2 stories programmées pour le 06/11."
+    },
+    {
+      "date": "2026-11-06",
+      "tache": "vérification du matin",
+      "resume": "Programme du jour complet et conforme (4 créneaux, médias et miniatures OK, 6 URL en 200). Stats J+1 ép.6 : 545 vues IG, 16,2 s ; ép.7 pas encore remontée ; TikTok 0 vue partout (API)."
     }
   ],
   "dernier_pilier": "forme_contre_intuitive",
