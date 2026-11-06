@@ -1,0 +1,9 @@
+# Story Instagram liée à l'épisode 11 (19:00, après la vidéo de 18 h). Question écrite dans l'image.
+stories:
+  - id: 1
+    heure: "19:00"
+    entete: "LA QUESTION DE L'INGÉNIEUR MALIN"
+    question: ["Que risque", "L'EAU QUI GÈLE", "dans un cadenas ?"]
+    mot_vert: "L'EAU QUI GÈLE"
+    choix: ["Rien du tout", "Fissurer des pièces", "Rendre l'acier magnétique"]
+    pied: "Réponse dans la vidéo de 18 h"

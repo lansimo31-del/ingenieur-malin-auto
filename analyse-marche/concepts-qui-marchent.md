@@ -4,6 +4,30 @@
 > de recherche**, en ordre de grandeur (ni vues, ni rétention). À recouper chaque mois.
 > Complète [`comptes.md`](comptes.md) (comptes similaires).
 
+## Veille du 06/11 (soir, tâche automatique)
+
+**Nos chiffres** (Metricool, 7 oct. – 6 nov., lus le 6 nov. au soir ; aucun chiffre estimé) :
+
+| Épisode (pilier) | Instagram : vues | Durée moy. regardée | Partages | Enregistrements | TikTok : vues |
+|---|---|---|---|---|---|
+| Ép. 1 ballast (`fait_expres`, a posteriori) | 1 958 | 19,3 s | 2 | 3 | 53 |
+| Ép. 2 stylo | 1 558 | 14,0 s | 0 | 1 | 53 |
+| Ép. 3 hublots (hors piliers) | 219 | 10,0 s | 0 | 1 | 61 |
+| Ép. 4 serrure (`devine_construction`) | 235 | 6,9 s | 0 | 1 | 48 |
+| Ép. 5 pistolet (`fait_expres`) | 384 | 8,3 s | 0 | 2 | 56 |
+| Ép. 6 poutre en I (`forme_contre_intuitive`) | 4 001 | 24,7 s | 5 | 14 | 47 |
+| Ép. 7 chasse d'eau (`devine_construction`) | 475 | 9,9 s | 10 | 1 | 57 |
+| Ép. 8 points noirs du pare-brise (`fait_expres`, publié ce matin) | 1 166 | 12,7 s | 0 | 1 | 50 |
+
+- Par pilier : `fait_expres` (3 publications : ballast, pistolet, pare-brise) : 1 169 vues en moyenne ; `devine_construction` (2 publications) : 355 vues en moyenne, durée regardée 6,9 à 9,9 s, donc nettement en dessous : **on change d'angle sans l'abandonner** (ép. 10 : un objet où le geste final, appuyer, déclenche tout, pour garder la curiosité jusqu'à la chute) ; `forme_contre_intuitive` : 1 publication (poutre, 4 001 vues, 24,7 s, 14 enregistrements : la meilleure à ce jour, à confirmer avec l'ép. 9). Aucun pilier au-dessus des autres avec 3 publications : pas de remontée en tête de file.
+- Les vues TikTok remontées par Metricool valent désormais environ 50 par vidéo (0 hier) ; TKPO13 et TKPO15 restent vides. IGRE27 vide.
+
+**Web** : le petit trou du cadenas est très expliqué en articles grand public (français et anglais), aucune vidéo avec ses likes n'a pu être lue : pas déclaré saturé faute de chiffre. Le briquet à pierre : pages techniques et boutiques, aucune vidéo concurrente lue. Les pages wikipedia.org, scienceabc.com et housedigest.com ne sont pas joignables depuis le cloud.
+
+**TikTok** : illisible depuis le cloud le 06/11 (la page de recherche répond 200 mais n'est qu'une coquille JavaScript avec captcha). Aucun chiffre TikTok relevé.
+
+**Décisions** : rotation : dernier pilier publié `forme_contre_intuitive` ; 10 h `devine_construction` (le briquet à pierre, ép. 10), 18 h `fait_expres` (le petit trou sous le cadenas, ép. 11). Aucun refus automatique. Pas de reclassement par performance.
+
 ## Veille du 05/11 (soir, tâche automatique)
 
 **Nos chiffres** (Metricool, 6 oct. – 5 nov., lus le 5 nov. au soir ; aucun chiffre estimé) :

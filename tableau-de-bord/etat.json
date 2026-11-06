@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-06T07:45:00+01:00",
+  "mis_a_jour": "2026-11-06T21:25:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -17,35 +17,35 @@
     }
   },
   "derniere_production": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "episodes": [
       {
-        "numero": 8,
-        "sujet": "Les points noirs du pare-brise",
-        "concept": "fait_expres",
+        "numero": 10,
+        "sujet": "Le briquet à pierre",
+        "concept": "devine_construction",
         "creneau": "10:00",
-        "duree_s": 50.7,
-        "taille_mo": 8.92,
+        "duree_s": 54.0,
+        "taille_mo": 8.94,
         "voix": "Enzo (gemini-3.8-flash-tts)",
-        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep08-video.mp4",
-        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep08-miniature.png",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep10-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep10-miniature.png",
         "stories": [
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep08-story.png"
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep10-story.png"
         ],
         "statut": "programmé"
       },
       {
-        "numero": 9,
-        "sujet": "Le fond à pieds des bouteilles de soda",
-        "concept": "forme_contre_intuitive",
+        "numero": 11,
+        "sujet": "Le petit trou sous le cadenas",
+        "concept": "fait_expres",
         "creneau": "18:00",
-        "duree_s": 53.2,
-        "taille_mo": 8.85,
+        "duree_s": 50.5,
+        "taille_mo": 8.71,
         "voix": "Enzo (gemini-3.8-flash-tts)",
-        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep09-video.mp4",
-        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep09-miniature.png",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep11-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep11-miniature.png",
         "stories": [
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@cd977ac87dc17566cd2154c016d9f4e5337b966b/ep09-story.png"
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep11-story.png"
         ],
         "statut": "programmé"
       }
@@ -233,6 +233,62 @@
         "instagram": "418178827"
       },
       "statut": "programmé"
+    },
+    {
+      "date": "2026-11-07",
+      "heure": "10:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 10,
+      "post_id": {
+        "instagram": "419369261",
+        "tiktok": "419369261"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-07",
+      "heure": "12:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 10,
+      "post_id": {
+        "instagram": "419369321"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-07",
+      "heure": "18:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 11,
+      "post_id": {
+        "instagram": "419369295",
+        "tiktok": "419369295"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-07",
+      "heure": "19:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 11,
+      "post_id": {
+        "instagram": "419369337"
+      },
+      "statut": "programmé"
     }
   ],
   "stats": {
@@ -249,9 +305,9 @@
     "meilleur_concept": "indéterminé (aucun pilier à 3 publications)"
   },
   "alertes": [
-    "Veille : TikTok illisible depuis le cloud (coquille JavaScript, captcha, connexion) ; relevés manuels d'Ilan seuls fiables.",
-    "Production du 05/11 : TikTok illisible depuis le cloud (captcha) ; Metricool remonte 0 vue TikTok pour toutes les vidéos.",
-    "Stats TikTok : 0 vue remontée par Metricool sur toutes les vidéos publiées ; vérifier à la main dans l'app TikTok."
+    "Veille : TikTok illisible depuis le cloud le 06/11 (captcha) ; relevés manuels d'Ilan seuls fiables.",
+    "wikipedia.org, scienceabc.com, housedigest.com, monroeengineering.com injoignables depuis le cloud : faits des ép. 10 et 11 fondés sur des résumés de recherche et des pages grand public (aucune source primaire) ; à recouper.",
+    "Ép. 10 : la voix a demandé 5 générations (le modèle lisait la consigne) ; alignement par pics corrigé à la main sur les premiers mots de l'ép. 11 (numpy absent au départ, réinstallé)."
   ],
   "historique": [
     {
@@ -303,19 +359,24 @@
       "date": "2026-11-06",
       "tache": "vérification du matin",
       "resume": "Programme du jour complet et conforme (4 créneaux, médias et miniatures OK, 6 URL en 200). Stats J+1 ép.6 : 545 vues IG, 16,2 s ; ép.7 pas encore remontée ; TikTok 0 vue partout (API)."
+    },
+    {
+      "date": "2026-11-06",
+      "tache": "production du soir",
+      "resume": "Ép. 10 briquet à pierre (10 h, 54,0 s) et ép. 11 trou du cadenas (18 h, 50,5 s), voix Enzo, jsDelivr vérifié (run 42286937881), 2 vidéos et 2 stories programmées pour le 07/11."
     }
   ],
-  "dernier_pilier": "forme_contre_intuitive",
+  "dernier_pilier": "fait_expres",
   "piliers": [
     "devine_construction",
     "fait_expres",
     "forme_contre_intuitive"
   ],
   "derniere_veille": {
-    "date": "2026-11-05 (soir)",
-    "metricool": "lu : ballast 1940 vues IG / 19,2 s, stylo 1535 / 13,9 s, poutre 545 / 16,2 s (4 enreg.), pistolet 287, serrure 215, hublots 197 ; TikTok 0 vue remontée partout ; aucun pilier à 3 publications, pas de reclassement",
-    "web": "lu : points noirs du pare-brise très couverts par la presse FR (aucune vidéo lue), fond à pieds expliqué par Tribunal du Net et Geopop, aucune vidéo concurrente trouvée",
+    "date": "2026-11-06 (soir)",
+    "metricool": "lu : poutre 4001 vues IG / 24,7 s / 14 enreg., ballast 1958, stylo 1558, pare-brise 1166, chasse d'eau 475, pistolet 384, serrure 235, hublots 219 ; TikTok environ 50 vues par vidéo ; fait_expres 3 publications (1169 vues en moyenne), devine_construction nettement en dessous (355) : changement d'angle, pas d'abandon",
+    "web": "lu : cadenas très expliqué en articles grand public, briquet : pages techniques ; aucune vidéo concurrente lue ; wikipedia, scienceabc, housedigest injoignables",
     "tiktok": "illisible : coquille JavaScript avec captcha, aucun like lisible",
-    "decisions": "points noirs du pare-brise (10h, fait exprès) + fond à pieds des bouteilles (18h, forme contre-intuitive) ; banque : sujets cochés"
+    "decisions": "briquet à pierre (10h, devine_construction) + trou du cadenas (18h, fait_expres) ; banque : sujets cochés"
   }
 }

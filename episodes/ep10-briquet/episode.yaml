@@ -1,0 +1,26 @@
+numero: 10
+sujet: "Le briquet à pierre"
+concept: devine_construction
+statut: programme
+creneau: "10:00"
+date_publication: "2026-11-07"
+accroche: "Devine ce que je construis. Réponse à la fin."
+question_ouverte: "Quel objet se cache derrière ce réservoir, cette valve, cette pierre et cette roue ?"
+script: texte-script-episode-10-briquet.md
+voix_off: texte-voix-off-enzo-episode-10-briquet.txt
+faits: texte-faits-verifies-briquet.md
+description: texte-description-episode-10-briquet.txt
+couverture: "DEVINE CE QUE JE CONSTRUIS"
+couverture_entete: "DEVINE CE QUE JE CONSTRUIS"
+couverture_lignes: ["DEVINE CE QUE JE", "CONSTRUIS", "RÉPONSE À LA FIN"]
+mot_cle_vert: "CONSTRUIS"
+stories: stories.yaml
+voix_retenue: "Enzo (gemini-3.8-flash-tts)"
+duree_s: 54.0
+taille_mo: 8.94
+medias:   # branche media, commit 47c4355a8f4c669d6d83626d8f9b7c13ba400684, verify-media OK (run 42286937881)
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep10-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep10-miniature.png"
+  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep10-story.png"
+heure_publication: "10:00"
+metricool: {video_post_id: "419369261", story_post_id: "419369321"}

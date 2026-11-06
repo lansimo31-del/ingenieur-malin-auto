@@ -26,7 +26,7 @@ L'objet n'est **jamais nommé** avant la chute, ni dans la couverture, ni dans l
 
 - [x] **La serrure à goupilles** (ép. 4, 4 nov. 10 h) · en premier et vite. Angle : le mystère, le dessin papier, et la chute « c'est la serrure de ta porte d'entrée »
 - [x] **La chasse d'eau** (ép. 7, 5 nov. 18 h) (le flotteur, le clapet, le trop-plein ; aucune vidéo concurrente trouvée le 04/11)
-- [ ] Le briquet à pierre (la molette, la pierre, la valve)
+- [x] **Le briquet à pierre** (ép. 10, 7 nov. 10 h) (la molette, la pierre, la valve ; angle : réservoir, valve, pierre sur ressort, roue striée ; aucune vidéo concurrente lue le 06/11, TikTok illisible)
 - [ ] L'agrafeuse (le ressort, l'enclume qui replie les pattes)
 - [ ] Le robinet mitigeur (la cartouche à disques céramique)
 - [ ] La pompe à vélo (le piston, le clapet)
@@ -40,7 +40,7 @@ Accroche : « Ce n'est pas un défaut. » On montre le « défaut », on laisse 
 
 - [x] **Le trou minuscule au bout du pistolet de la pompe à essence** (ép. 5, 4 nov. 18 h) (effet Venturi : il coupe le plein quand le réservoir est plein)
 - [x] **Les points noirs sur le bord du pare-brise** (ép. 8, 6 nov. 10 h) (bande de céramique : protection de la colle contre les UV, cordon caché, dégradé ; très couvert par la presse française le 05/11, angle : la colle et le dégradé de points)
-- [ ] Le petit trou sous le cadenas (laisser sortir l'eau, qui gèlerait dans le mécanisme)
+- [x] **Le petit trou sous le cadenas** (ép. 11, 7 nov. 18 h) (laisse sortir l'eau : rouille, gel, lubrification ; beaucoup d'articles FR/EN, aucune vidéo lue le 06/11, TikTok illisible ; sources grand public seulement)
 - [ ] Les petites bosses des touches F et J du clavier (repères pour les index, sans regarder)
 - [ ] Les carrés de couleur au bout des tubes de dentifrice (repères pour la machine qui coupe et soude ; démonte une rumeur)
 - [ ] Les stries sur la tranche de certaines pièces de monnaie (contre le rognage, et pour reconnaître la pièce au toucher)
