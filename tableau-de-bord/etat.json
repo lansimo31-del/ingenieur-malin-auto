@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-06T21:25:00+01:00",
+  "mis_a_jour": "2026-11-07T07:45:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -52,9 +52,9 @@
     ]
   },
   "derniere_verification": {
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "resultat": "OK",
-    "details": "Programme du jour complet dans Metricool (10:00 Reel IG + TikTok ép.8 id 418179125, story 12:00 id 418178758, 18:00 IG+TikTok ép.9 id 418178803, story 19:00 id 418178827), heures conformes, médias et miniatures présents ; verify-media run 42175203974 : 6 URL en HTTP 200, bon content-type, Range 206 ; episode.yaml ép.8 et 9 statut programme, vidéos 50,7 s et 53,2 s."
+    "details": "Programme du jour complet dans Metricool (10:00 Reel IG + TikTok ép.10 id 419369261, story 12:00 id 419369321, 18:00 IG+TikTok ép.11 id 419369295, story 19:00 id 419369337), heures conformes, médias et miniatures présents ; verify-media run 42347552553 : 6 URL en HTTP 200, bon content-type, Range 206 ; episode.yaml ép.10 et 11 statut programme, vidéos 54,0 s et 50,5 s."
   },
   "programme_metricool": [
     {
@@ -292,22 +292,21 @@
     }
   ],
   "stats": {
-    "periode": "2026-10-30 au 2026-11-06 (lecture 06/11 matin)",
+    "periode": "2026-10-31 au 2026-11-06 (lecture 07/11 matin)",
     "instagram": {
-      "vues_moy": 786,
-      "detail": "ballast 1940 vues (19,2 s), stylo 1535 (13,9 s), poutre 545 J+1 (16,2 s, 4 enreg.), pistolet 287, serrure 215, hublots 197 ; ép.7 chasse d'eau (publiée hier 18 h) pas encore remontée ; aucun épisode à J+7 (J+7 = 30/10, aucune publication)"
+      "vues_moy": 1250,
+      "detail": "poutre 4001 vues (24,7 s, 14 enreg.), ballast 1958, stylo 1558, pare-brise 1166 J+1 (12,7 s), chasse d'eau 475, pistolet 384, serrure 235, hublots 219 ; ép.9 bouteille (publiée hier 18 h) pas encore remontée ; aucun épisode à J+7 (J+7 = 31/10, aucune publication)"
     },
     "tiktok": {
       "vues_moy": 0,
-      "detail": "0 vue remontée par l'API Metricool pour les 6 vidéos publiées (ép.7 absent)"
+      "detail": "0 vue remontée par l'API Metricool pour toutes les vidéos publiées"
     },
-    "meilleur_episode": "ép.1 ballast (1940 vues IG)",
-    "meilleur_concept": "indéterminé (aucun pilier à 3 publications)"
+    "meilleur_episode": "ép.6 poutre en I (4001 vues IG)",
+    "meilleur_concept": "forme_contre_intuitive (moy. 2110 vues IG sur 2 épisodes, devant fait_expres 1169 et devine_construction 756)"
   },
   "alertes": [
-    "Veille : TikTok illisible depuis le cloud le 06/11 (captcha) ; relevés manuels d'Ilan seuls fiables.",
-    "wikipedia.org, scienceabc.com, housedigest.com, monroeengineering.com injoignables depuis le cloud : faits des ép. 10 et 11 fondés sur des résumés de recherche et des pages grand public (aucune source primaire) ; à recouper.",
-    "Ép. 10 : la voix a demandé 5 générations (le modèle lisait la consigne) ; alignement par pics corrigé à la main sur les premiers mots de l'ép. 11 (numpy absent au départ, réinstallé)."
+    "TikTok : 0 vue sur toutes les vidéos via l'API Metricool depuis plusieurs jours (probable limite de l'API ou compte non Business) ; relevés manuels d'Ilan seuls fiables.",
+    "wikipedia.org, scienceabc.com, housedigest.com, monroeengineering.com injoignables depuis le cloud : faits des ép. 10 et 11 fondés sur des résumés de recherche et des pages grand public (aucune source primaire) ; à recouper."
   ],
   "historique": [
     {
@@ -364,6 +363,11 @@
       "date": "2026-11-06",
       "tache": "production du soir",
       "resume": "Ép. 10 briquet à pierre (10 h, 54,0 s) et ép. 11 trou du cadenas (18 h, 50,5 s), voix Enzo, jsDelivr vérifié (run 42286937881), 2 vidéos et 2 stories programmées pour le 07/11."
+    },
+    {
+      "date": "2026-11-07",
+      "tache": "vérification du matin",
+      "resume": "Programme du jour complet et conforme (4 créneaux, médias et miniatures OK, 6 URL en 200). J+1 ép.8 : 1166 vues IG, 12,7 s ; ép.9 pas encore remontée ; pas de J+7 ; TikTok 0 vue (API)."
     }
   ],
   "dernier_pilier": "fait_expres",
