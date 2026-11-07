@@ -55,6 +55,7 @@ def synth(text, out, cfg=None):
     key = os.environ.get("GEMINI_API_KEY")
     if not key: raise SystemExit("GEMINI_API_KEY absente de l'environnement (secret à ajouter, puis nouvelle session)")
     cfg = cfg or json.load(open(CFG))
+    if os.environ.get("VOIX_STYLE"): cfg = dict(cfg, style=os.environ["VOIX_STYLE"])   # consigne courte de secours si le modèle lit le style (7 nov.)
     if cfg["voix_gemini"] == "A_CONFIRMER":
         raise SystemExit("config/voix.json : nom de la voix Gemini à confirmer par Ilan (voix « Enzo » = quelle voix prédéfinie ?)")
     model = cfg["modele"] if cfg["modele"] != "auto" else pick_model(key)

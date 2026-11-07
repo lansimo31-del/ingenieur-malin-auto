@@ -26,6 +26,14 @@ def speech_spans(path):
         if s - t > 0.06: spans.append((t, s))
         t = e
     if D - t > 0.06: spans.append((t, D))
+    import os
+    g = float(os.environ.get("ALIGN_MERGE", "0"))          # fusionne les zones séparées par moins de g s (voix lente, micro-pauses)
+    if g > 0 and spans:
+        m = [list(spans[0])]
+        for a_, b_ in spans[1:]:
+            if a_ - m[-1][1] < g: m[-1][1] = b_
+            else: m.append([a_, b_])
+        spans = [tuple(x) for x in m]
     return spans, D
 
 

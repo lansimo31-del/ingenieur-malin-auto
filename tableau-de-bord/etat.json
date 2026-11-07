@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-07T07:45:00+01:00",
+  "mis_a_jour": "2026-11-07T21:15:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -17,39 +17,40 @@
     }
   },
   "derniere_production": {
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "episodes": [
       {
-        "numero": 10,
-        "sujet": "Le briquet à pierre",
-        "concept": "devine_construction",
+        "numero": 12,
+        "sujet": "Le carton ondulé",
+        "concept": "forme_contre_intuitive",
         "creneau": "10:00",
-        "duree_s": 54.0,
-        "taille_mo": 8.94,
-        "voix": "Enzo (gemini-3.8-flash-tts)",
-        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep10-video.mp4",
-        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep10-miniature.png",
+        "duree_s": 45.2,
+        "taille_mo": 8.16,
+        "voix": "Enzo (gemini-3.8-flash-tts, consigne courte « Say calmly: »)",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bbaadfb97e1544e3c68879208ff7de55b06b9b04/ep12-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bbaadfb97e1544e3c68879208ff7de55b06b9b04/ep12-miniature.png",
         "stories": [
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep10-story.png"
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bbaadfb97e1544e3c68879208ff7de55b06b9b04/ep12-story.png"
         ],
         "statut": "programmé"
       },
       {
-        "numero": 11,
-        "sujet": "Le petit trou sous le cadenas",
-        "concept": "fait_expres",
+        "numero": 13,
+        "sujet": "L'agrafeuse",
+        "concept": "devine_construction",
         "creneau": "18:00",
-        "duree_s": 50.5,
-        "taille_mo": 8.71,
+        "duree_s": 56.2,
+        "taille_mo": 8.54,
         "voix": "Enzo (gemini-3.8-flash-tts)",
-        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep11-video.mp4",
-        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep11-miniature.png",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bbaadfb97e1544e3c68879208ff7de55b06b9b04/ep13-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bbaadfb97e1544e3c68879208ff7de55b06b9b04/ep13-miniature.png",
         "stories": [
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep11-story.png"
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bbaadfb97e1544e3c68879208ff7de55b06b9b04/ep13-story.png"
         ],
         "statut": "programmé"
       }
-    ]
+    ],
+    "verify_media": "run 42409586497 : 6 URL OK (HTTP 200, bon content-type, Range 206)"
   },
   "derniere_verification": {
     "date": "2026-11-07",
@@ -289,6 +290,60 @@
         "instagram": "419369337"
       },
       "statut": "programmé"
+    },
+    {
+      "date": "2026-11-08",
+      "heure": "10:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 12,
+      "post_id": {
+        "instagram+tiktok": "420224572"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-08",
+      "heure": "12:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 12,
+      "post_id": {
+        "instagram": "420224605"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-08",
+      "heure": "18:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 13,
+      "post_id": {
+        "instagram+tiktok": "420224591"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-08",
+      "heure": "19:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 13,
+      "post_id": {
+        "instagram": "420224610"
+      },
+      "statut": "programmé"
     }
   ],
   "stats": {
@@ -306,7 +361,10 @@
   },
   "alertes": [
     "TikTok : 0 vue sur toutes les vidéos via l'API Metricool depuis plusieurs jours (probable limite de l'API ou compte non Business) ; relevés manuels d'Ilan seuls fiables.",
-    "wikipedia.org, scienceabc.com, housedigest.com, monroeengineering.com injoignables depuis le cloud : faits des ép. 10 et 11 fondés sur des résumés de recherche et des pages grand public (aucune source primaire) ; à recouper."
+    "wikipedia.org, scienceabc.com, housedigest.com, monroeengineering.com injoignables depuis le cloud : faits des ép. 10 et 11 fondés sur des résumés de recherche et des pages grand public (aucune source primaire) ; à recouper.",
+    "Voix : le modèle Gemini TTS lisait la consigne de style à voix haute pour l'ép. 12 (12 essais en échec) ; contournement par la consigne courte « Say calmly: » (variable VOIX_STYLE dans tts.py), config/voix.json inchangé. À surveiller.",
+    "Faits des ép. 12 et 13 fondés sur des résumés de recherche (brevets, fiches, pages grand public) : fefco.org, paper-world.com, wikipedia.org injoignables ; à recouper.",
+    "Alignement : option ALIGN_MERGE ajoutée à align.py (fusion des pauses courtes), non utilisée au final."
   ],
   "historique": [
     {
@@ -368,19 +426,24 @@
       "date": "2026-11-07",
       "tache": "vérification du matin",
       "resume": "Programme du jour complet et conforme (4 créneaux, médias et miniatures OK, 6 URL en 200). J+1 ép.8 : 1166 vues IG, 12,7 s ; ép.9 pas encore remontée ; pas de J+7 ; TikTok 0 vue (API)."
+    },
+    {
+      "date": "2026-11-07",
+      "tache": "production du soir",
+      "resume": "Ép. 12 carton ondulé (10 h, 45,2 s) et ép. 13 agrafeuse (18 h, 56,2 s), voix Enzo, jsDelivr vérifié (run 42409586497), 2 vidéos et 2 stories programmées pour le 08/11 (ids 420224572, 420224605, 420224591, 420224610)."
     }
   ],
-  "dernier_pilier": "fait_expres",
+  "dernier_pilier": "devine_construction",
   "piliers": [
     "devine_construction",
     "fait_expres",
     "forme_contre_intuitive"
   ],
   "derniere_veille": {
-    "date": "2026-11-06 (soir)",
-    "metricool": "lu : poutre 4001 vues IG / 24,7 s / 14 enreg., ballast 1958, stylo 1558, pare-brise 1166, chasse d'eau 475, pistolet 384, serrure 235, hublots 219 ; TikTok environ 50 vues par vidéo ; fait_expres 3 publications (1169 vues en moyenne), devine_construction nettement en dessous (355) : changement d'angle, pas d'abandon",
-    "web": "lu : cadenas très expliqué en articles grand public, briquet : pages techniques ; aucune vidéo concurrente lue ; wikipedia, scienceabc, housedigest injoignables",
-    "tiktok": "illisible : coquille JavaScript avec captcha, aucun like lisible",
-    "decisions": "briquet à pierre (10h, devine_construction) + trou du cadenas (18h, fait_expres) ; banque : sujets cochés"
+    "date": "2026-11-07 (soir)",
+    "metricool": "lu : poutre 4524 vues IG / 24,4 s, bouteille 1750 / 20,6 s, ballast 1959, pare-brise 1652, stylo 1562, chasse 499, briquet 422 (11 h), pistolet 394, serrure 242, hublots 225 ; TikTok ~50 vues par vidéo ; abonnés IG 31 (dont 22 le 05/11), TikTok 0 ; forme_contre_intuitive 3137 vues en moyenne (2 publications), fait_expres 1335, devine_construction 388 (nettement en dessous : changement d'angle, pas d'abandon)",
+    "web": "lu : carton ondulé, agrafeuse : brevets et fiches, aucune vidéo concurrente lue ; tours de refroidissement déjà traité par Practical Engineering (angle différent requis) ; bosses F/J très couvert par la presse FR ; wikipedia, fefco, paper-world, wikiwand injoignables",
+    "tiktok": "illisible depuis le cloud le 07/11 : coquille JavaScript avec captcha, aucun like lisible, aucun chiffre relevé",
+    "decisions": "10 h forme_contre_intuitive (carton ondulé, ép. 12), 18 h devine_construction (agrafeuse, ép. 13) ; nid d'abeille descendu (proche du carton), tours de refroidissement montés"
   }
 }

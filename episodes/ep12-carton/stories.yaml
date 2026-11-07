@@ -1,0 +1,9 @@
+# Story Instagram liée à l'épisode 12 (12:00, après la vidéo de 10 h). Question écrite dans l'image.
+stories:
+  - id: 1
+    heure: "12:00"
+    entete: "LA QUESTION DE L'INGÉNIEUR MALIN"
+    question: ["À quoi servent", "LES VAGUES", "dans un carton ?"]
+    mot_vert: "LES VAGUES"
+    choix: ["Écarter les feuilles plates", "Faire joli", "Gagner du papier collé"]
+    pied: "Réponse dans la vidéo de 10 h"

@@ -27,13 +27,13 @@ L'objet n'est **jamais nommé** avant la chute, ni dans la couverture, ni dans l
 - [x] **La serrure à goupilles** (ép. 4, 4 nov. 10 h) · en premier et vite. Angle : le mystère, le dessin papier, et la chute « c'est la serrure de ta porte d'entrée »
 - [x] **La chasse d'eau** (ép. 7, 5 nov. 18 h) (le flotteur, le clapet, le trop-plein ; aucune vidéo concurrente trouvée le 04/11)
 - [x] **Le briquet à pierre** (ép. 10, 7 nov. 10 h) (la molette, la pierre, la valve ; angle : réservoir, valve, pierre sur ressort, roue striée ; aucune vidéo concurrente lue le 06/11, TikTok illisible)
-- [ ] L'agrafeuse (le ressort, l'enclume qui replie les pattes)
+- [x] **L'agrafeuse** (ép. 13, 8 nov. 18 h) (bande de barres, ressort, lame, plaque à rainures ; aucune vidéo concurrente trouvée le 07/11, TikTok illisible ; angle : le geste d'appuyer déclenche tout)
 - [ ] Le robinet mitigeur (la cartouche à disques céramique)
 - [ ] La pompe à vélo (le piston, le clapet)
 - [ ] Le tire-bouchon à ailes (la crémaillère, les deux pignons)
 - [ ] Le taille-crayon (la lame inclinée, le cône)
 - [ ] La souris d'ordinateur (la LED, le capteur, la molette)
-- [ ] Le cadenas (proche de la serrure : à espacer d'au moins deux semaines)
+- [ ] Le cadenas (proche de la serrure : à espacer d'au moins deux semaines ; son petit trou est déjà traité en ép. 11, pilier `fait_expres`, donc à écarter ou à prendre sous un autre angle)
 
 ## Pilier 2 · `fait_expres` : « Ce n'est pas un défaut, c'est fait exprès »
 Accroche : « Ce n'est pas un défaut. » On montre le « défaut », on laisse croire à une erreur, puis on révèle la raison.
@@ -53,12 +53,12 @@ Une forme qui a l'air absurde, une fausse piste, puis un chiffre fort ou une exp
 
 - [x] **La poutre en I** (ép. 6, 5 nov. 10 h) (« 29 fois » retrouvé par le calcul IPE 200 contre barre carrée de même section, 28,7 ; angle : la règle à plat puis sur la tranche)
 - [x] **Le fond à cinq pieds des bouteilles de soda** (ép. 9, 6 nov. 18 h) (fond rond qui résiste à la pression + pieds pour tenir debout ; aucune vidéo concurrente trouvée le 05/11)
-- [ ] Le fond bombé des canettes (la pression, moins de métal ; 04/11 : aucune source trouvée par la recherche, à sourcer avant script)
-- [ ] Le carton ondulé (une feuille ondulée entre deux feuilles plates)
-- [ ] Le nid d'abeille dans les portes et les avions (plein de vide, très rigide)
-- [ ] Les tours de refroidissement en forme de diabolo (forme hyperbolique : droite, solide, économe en béton)
-- [ ] Le profil en champignon des rails (une forme taillée pour la roue)
+- [x] **Le carton ondulé** (ép. 12, 8 nov. 10 h) (feuille en vagues entre deux feuilles plates : entretoise, arches ; sources grand public et brevets seulement, aucune vidéo concurrente lue le 07/11, TikTok illisible)
+- [ ] Les tours de refroidissement en forme de diabolo (forme hyperbolique : droite, solide, économe en béton) · monté le 07/11 · maquette en anglais par Practical Engineering : à reprendre avec un angle différent (la paroi fine comme une feuille de papier)
 - [ ] Le cadre de vélo en triangles (le triangle ne se déforme pas)
+- [ ] Le profil en champignon des rails (une forme taillée pour la roue)
+- [ ] Le fond bombé des canettes (la pression, moins de métal ; 04/11 : aucune source trouvée par la recherche, à sourcer avant script)
+- [ ] Le nid d'abeille dans les portes et les avions (plein de vide, très rigide) · descendu le 07/11 : trop proche du carton ondulé (ép. 12), à espacer d'au moins deux semaines
 
 ## Plus tard (avec l'accord d'Ilan)
 - Humour de la sur-ingénierie (type Unnecessary Engineering, 241K) : hors piliers, donc à valider par Ilan.

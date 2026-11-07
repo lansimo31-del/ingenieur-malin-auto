@@ -4,6 +4,33 @@
 > de recherche**, en ordre de grandeur (ni vues, ni rétention). À recouper chaque mois.
 > Complète [`comptes.md`](comptes.md) (comptes similaires).
 
+## Veille du 07/11 (soir, tâche automatique)
+
+**Nos chiffres** (Metricool, 8 oct. – 7 nov., lus le 7 nov. au soir ; aucun chiffre estimé ; durée regardée en secondes puis en % de la durée de la vidéo quand elle est connue) :
+
+| Épisode (pilier) | Instagram : vues | Durée moy. regardée | Partages | Enregistrements | TikTok : vues |
+|---|---|---|---|---|---|
+| Ép. 1 ballast (`fait_expres`, a posteriori) | 1 959 | 19,3 s | 2 | 3 | 53 |
+| Ép. 2 stylo | 1 562 | 14,0 s | 0 | 1 | 53 |
+| Ép. 3 hublots (hors piliers) | 225 | 10,0 s (16 %) | 0 | 1 | 61 |
+| Ép. 4 serrure (`devine_construction`) | 242 | 6,8 s (14 %) | 0 | 1 | 48 |
+| Ép. 5 pistolet (`fait_expres`) | 394 | 8,7 s (15 %) | 0 | 3 | 56 |
+| Ép. 6 poutre en I (`forme_contre_intuitive`) | 4 524 | 24,4 s (52 %) | 5 | 14 | 47 |
+| Ép. 7 chasse d'eau (`devine_construction`) | 499 | 10,5 s (18 %) | 10 | 1 | 57 |
+| Ép. 8 points noirs du pare-brise (`fait_expres`) | 1 652 | 18,5 s (36 %) | 0 | 1 | 50 |
+| Ép. 9 fond à pieds des bouteilles (`forme_contre_intuitive`) | 1 750 | 20,6 s (39 %) | 0 | 3 | 53 |
+| Ép. 10 briquet à pierre (`devine_construction`, publié ce matin, 11 h de recul) | 422 | 11,0 s (20 %) | 1 | 2 | 54 |
+
+- **Par pilier** : `forme_contre_intuitive` (2 publications) : 3 137 vues en moyenne, 22,5 s regardées (environ 45 %), 0,8 partage et 2,7 enregistrements pour 1 000 vues : de loin le meilleur, mais il n'a que 2 publications (seuil de 3 non atteint : pas de remontée automatique, il passe simplement en tête de la rotation de demain à 10 h). `fait_expres` (3 publications) : 1 335 vues, 15,5 s, 0,5 partage et 1,7 enregistrement pour 1 000 vues (un très bon score pour le ballast et le pare-brise, un score faible pour le pistolet). `devine_construction` (3 publications, le briquet n'a que 11 h) : 388 vues, 9,4 s regardées (environ 17 %), 9,5 partages (dont 10 sur la chasse d'eau) et 3,4 enregistrements pour 1 000 vues : **nettement en dessous** des deux autres pour les vues et la rétention, donc **changement d'angle sans abandon** : l'ép. 13 (agrafeuse) garde le geste final (appuyer) qui déclenche tout, avec une chute plus visuelle (la pièce qui plie les pointes) et des pièces plus parlantes à l'écran.
+- **Abonnés gagnés** : Instagram 31 sur la période, dont 22 le 5 nov. (jour de l'ép. 6, la poutre en I) ; TikTok 0. `TKPO13`, `TKPO15`, `TKPO06`, `IGRE27` : vides (illisibles).
+- Les vues TikTok remontées restent d'environ 50 par vidéo.
+
+**Web** : carton ondulé : pages de fournisseurs et brevets, aucune vidéo avec ses likes lue, aucune version TikTok/Reel trouvée. Agrafeuse : brevets et fiches techniques, aucune vidéo « pièce par pièce » trouvée. Tours de refroidissement : article Neoteo sur la vidéo de Practical Engineering (maquette d'une tour hyperboloïde, en anglais) : sujet déjà traité par ce compte, à reprendre seulement avec un angle différent. Bosses des touches F et J : très couvert par la presse française (Presse-Citron, Tribunal du Net, Phonandroid), aucune vidéo avec ses likes lue.
+
+**TikTok** : illisible depuis le cloud le 07/11 (la page de recherche répond 200 mais n'est qu'une coquille JavaScript avec captcha ; aucun like lisible). Aucun chiffre TikTok relevé.
+
+**Décisions** : rotation : dernier pilier publié `fait_expres` (ép. 11) ; 10 h `forme_contre_intuitive` (le carton ondulé, ép. 12), 18 h `devine_construction` (l'agrafeuse, ép. 13). Reclassement : `forme_contre_intuitive` : le nid d'abeille descend (trop proche du carton, à espacer), les tours de refroidissement montent (avec un angle différent de Practical Engineering) ; `devine_construction` : le cadenas est marqué « fait en ép. 11 sous un autre pilier » ; `fait_expres` : inchangé. Aucun refus automatique pour les deux sujets retenus (ni publiés, ni annoncés, ni refusés par Ilan, ni hors piliers).
+
 ## Veille du 06/11 (soir, tâche automatique)
 
 **Nos chiffres** (Metricool, 7 oct. – 6 nov., lus le 6 nov. au soir ; aucun chiffre estimé) :

@@ -1,0 +1,26 @@
+numero: 12
+sujet: "Le carton ondulé"
+concept: forme_contre_intuitive
+statut: programme
+creneau: "10:00"
+date_publication: "2026-11-08"
+accroche: "Cette forme a l'air absurde."
+question_ouverte: "Pourquoi une feuille en vagues au milieu d'un carton ?"
+script: texte-script-episode-12-carton.md
+voix_off: texte-voix-off-enzo-episode-12-carton.txt
+faits: texte-faits-verifies-carton.md
+description: texte-description-episode-12-carton.txt
+couverture: "CETTE FORME EST ABSURDE ?"
+couverture_entete: "FORME CONTRE-INTUITIVE"
+couverture_lignes: ["CETTE FORME EST", "ABSURDE ?", "LE CARTON"]
+mot_cle_vert: "ABSURDE ?"
+stories: stories.yaml
+heure_publication: "10:00"
+voix_retenue: "Enzo (gemini-3.8-flash-tts, consigne courte « Say calmly: » car le modèle lisait le style long)"
+duree_s: 45.2
+taille_mo: 8.16
+medias:   # branche media, commit bbaadfb97e1544e3c68879208ff7de55b06b9b04
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bbaadfb97e1544e3c68879208ff7de55b06b9b04/ep12-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bbaadfb97e1544e3c68879208ff7de55b06b9b04/ep12-miniature.png"
+  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@bbaadfb97e1544e3c68879208ff7de55b06b9b04/ep12-story.png"
+metricool: {video_post_id: "420224572", story_post_id: "420224605"}
