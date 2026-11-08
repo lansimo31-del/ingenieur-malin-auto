@@ -24,3 +24,4 @@ medias:   # branche media, commit 47c4355a8f4c669d6d83626d8f9b7c13ba400684, veri
   story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@47c4355a8f4c669d6d83626d8f9b7c13ba400684/ep10-story.png"
 heure_publication: "10:00"
 metricool: {video_post_id: "419369261", story_post_id: "419369321"}
+stats_j1: {instagram_vues: 585, instagram_portee: 507, likes: 10, commentaires: 0, partages: 1, enregistrements: 2, duree_moy_visionnage_s: 10.9, tiktok_vues: 0, lecture: "2026-11-08"}

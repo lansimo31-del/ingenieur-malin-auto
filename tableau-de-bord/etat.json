@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-07T21:15:00+01:00",
+  "mis_a_jour": "2026-11-08T07:40:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -53,9 +53,9 @@
     "verify_media": "run 42409586497 : 6 URL OK (HTTP 200, bon content-type, Range 206)"
   },
   "derniere_verification": {
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "resultat": "OK",
-    "details": "Programme du jour complet dans Metricool (10:00 Reel IG + TikTok ép.10 id 419369261, story 12:00 id 419369321, 18:00 IG+TikTok ép.11 id 419369295, story 19:00 id 419369337), heures conformes, médias et miniatures présents ; verify-media run 42347552553 : 6 URL en HTTP 200, bon content-type, Range 206 ; episode.yaml ép.10 et 11 statut programme, vidéos 54,0 s et 50,5 s."
+    "details": "Programme du jour complet dans Metricool (10:00 Reel IG + TikTok ép.12 id 420224572, story 12:00 id 420224605, 18:00 IG+TikTok ép.13 id 420224591, story 19:00 id 420224610), heures conformes, médias et miniatures présents ; verify-media run 42455276211 : 6 URL en HTTP 200, bon content-type, Range 206 ; episode.yaml ép.12 et 13 statut programme (vidéos 45,2 s et 56,2 s). Aucune action de rattrapage nécessaire."
   },
   "programme_metricool": [
     {
@@ -347,17 +347,17 @@
     }
   ],
   "stats": {
-    "periode": "2026-10-31 au 2026-11-06 (lecture 07/11 matin)",
+    "periode": "2026-11-03 au 2026-11-07 (lecture 08/11 matin)",
     "instagram": {
-      "vues_moy": 1250,
-      "detail": "poutre 4001 vues (24,7 s, 14 enreg.), ballast 1958, stylo 1558, pare-brise 1166 J+1 (12,7 s), chasse d'eau 475, pistolet 384, serrure 235, hublots 219 ; ép.9 bouteille (publiée hier 18 h) pas encore remontée ; aucun épisode à J+7 (J+7 = 31/10, aucune publication)"
+      "vues_moy": 1387,
+      "detail": "ép.4 à 11 : poutre 4524, bouteille 1765, pare-brise 1660, cadenas 1427 (J+1, 15,6 s), briquet 585 (J+1, 10,9 s), chasse 499, serrure 242, pistolet 394 ; aucun épisode à J+7 (J+7 = 01/11, aucune publication)"
     },
     "tiktok": {
       "vues_moy": 0,
       "detail": "0 vue remontée par l'API Metricool pour toutes les vidéos publiées"
     },
-    "meilleur_episode": "ép.6 poutre en I (4001 vues IG)",
-    "meilleur_concept": "forme_contre_intuitive (moy. 2110 vues IG sur 2 épisodes, devant fait_expres 1169 et devine_construction 756)"
+    "meilleur_episode": "ép.6 poutre en I (4524 vues IG)",
+    "meilleur_concept": "forme_contre_intuitive (moy. 3145 vues IG sur 2 épisodes, devant fait_expres 1160 et devine_construction 442)"
   },
   "alertes": [
     "TikTok : 0 vue sur toutes les vidéos via l'API Metricool depuis plusieurs jours (probable limite de l'API ou compte non Business) ; relevés manuels d'Ilan seuls fiables.",
@@ -431,6 +431,11 @@
       "date": "2026-11-07",
       "tache": "production du soir",
       "resume": "Ép. 12 carton ondulé (10 h, 45,2 s) et ép. 13 agrafeuse (18 h, 56,2 s), voix Enzo, jsDelivr vérifié (run 42409586497), 2 vidéos et 2 stories programmées pour le 08/11 (ids 420224572, 420224605, 420224591, 420224610)."
+    },
+    {
+      "date": "2026-11-08",
+      "tache": "vérification du matin",
+      "resume": "Programme du jour complet et conforme (4 créneaux, médias et miniatures OK, 6 URL en 200). J+1 : cadenas 1427 vues IG (15,6 s), briquet 585 (10,9 s) ; pas de J+7 ; TikTok 0 vue (API)."
     }
   ],
   "dernier_pilier": "devine_construction",
