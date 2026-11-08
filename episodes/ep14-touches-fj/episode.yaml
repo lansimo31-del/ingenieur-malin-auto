@@ -1,0 +1,27 @@
+numero: 14
+sujet: "Les bosses des touches F et J du clavier"
+concept: fait_expres
+statut: programme
+creneau: "10:00"
+date_publication: "2026-11-09"
+accroche: "Ce n'est pas un défaut."
+question_ouverte: "Pourquoi deux petites bosses sur le F et le J ?"
+script: texte-script-episode-14-touches-fj.md
+voix_off: texte-voix-off-enzo-episode-14-touches-fj.txt
+faits: texte-faits-verifies-touches-fj.md
+description: texte-description-episode-14-touches-fj.txt
+couverture: "CE N'EST PAS UN DÉFAUT : LES BOSSES F ET J"
+couverture_entete: "CE N'EST PAS UN DÉFAUT"
+couverture_lignes: ["LES BOSSES", "F ET J", "DU CLAVIER"]
+mot_cle_vert: "F ET J"
+stories: stories.yaml
+heure_publication: "10:00"
+voix_retenue: "Enzo (gemini-3.8-flash-tts, consigne courte « Say calmly: »)"
+duree_s: 46.5
+taille_mo: 8.32
+alignement: "zones de parole + phrases du script (palign : appariement par durées, mots répartis par syllabes), car le modèle de transcription n'est pas joignable"
+medias:   # branche media, commit 76f0d0b1716449722dbc17aab974934fc2b374b6
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep14-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep14-miniature.png"
+  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep14-story.png"
+metricool: {video_post_id: "421045324", story_post_id: "421045530"}

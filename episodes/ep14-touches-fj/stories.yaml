@@ -1,0 +1,9 @@
+# Story Instagram liée à l'épisode 14 (12:00, après la vidéo de 10 h). Question écrite dans l'image.
+stories:
+  - id: 1
+    heure: "12:00"
+    entete: "LA QUESTION DE L'INGÉNIEUR MALIN"
+    question: ["À quoi servent les", "BOSSES", "du F et du J ?"]
+    mot_vert: "BOSSES"
+    choix: ["Placer ses index au toucher", "Retenir la poussière", "Décorer le clavier"]
+    pied: "Réponse dans la vidéo de 10 h"

@@ -41,9 +41,9 @@ Accroche : « Ce n'est pas un défaut. » On montre le « défaut », on laisse 
 - [x] **Le trou minuscule au bout du pistolet de la pompe à essence** (ép. 5, 4 nov. 18 h) (effet Venturi : il coupe le plein quand le réservoir est plein)
 - [x] **Les points noirs sur le bord du pare-brise** (ép. 8, 6 nov. 10 h) (bande de céramique : protection de la colle contre les UV, cordon caché, dégradé ; très couvert par la presse française le 05/11, angle : la colle et le dégradé de points)
 - [x] **Le petit trou sous le cadenas** (ép. 11, 7 nov. 18 h) (laisse sortir l'eau : rouille, gel, lubrification ; beaucoup d'articles FR/EN, aucune vidéo lue le 06/11, TikTok illisible ; sources grand public seulement)
-- [ ] Les petites bosses des touches F et J du clavier (repères pour les index, sans regarder)
-- [ ] Les carrés de couleur au bout des tubes de dentifrice (repères pour la machine qui coupe et soude ; démonte une rumeur)
-- [ ] Les stries sur la tranche de certaines pièces de monnaie (contre le rognage, et pour reconnaître la pièce au toucher)
+- [x] **Les petites bosses des touches F et J du clavier** (ép. 14, 9 nov. 10 h) (repères pour les index, sans regarder ; très couvert par la presse FR, aucune vidéo lue le 08/11, TikTok illisible ; l'histoire des bosses n'est pas sourcée, non utilisée)
+- [ ] Les carrés de couleur au bout des tubes de dentifrice (repères pour la machine qui coupe et soude ; démonte une rumeur) · reclassé le 08/11 : rumeur très démentie à l'écrit (Paris Match, Tribunal du Net, Maldita), à garder en deuxième position
+- [ ] Les stries sur la tranche de certaines pièces de monnaie (contre le rognage, et pour reconnaître la pièce au toucher) · 08/11 : très traité à l'écrit, aucune vidéo lue ; à sourcer (stries conservées surtout par héritage)
 - [ ] Les bandes rugueuses au bord des autoroutes (réveiller le conducteur qui dévie)
 - [ ] Les joints de dilatation des ponts (les « trous » qui empêchent le pont de se fissurer quand il fait chaud)
 - [ ] Le crochet du mètre ruban qui bouge · descendu le 03/11 : très répandu en anglais (TikTok viral, articles) ; à reprendre seulement avec un angle différent (il coulisse de sa propre épaisseur : mesure juste en poussant comme en tirant)
@@ -54,8 +54,8 @@ Une forme qui a l'air absurde, une fausse piste, puis un chiffre fort ou une exp
 - [x] **La poutre en I** (ép. 6, 5 nov. 10 h) (« 29 fois » retrouvé par le calcul IPE 200 contre barre carrée de même section, 28,7 ; angle : la règle à plat puis sur la tranche)
 - [x] **Le fond à cinq pieds des bouteilles de soda** (ép. 9, 6 nov. 18 h) (fond rond qui résiste à la pression + pieds pour tenir debout ; aucune vidéo concurrente trouvée le 05/11)
 - [x] **Le carton ondulé** (ép. 12, 8 nov. 10 h) (feuille en vagues entre deux feuilles plates : entretoise, arches ; sources grand public et brevets seulement, aucune vidéo concurrente lue le 07/11, TikTok illisible)
-- [ ] Les tours de refroidissement en forme de diabolo (forme hyperbolique : droite, solide, économe en béton) · monté le 07/11 · maquette en anglais par Practical Engineering : à reprendre avec un angle différent (la paroi fine comme une feuille de papier)
-- [ ] Le cadre de vélo en triangles (le triangle ne se déforme pas)
+- [x] **Les tours de refroidissement en forme de diabolo** (ép. 15, 9 nov. 18 h) (hyperboloïde brevetée en 1918, lignes droites, col étroit, paroi d'environ vingt centimètres ; angle : la paroi fine, différent de Practical Engineering ; sources secondaires)
+- [ ] Le cadre de vélo en triangles (le triangle ne se déforme pas) · monté le 08/11 (aucune vidéo concurrente lue)
 - [ ] Le profil en champignon des rails (une forme taillée pour la roue)
 - [ ] Le fond bombé des canettes (la pression, moins de métal ; 04/11 : aucune source trouvée par la recherche, à sourcer avant script)
 - [ ] Le nid d'abeille dans les portes et les avions (plein de vide, très rigide) · descendu le 07/11 : trop proche du carton ondulé (ép. 12), à espacer d'au moins deux semaines

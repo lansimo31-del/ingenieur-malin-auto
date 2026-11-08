@@ -1,0 +1,9 @@
+# Story Instagram liée à l'épisode 15 (19:00, après la vidéo de 18 h). Question écrite dans l'image.
+stories:
+  - id: 1
+    heure: "19:00"
+    entete: "LA QUESTION DE L'INGÉNIEUR MALIN"
+    question: ["Pourquoi la tour de centrale", "SE PINCE", "au milieu ?"]
+    mot_vert: "SE PINCE"
+    choix: ["Pour faire joli", "Forme solide, paroi fine", "Pour gagner de la place"]
+    pied: "Réponse dans la vidéo de 18 h"

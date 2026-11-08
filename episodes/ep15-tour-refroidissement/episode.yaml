@@ -1,0 +1,27 @@
+numero: 15
+sujet: "Les tours de refroidissement en forme de diabolo"
+concept: forme_contre_intuitive
+statut: programme
+creneau: "18:00"
+date_publication: "2026-11-09"
+accroche: "Cette forme a l'air absurde."
+question_ouverte: "Pourquoi une tour de centrale se pince-t-elle au milieu ?"
+script: texte-script-episode-15-tour-refroidissement.md
+voix_off: texte-voix-off-enzo-episode-15-tour-refroidissement.txt
+faits: texte-faits-verifies-tour-refroidissement.md
+description: texte-description-episode-15-tour-refroidissement.txt
+couverture: "CETTE FORME EST ABSURDE ?"
+couverture_entete: "FORME CONTRE-INTUITIVE"
+couverture_lignes: ["CETTE FORME EST", "ABSURDE ?", "LA TOUR"]
+mot_cle_vert: "ABSURDE ?"
+stories: stories.yaml
+heure_publication: "18:00"
+voix_retenue: "Enzo (gemini-3.8-flash-tts, consigne courte « Say calmly: »)"
+duree_s: 48.6
+taille_mo: 8.17
+alignement: "zones de parole + phrases du script (palign : appariement par durées, mots répartis par syllabes), car le modèle de transcription n'est pas joignable"
+medias:   # branche media, commit 76f0d0b1716449722dbc17aab974934fc2b374b6
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep15-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep15-miniature.png"
+  story_1: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep15-story.png"
+metricool: {video_post_id: "421045545", story_post_id: "421045566"}

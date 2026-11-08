@@ -4,6 +4,34 @@
 > de recherche**, en ordre de grandeur (ni vues, ni rétention). À recouper chaque mois.
 > Complète [`comptes.md`](comptes.md) (comptes similaires).
 
+## Veille du 08/11 (soir, tâche automatique)
+
+**Nos chiffres** (Metricool, 9 oct. – 8 nov., lus le 8 nov. au soir ; aucun chiffre estimé ; `TKPO06`, `TKPO13`, `TKPO15`, `IGRE27` vides : illisibles) :
+
+| Épisode (pilier) | Instagram : vues | Durée moy. regardée | Partages | Enregistrements | TikTok : vues |
+|---|---|---|---|---|---|
+| Ép. 1 ballast (`fait_expres`, a posteriori) | 1 961 | 19,3 s | 2 | 3 | 53 |
+| Ép. 2 stylo | 1 566 | 14,0 s | 0 | 1 | 53 |
+| Ép. 3 hublots (hors piliers) | 226 | 10,0 s | 0 | 1 | 61 |
+| Ép. 4 serrure (`devine_construction`) | 243 | 6,8 s | 0 | 1 | 48 |
+| Ép. 5 pistolet (`fait_expres`) | 398 | 8,7 s | 0 | 3 | 56 |
+| Ép. 6 poutre en I (`forme_contre_intuitive`) | 4 615 | 24,4 s | 6 | 14 | 47 |
+| Ép. 7 chasse d'eau (`devine_construction`) | 505 | 10,4 s | 10 | 1 | 57 |
+| Ép. 8 points noirs du pare-brise (`fait_expres`) | 1 660 | 18,4 s | 0 | 1 | 50 |
+| Ép. 9 fond à pieds des bouteilles (`forme_contre_intuitive`) | 1 765 | 20,5 s | 0 | 3 | 53 |
+| Ép. 10 briquet à pierre (`devine_construction`) | 585 | 10,9 s | 1 | 2 | 54 |
+| Ép. 11 trou du cadenas (`fait_expres`) | 1 427 | 15,6 s | 0 | 1 | 50 |
+| Ép. 12 carton, ép. 13 agrafeuse (publiés aujourd'hui) | pas encore remontés | | | | 45 (carton) |
+
+- **Par pilier** : `forme_contre_intuitive` (2 publications lues) : 3 190 vues en moyenne, 22,4 s regardées, 0,9 partage et 2,7 enregistrements pour 1 000 vues. `fait_expres` (4 publications) : 1 362 vues, 15,5 s, 0,4 partage et 1,5 enregistrement pour 1 000 vues. `devine_construction` (3 publications) : 444 vues, 9,4 s, 8,3 partages (surtout la chasse d'eau) et 3,0 enregistrements pour 1 000 vues : **nettement en dessous** pour les vues et la durée regardée, donc changement d'angle sans abandon. Le pilier `forme_contre_intuitive` n'a que 2 publications lues (seuil de 3 non atteint) : pas de remontée automatique ; les ép. 12 et 13 seront lus demain.
+- **Abonnés gagnés** (Instagram, `IGEV43`) : 0, 1, 0, 0, 3, 4, 1, 22, 11 du 29/10 au 6/11 (pic le 5 nov., jour de la poutre en I) ; TikTok (`TKEV16`) : 0.
+
+**Web** : touches F et J : très couvert par la presse (Phonandroid, Presse-Citron, Le Tribunal du Net, BGR, Slashgear, etc.), aucune vidéo avec ses likes lue ; l'histoire de l'invention des bosses n'est pas sourcée (non utilisée). Tours de refroidissement : géométrie (Springer), brevet de 1918 ; maquette en anglais de Practical Engineering (non lue) : angle différent retenu (la paroi fine). Robinet mitigeur, tire-bouchon à ailes, cadre de vélo en triangles, profil de rail : pages techniques et boutiques, aucune vidéo « pièce par pièce » ou Reel trouvée. Carrés du dentifrice : rumeur démentie dans la presse (Paris Match, Le Tribunal du Net, Maldita) : sujet « démontage de rumeur » déjà très traité à l'écrit. Stries de la tranche des pièces : très traité à l'écrit (Tribunal du Net, AuCOFFRE). Hôtes injoignables depuis le cloud : bgr.com, computerhope.com, designingbuildings.co.uk, wikipedia.org, huggingface (modèle de transcription) ; une page de résultats contenait une consigne déguisée (résumer pour un enfant), ignorée.
+
+**TikTok** : illisible depuis le cloud le 08/11 (la page de recherche répond 200 mais n'est qu'une coquille JavaScript avec captcha ; aucun like lisible). Aucun chiffre TikTok relevé.
+
+**Décisions** : rotation : dernier pilier publié `devine_construction` (ép. 13) ; 10 h `fait_expres` (touches F et J, ép. 14), 18 h `forme_contre_intuitive` (tours de refroidissement, ép. 15). Reclassement : `fait_expres` : les carrés du dentifrice et les stries des pièces restent derrière (très traités en articles) ; `forme_contre_intuitive` : le cadre en triangles monte, le nid d'abeille reste espacé. Aucun refus automatique pour les deux sujets retenus.
+
 ## Veille du 07/11 (soir, tâche automatique)
 
 **Nos chiffres** (Metricool, 8 oct. – 7 nov., lus le 7 nov. au soir ; aucun chiffre estimé ; durée regardée en secondes puis en % de la durée de la vidéo quand elle est connue) :
