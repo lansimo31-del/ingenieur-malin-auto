@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-08T21:10:00+01:00",
+  "mis_a_jour": "2026-11-09T07:40:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -53,9 +53,9 @@
     "verify_media": "run 42518246948 : 6 URL OK (HTTP 200, bon content-type, Range 206)"
   },
   "derniere_verification": {
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "resultat": "OK",
-    "details": "Programme du jour complet dans Metricool (10:00 Reel IG + TikTok ép.12 id 420224572, story 12:00 id 420224605, 18:00 IG+TikTok ép.13 id 420224591, story 19:00 id 420224610), heures conformes, médias et miniatures présents ; verify-media run 42455276211 : 6 URL en HTTP 200, bon content-type, Range 206 ; episode.yaml ép.12 et 13 statut programme (vidéos 45,2 s et 56,2 s). Aucune action de rattrapage nécessaire."
+    "details": "Programme du jour complet dans Metricool (10:00 Reel IG + TikTok ép.14 id 421045324, story 12:00 id 421045530, 18:00 IG+TikTok ép.15 id 421045545, story 19:00 id 421045566), heures conformes, médias et miniatures présents ; verify-media run 42573808759 : 6 URL en HTTP 200, bon content-type, Range 206 ; episode.yaml ép.14 et 15 statut programme (vidéos 46,5 s et 48,6 s). Aucune action de rattrapage nécessaire. Créneaux du lundi relus (IG pics 10 h/18 h, TikTok 10 h/18 h) : planning inchangé."
   },
   "programme_metricool": [
     {
@@ -401,16 +401,16 @@
     }
   ],
   "stats": {
-    "periode": "2026-11-03 au 2026-11-07 (lecture 08/11 matin)",
+    "periode": "2026-11-03 au 2026-11-08 (lecture 09/11 matin)",
     "instagram": {
-      "vues_moy": 1387,
-      "detail": "ép.4 à 11 : poutre 4524, bouteille 1765, pare-brise 1660, cadenas 1427 (J+1, 15,6 s), briquet 585 (J+1, 10,9 s), chasse 499, serrure 242, pistolet 394 ; aucun épisode à J+7 (J+7 = 01/11, aucune publication)"
+      "vues_moy": 1260,
+      "detail": "11 reels : poutre 4677, bouteille 1777, pare-brise 1667, hublots 1571, cadenas 1454, ep.12 carton 713 (J+1, 8,8 s), briquet 618, chasse 507, pistolet 401, serrure 246, ép.3 18h 232 ; ép.13 pas encore remontée ; aucun épisode à J+7 (J+7 = 02/11, aucune publication)"
     },
     "tiktok": {
       "vues_moy": 0,
-      "detail": "0 vue remontée par l'API Metricool pour toutes les vidéos publiées"
+      "detail": "0 vue remontée par l'API Metricool"
     },
-    "meilleur_episode": "ép.6 poutre en I (4524 vues IG)",
+    "meilleur_episode": "ép.6 poutre en I (4677 vues IG)",
     "meilleur_concept": "forme_contre_intuitive (moy. 3145 vues IG sur 2 épisodes, devant fait_expres 1160 et devine_construction 442)"
   },
   "alertes": [
@@ -499,6 +499,11 @@
       "date": "2026-11-08",
       "tache": "production du soir",
       "resume": "Ép. 14 touches F et J (fait_expres, 10 h, 46,5 s) et ép. 15 tours de refroidissement (forme_contre_intuitive, 18 h, 48,6 s), voix Enzo, jsDelivr vérifié (run 42518246948), 2 vidéos et 2 stories programmées pour le 09/11 (ids 421045324, 421045530, 421045545, 421045566)."
+    },
+    {
+      "date": "2026-11-09",
+      "tache": "vérification du matin",
+      "resume": "Programme du jour complet et conforme (4 créneaux, médias et miniatures OK, 6 URL en 200). J+1 : ép.12 carton 713 vues IG (8,8 s), ép.13 pas encore remontée ; pas de J+7 ; créneaux du lundi inchangés ; TikTok 0 vue (API)."
     }
   ],
   "dernier_pilier": "forme_contre_intuitive",
