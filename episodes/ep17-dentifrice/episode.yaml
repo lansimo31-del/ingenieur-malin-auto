@@ -1,0 +1,18 @@
+numero: 17
+sujet: "Le carré de couleur au bout du tube de dentifrice"
+concept: fait_expres
+statut: script
+creneau: "18:00"
+date_publication: "2026-11-10"
+accroche: "Ce n'est pas un défaut."
+question_ouverte: "À quoi sert le petit carré de couleur au bout d'un tube de dentifrice ?"
+script: texte-script-episode-17-dentifrice.md
+voix_off: texte-voix-off-enzo-episode-17-dentifrice.txt
+faits: texte-faits-verifies-dentifrice.md
+description: texte-description-episode-17-dentifrice.txt
+couverture: "CE N'EST PAS UN DÉFAUT : LE CARRÉ DU DENTIFRICE"
+couverture_entete: "CE N'EST PAS UN DÉFAUT"
+couverture_lignes: ["LE CARRÉ", "DU DENTIFRICE", "C'EST QUOI ?"]
+mot_cle_vert: "DU DENTIFRICE"
+stories: stories.yaml
+heure_publication: "18:00"

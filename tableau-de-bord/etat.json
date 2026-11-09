@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-09T07:40:00+01:00",
+  "mis_a_jour": "2026-11-09T21:00:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -414,6 +414,7 @@
     "meilleur_concept": "forme_contre_intuitive (moy. 3145 vues IG sur 2 épisodes, devant fait_expres 1160 et devine_construction 442)"
   },
   "alertes": [
+    "BLOQUANT 09/11 : Gemini TTS renvoie HTTP 402 (crédits prépayés épuisés, à recharger sur ai.studio). Ép. 16 (mitigeur, 10 h) et ép. 17 (dentifrice, 18 h) préparés (faits, scripts, voix off, légendes, scènes, miniatures, stories) mais NON rendus ni programmés : rien n'est prévu dans Metricool pour le 10/11. Après recharge, lancer build.py sur chacun puis étapes 4 à 7 de soir.md.",
     "TikTok : 0 vue sur toutes les vidéos via l'API Metricool depuis plusieurs jours (probable limite de l'API ou compte non Business) ; relevés manuels d'Ilan seuls fiables.",
     "wikipedia.org, scienceabc.com, housedigest.com, monroeengineering.com injoignables depuis le cloud : faits des ép. 10 et 11 fondés sur des résumés de recherche et des pages grand public (aucune source primaire) ; à recouper.",
     "Voix : le modèle Gemini TTS lisait la consigne de style à voix haute pour l'ép. 12 (12 essais en échec) ; contournement par la consigne courte « Say calmly: » (variable VOIX_STYLE dans tts.py), config/voix.json inchangé. À surveiller.",
@@ -504,6 +505,11 @@
       "date": "2026-11-09",
       "tache": "vérification du matin",
       "resume": "Programme du jour complet et conforme (4 créneaux, médias et miniatures OK, 6 URL en 200). J+1 : ép.12 carton 713 vues IG (8,8 s), ép.13 pas encore remontée ; pas de J+7 ; créneaux du lundi inchangés ; TikTok 0 vue (API)."
+    },
+    {
+      "date": "2026-11-09",
+      "tache": "production du soir",
+      "resume": "Veille faite. Ép. 16 mitigeur et ép. 17 dentifrice préparés (texte, scènes) mais voix impossible (Gemini 402, crédits épuisés) : aucun rendu, aucune programmation pour le 10/11."
     }
   ],
   "dernier_pilier": "forme_contre_intuitive",
@@ -513,10 +519,10 @@
     "forme_contre_intuitive"
   ],
   "derniere_veille": {
-    "date": "2026-11-08 (soir)",
-    "metricool": "lu : poutre 4615 vues IG / 24,4 s, ballast 1961, bouteille 1765, pare-brise 1660, stylo 1566, cadenas 1427 / 15,6 s, briquet 585, chasse 505, pistolet 398, serrure 243, hublots 226 ; ép. 12 et 13 pas encore remontés ; TikTok ~50 vues par vidéo ; abonnés IG 22 le 05/11 et 11 le 06/11, TikTok 0 ; forme_contre_intuitive 3190 vues en moyenne (2 publications, seuil de 3 non atteint), fait_expres 1362, devine_construction 444 (nettement en dessous : angle changé, pas abandonné)",
-    "web": "lu : touches F et J (très couvert par la presse, aucune vidéo avec likes lue), tours de refroidissement (Springer, brevet 1918 ; Practical Engineering non lu), mitigeur, tire-bouchon, cadre de vélo, rail, dentifrice, pièces : aucune vidéo concurrente lue ; bgr.com, computerhope.com, designingbuildings.co.uk, wikipedia.org, huggingface injoignables",
-    "tiktok": "illisible depuis le cloud le 08/11 : coquille JavaScript avec captcha, aucun like lisible, aucun chiffre relevé",
-    "decisions": "10 h fait_expres (touches F et J, ép. 14), 18 h forme_contre_intuitive (tours de refroidissement, ép. 15) ; carrés du dentifrice et stries des pièces gardés en retrait (rumeur/histoire très traitées à l'écrit) ; cadre de vélo monté"
+    "date": "2026-11-09 (soir)",
+    "metricool": "lu : poutre 4677 vues IG, ballast 1962, bouteille 1777, pare-brise 1667, stylo 1571, cadenas 1454, carton 713, briquet 618 ; forme_contre_intuitive ~3000, fait_expres ~1100, devine_construction ~450 ; TikTok ~50 vues par vidéo",
+    "web": "lu : mitigeur (brevets EP, Castorama, Drench), carré du dentifrice (Colgate, Snopes, Paris Match, Maldita) ; aucune vidéo concurrente trouvée",
+    "tiktok": "illisible depuis le cloud le 09/11 : page vide avec captcha, aucun chiffre relevé",
+    "decisions": "10 h devine_construction (mitigeur, ép. 16), 18 h fait_expres (carré du dentifrice, ép. 17) ; production bloquée à l'étape voix"
   }
 }

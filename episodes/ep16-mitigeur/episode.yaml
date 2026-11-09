@@ -1,0 +1,18 @@
+numero: 16
+sujet: "Le robinet mitigeur (cartouche à disques en céramique)"
+concept: devine_construction
+statut: script
+creneau: "10:00"
+date_publication: "2026-11-10"
+accroche: "Devine ce que je construis. Réponse à la fin."
+question_ouverte: "Quel objet se cache derrière ces deux disques percés, ce levier et ces deux arrivées d'eau ?"
+script: texte-script-episode-16-mitigeur.md
+voix_off: texte-voix-off-enzo-episode-16-mitigeur.txt
+faits: texte-faits-verifies-mitigeur.md
+description: texte-description-episode-16-mitigeur.txt
+couverture: "DEVINE CE QUE JE CONSTRUIS"
+couverture_entete: "DEVINE CE QUE JE CONSTRUIS"
+couverture_lignes: ["DEVINE CE QUE JE", "CONSTRUIS", "RÉPONSE À LA FIN"]
+mot_cle_vert: "CONSTRUIS"
+stories: stories.yaml
+heure_publication: "10:00"

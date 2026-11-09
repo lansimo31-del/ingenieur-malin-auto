@@ -1,5 +1,12 @@
 # Concepts qui marchent sur TikTok
 
+## Veille du 09/11
+- **Nos chiffres (Metricool, 10/10 au 09/11, lus)** : Instagram, vues par Reel : poutre en I 4677 (24,3 s), ballast 1962, bouteille 1777, pare-brise 1667, stylo 1571, cadenas 1454, carton 713, briquet 618, chasse d'eau 507, pistolet 401, serrure 246, hublots 232. Par pilier : forme_contre_intuitive ~3 000 en moyenne (poutre, bouteille, carton), fait_expres ~1 100, devine_construction ~450 (nettement en dessous : angle changé, pas abandonné). Partages et enregistrements très faibles (0 à 14). TikTok : environ 50 vues par vidéo, abonnés TikTok 0. Abonnés Instagram : 22 le 05/11, 11 le 06/11, 3 le 07/11.
+- **Web** : mitigeur à cartouche céramique et carré de couleur du dentifrice, sources écrites seulement (brevets, Castorama, Colgate, Snopes, Paris Match, Maldita) ; aucune vidéo concurrente trouvée par la recherche.
+- **TikTok** : illisible depuis le cloud le 09/11 (page vide avec captcha, aucun like lisible).
+- **Décisions** : 10 h devine_construction = mitigeur (angle : le levier du quotidien expliqué par deux disques qui glissent) ; 18 h fait_expres = carré du dentifrice (démonte la rumeur du code couleur). Production vocale impossible ce soir (Gemini 402, crédits épuisés) : scripts, scènes et miniatures prêts, à rendre dès que la voix revient.
+
+
 > Analyse faite par **Ilan le 3 nov. 2026** dans la recherche TikTok. Chiffres = **likes visibles dans les résultats
 > de recherche**, en ordre de grandeur (ni vues, ni rétention). À recouper chaque mois.
 > Complète [`comptes.md`](comptes.md) (comptes similaires).
