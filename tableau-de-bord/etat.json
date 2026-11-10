@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-09T21:00:00+01:00",
+  "mis_a_jour": "2026-11-10T07:40:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -53,9 +53,9 @@
     "verify_media": "run 42518246948 : 6 URL OK (HTTP 200, bon content-type, Range 206)"
   },
   "derniere_verification": {
-    "date": "2026-11-09",
-    "resultat": "OK",
-    "details": "Programme du jour complet dans Metricool (10:00 Reel IG + TikTok ép.14 id 421045324, story 12:00 id 421045530, 18:00 IG+TikTok ép.15 id 421045545, story 19:00 id 421045566), heures conformes, médias et miniatures présents ; verify-media run 42573808759 : 6 URL en HTTP 200, bon content-type, Range 206 ; episode.yaml ép.14 et 15 statut programme (vidéos 46,5 s et 48,6 s). Aucune action de rattrapage nécessaire. Créneaux du lundi relus (IG pics 10 h/18 h, TikTok 10 h/18 h) : planning inchangé."
+    "date": "2026-11-10",
+    "resultat": "ALERTES (1 bloquante)",
+    "details": "Programme du jour ABSENT de Metricool : getScheduledPosts du 10/11 (00:00-23:59 Europe/Paris) renvoie 0 post. Aucune vidéo 10:00/18:00 (IG + TikTok), aucune story 12:00/19:00. Cause : production du 09/11 bloquée (Gemini TTS HTTP 402, crédits épuisés) ; ép. 16 et 17 restent au statut script. verify-media non lancé (aucun média à vérifier). Rien programmé par cette tâche (interdit). Action : recharger les crédits sur ai.studio puis build.py sur ép. 16/17 et programmation manuelle ou publication à la main. Stats : J+1 (09/11) ép. 14 et 15 pas encore remontées, ép. 13 non plus ; J+7 (03/11) hublots 232 vues IG, 189 portée, 5 likes, 9,9 s ; TikTok 0 vue (API). Mardi : pas de relecture des créneaux."
   },
   "programme_metricool": [
     {
@@ -401,10 +401,10 @@
     }
   ],
   "stats": {
-    "periode": "2026-11-03 au 2026-11-08 (lecture 09/11 matin)",
+    "periode": "2026-11-03 au 2026-11-09 (lecture 10/11 matin)",
     "instagram": {
       "vues_moy": 1260,
-      "detail": "11 reels : poutre 4677, bouteille 1777, pare-brise 1667, hublots 1571, cadenas 1454, ep.12 carton 713 (J+1, 8,8 s), briquet 618, chasse 507, pistolet 401, serrure 246, ép.3 18h 232 ; ép.13 pas encore remontée ; aucun épisode à J+7 (J+7 = 02/11, aucune publication)"
+      "detail": "11 reels 3-9 nov : poutre 4677, bouteille 1777, pare-brise 1667, hublots 232 (J+7), stylo 1571, cadenas 1454, ép.12 carton 713, briquet 618, chasse 507, pistolet 401, serrure 246 ; ép.13, 14 et 15 pas encore remontées"
     },
     "tiktok": {
       "vues_moy": 0,
@@ -414,6 +414,7 @@
     "meilleur_concept": "forme_contre_intuitive (moy. 3145 vues IG sur 2 épisodes, devant fait_expres 1160 et devine_construction 442)"
   },
   "alertes": [
+    "BLOQUANT 10/11 : aucun post programmé dans Metricool pour aujourd'hui (4 créneaux manquants : 10:00 IG+TikTok, 12:00 story, 18:00 IG+TikTok, 19:00 story). Cause : Gemini TTS 402 (crédits épuisés). Action : recharger ai.studio, lancer build.py ép. 16 et 17, programmer à 18:00/19:00 si possible ou publier à la main.",
     "BLOQUANT 09/11 : Gemini TTS renvoie HTTP 402 (crédits prépayés épuisés, à recharger sur ai.studio). Ép. 16 (mitigeur, 10 h) et ép. 17 (dentifrice, 18 h) préparés (faits, scripts, voix off, légendes, scènes, miniatures, stories) mais NON rendus ni programmés : rien n'est prévu dans Metricool pour le 10/11. Après recharge, lancer build.py sur chacun puis étapes 4 à 7 de soir.md.",
     "TikTok : 0 vue sur toutes les vidéos via l'API Metricool depuis plusieurs jours (probable limite de l'API ou compte non Business) ; relevés manuels d'Ilan seuls fiables.",
     "wikipedia.org, scienceabc.com, housedigest.com, monroeengineering.com injoignables depuis le cloud : faits des ép. 10 et 11 fondés sur des résumés de recherche et des pages grand public (aucune source primaire) ; à recouper.",
@@ -510,6 +511,11 @@
       "date": "2026-11-09",
       "tache": "production du soir",
       "resume": "Veille faite. Ép. 16 mitigeur et ép. 17 dentifrice préparés (texte, scènes) mais voix impossible (Gemini 402, crédits épuisés) : aucun rendu, aucune programmation pour le 10/11."
+    },
+    {
+      "date": "2026-11-10",
+      "tache": "vérification du matin",
+      "resume": "ALERTE : 0 post Metricool pour le 10/11 (production bloquée, Gemini 402). J+7 hublots 232 vues IG ; J+1 ép.13/14/15 pas encore remontées ; TikTok 0 vue (API)."
     }
   ],
   "dernier_pilier": "forme_contre_intuitive",
@@ -524,5 +530,10 @@
     "web": "lu : mitigeur (brevets EP, Castorama, Drench), carré du dentifrice (Colgate, Snopes, Paris Match, Maldita) ; aucune vidéo concurrente trouvée",
     "tiktok": "illisible depuis le cloud le 09/11 : page vide avec captcha, aucun chiffre relevé",
     "decisions": "10 h devine_construction (mitigeur, ép. 16), 18 h fait_expres (carré du dentifrice, ép. 17) ; production bloquée à l'étape voix"
+  },
+  "programme_du_jour": {
+    "date": "2026-11-10",
+    "statut": "absent",
+    "details": "0 post programmé dans Metricool"
   }
 }
