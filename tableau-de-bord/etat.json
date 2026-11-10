@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-10T07:40:00+01:00",
+  "mis_a_jour": "2026-11-10T20:45:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -414,6 +414,7 @@
     "meilleur_concept": "forme_contre_intuitive (moy. 3145 vues IG sur 2 épisodes, devant fait_expres 1160 et devine_construction 442)"
   },
   "alertes": [
+    "BLOQUANT 10/11 soir : Gemini TTS renvoie toujours HTTP 402 (crédits prépayés épuisés, testé à 20 h 30). Aucune vidéo rendue ni programmée pour le 11/11. Ép. 16 (mitigeur, 10 h) et ép. 17 (dentifrice, 18 h) prêts jusqu'au script, reportés au 11/11. Action : recharger ai.studio, puis build.py sur ép. 16 et 17 et étapes 4 à 7 de soir.md. Aucune voix de remplacement hors Gemini utilisée (charte).",
     "BLOQUANT 10/11 : aucun post programmé dans Metricool pour aujourd'hui (4 créneaux manquants : 10:00 IG+TikTok, 12:00 story, 18:00 IG+TikTok, 19:00 story). Cause : Gemini TTS 402 (crédits épuisés). Action : recharger ai.studio, lancer build.py ép. 16 et 17, programmer à 18:00/19:00 si possible ou publier à la main.",
     "BLOQUANT 09/11 : Gemini TTS renvoie HTTP 402 (crédits prépayés épuisés, à recharger sur ai.studio). Ép. 16 (mitigeur, 10 h) et ép. 17 (dentifrice, 18 h) préparés (faits, scripts, voix off, légendes, scènes, miniatures, stories) mais NON rendus ni programmés : rien n'est prévu dans Metricool pour le 10/11. Après recharge, lancer build.py sur chacun puis étapes 4 à 7 de soir.md.",
     "TikTok : 0 vue sur toutes les vidéos via l'API Metricool depuis plusieurs jours (probable limite de l'API ou compte non Business) ; relevés manuels d'Ilan seuls fiables.",
@@ -516,6 +517,11 @@
       "date": "2026-11-10",
       "tache": "vérification du matin",
       "resume": "ALERTE : 0 post Metricool pour le 10/11 (production bloquée, Gemini 402). J+7 hublots 232 vues IG ; J+1 ép.13/14/15 pas encore remontées ; TikTok 0 vue (API)."
+    },
+    {
+      "date": "2026-11-10",
+      "tache": "production du soir",
+      "resume": "Bloquée : Gemini TTS HTTP 402. Veille Metricool faite, ép. 16 et 17 reportés au 11/11, rien produit ni programmé."
     }
   ],
   "dernier_pilier": "forme_contre_intuitive",
@@ -525,11 +531,11 @@
     "forme_contre_intuitive"
   ],
   "derniere_veille": {
-    "date": "2026-11-09 (soir)",
-    "metricool": "lu : poutre 4677 vues IG, ballast 1962, bouteille 1777, pare-brise 1667, stylo 1571, cadenas 1454, carton 713, briquet 618 ; forme_contre_intuitive ~3000, fait_expres ~1100, devine_construction ~450 ; TikTok ~50 vues par vidéo",
-    "web": "lu : mitigeur (brevets EP, Castorama, Drench), carré du dentifrice (Colgate, Snopes, Paris Match, Maldita) ; aucune vidéo concurrente trouvée",
-    "tiktok": "illisible depuis le cloud le 09/11 : page vide avec captcha, aucun chiffre relevé",
-    "decisions": "10 h devine_construction (mitigeur, ép. 16), 18 h fait_expres (carré du dentifrice, ép. 17) ; production bloquée à l'étape voix"
+    "date": "2026-11-10 (soir)",
+    "metricool": "lu : forme_contre_intuitive ~2433 vues IG, fait_expres ~1178, devine_construction ~460 ; ép. 13 à 15 pas encore remontées",
+    "web": "non relu (production bloquée)",
+    "tiktok": "illisible depuis le cloud le 10/11, aucun chiffre",
+    "decisions": "sujets inchangés : 10 h devine_construction (mitigeur ép. 16), 18 h fait_expres (dentifrice ép. 17), reportés au 11/11"
   },
   "programme_du_jour": {
     "date": "2026-11-10",

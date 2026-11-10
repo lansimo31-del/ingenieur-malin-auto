@@ -1,5 +1,10 @@
 # Concepts qui marchent sur TikTok
 
+## Veille du 10/11
+- **Nos chiffres (Metricool, 11/10 au 10/11, lus)** : Instagram, vues moyennes par pilier : forme_contre_intuitive 2433 (poutre 4721, bouteille 1784, carton 793 ; durée regardée 24,3 / 20,5 / 9,2 s), fait_expres 1178 (pare-brise 1671, cadenas 1458, pistolet 405), devine_construction 460 (briquet 625, chasse d'eau 508, serrure 247). Les ép. 13, 14 et 15 ne sont pas encore remontées. Partages : 0 à 14 par Reel, trop faibles pour conclure. TikTok : pas de chiffre fiable via l'API.
+- **Web** et **TikTok** : non relus ce soir, production bloquée avant l'étape de choix (voix Gemini HTTP 402). TikTok illisible depuis le cloud le 10/11 : aucune tentative aboutie, aucun chiffre relevé.
+- **Décisions** : le pilier forme_contre_intuitive reste en tête. Le pilier devine_construction reste le plus faible : il change d'angle (indices plus nets dès les premières secondes), il n'est pas abandonné. Ép. 16 (mitigeur, 10 h) et ép. 17 (dentifrice, 18 h) reportés au 11/11, sujets inchangés.
+
 ## Veille du 09/11
 - **Nos chiffres (Metricool, 10/10 au 09/11, lus)** : Instagram, vues par Reel : poutre en I 4677 (24,3 s), ballast 1962, bouteille 1777, pare-brise 1667, stylo 1571, cadenas 1454, carton 713, briquet 618, chasse d'eau 507, pistolet 401, serrure 246, hublots 232. Par pilier : forme_contre_intuitive ~3 000 en moyenne (poutre, bouteille, carton), fait_expres ~1 100, devine_construction ~450 (nettement en dessous : angle changé, pas abandonné). Partages et enregistrements très faibles (0 à 14). TikTok : environ 50 vues par vidéo, abonnés TikTok 0. Abonnés Instagram : 22 le 05/11, 11 le 06/11, 3 le 07/11.
 - **Web** : mitigeur à cartouche céramique et carré de couleur du dentifrice, sources écrites seulement (brevets, Castorama, Colgate, Snopes, Paris Match, Maldita) ; aucune vidéo concurrente trouvée par la recherche.
