@@ -1,7 +1,7 @@
 numero: 16
 sujet: "Le robinet mitigeur (cartouche à disques en céramique)"
 concept: devine_construction
-statut: script
+statut: programme
 creneau: "10:00"
 date_publication: "2026-11-13"
 accroche: "Devine ce que je construis. Réponse à la fin."
@@ -16,3 +16,13 @@ couverture_lignes: ["DEVINE CE QUE JE", "CONSTRUIS", "RÉPONSE À LA FIN"]
 mot_cle_vert: "CONSTRUIS"
 stories: stories.yaml
 heure_publication: "10:00"
+voix_retenue: "Enzo (gemini-3.8-flash-tts, consigne courte « Say calmly: »)"
+duree_s: 57.5
+taille_mo: 8.79
+medias:
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep16-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep16-miniature.png"
+  story: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep16-story.png"
+metricool:
+  video: 426153973
+  story: 426154125

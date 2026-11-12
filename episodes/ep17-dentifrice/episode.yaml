@@ -1,7 +1,7 @@
 numero: 17
 sujet: "Le carré de couleur au bout du tube de dentifrice"
 concept: fait_expres
-statut: script
+statut: programme
 creneau: "18:00"
 date_publication: "2026-11-13"
 accroche: "Ce n'est pas un défaut."
@@ -16,3 +16,13 @@ couverture_lignes: ["LE CARRÉ", "DU TUBE", "C'EST QUOI ?"]
 mot_cle_vert: "DU TUBE"
 stories: stories.yaml
 heure_publication: "18:00"
+voix_retenue: "Enzo (gemini-3.8-flash-tts, consigne courte « Say calmly: »)"
+duree_s: 50.6
+taille_mo: 9.05
+medias:
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep17-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep17-miniature.png"
+  story: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep17-story.png"
+metricool:
+  video: 426154098
+  story: 426154213

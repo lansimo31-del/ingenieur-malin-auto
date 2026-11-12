@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-12T07:45:00+01:00",
+  "mis_a_jour": "2026-11-12T20:58:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -17,40 +17,40 @@
     }
   },
   "derniere_production": {
-    "date": "2026-11-08",
+    "date": "2026-11-12",
     "episodes": [
       {
-        "numero": 14,
-        "sujet": "Les bosses des touches F et J",
-        "concept": "fait_expres",
+        "numero": 16,
+        "sujet": "Le robinet mitigeur",
+        "concept": "devine_construction",
         "creneau": "10:00",
-        "duree_s": 46.5,
-        "taille_mo": 8.32,
+        "duree_s": 57.5,
+        "taille_mo": 8.79,
         "voix": "Enzo (gemini-3.8-flash-tts, consigne courte « Say calmly: »)",
-        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep14-video.mp4",
-        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep14-miniature.png",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep16-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep16-miniature.png",
         "stories": [
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep14-story.png"
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep16-story.png"
         ],
         "statut": "programmé"
       },
       {
-        "numero": 15,
-        "sujet": "Les tours de refroidissement",
-        "concept": "forme_contre_intuitive",
+        "numero": 17,
+        "sujet": "Le carré de couleur du tube de dentifrice",
+        "concept": "fait_expres",
         "creneau": "18:00",
-        "duree_s": 48.6,
-        "taille_mo": 8.17,
+        "duree_s": 50.6,
+        "taille_mo": 9.05,
         "voix": "Enzo (gemini-3.8-flash-tts, consigne courte « Say calmly: »)",
-        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep15-video.mp4",
-        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep15-miniature.png",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep17-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep17-miniature.png",
         "stories": [
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@76f0d0b1716449722dbc17aab974934fc2b374b6/ep15-story.png"
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep17-story.png"
         ],
         "statut": "programmé"
       }
     ],
-    "verify_media": "run 42518246948 : 6 URL OK (HTTP 200, bon content-type, Range 206)"
+    "verify_media": "run 43294884867 : succès (6 URL)"
   },
   "derniere_verification": {
     "date": "2026-11-12",
@@ -398,6 +398,60 @@
         "instagram": "421045566"
       },
       "statut": "programmé"
+    },
+    {
+      "date": "2026-11-13",
+      "heure": "10:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 16,
+      "post_id": {
+        "metricool": "426153973"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-13",
+      "heure": "12:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 16,
+      "post_id": {
+        "metricool": "426154125"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-13",
+      "heure": "18:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 17,
+      "post_id": {
+        "metricool": "426154098"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-13",
+      "heure": "19:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 17,
+      "post_id": {
+        "metricool": "426154213"
+      },
+      "statut": "programmé"
     }
   ],
   "stats": {
@@ -414,20 +468,7 @@
     "meilleur_concept": "forme_contre_intuitive (moy. 3145 vues IG sur 2 épisodes, devant fait_expres 1160 et devine_construction 442)"
   },
   "alertes": [
-    "BLOQUANT 12/11 : aucun post programmé dans Metricool pour aujourd'hui (4 créneaux manquants), 3e jour consécutif sans publication. Cause : Gemini TTS 402 (crédits épuisés). Action : recharger ai.studio, lancer build.py ép. 16 et 17 (dates à passer au 12/11), programmer 18:00/19:00 ou publier à la main.",
-    "BLOQUANT 11/11 soir : Gemini TTS renvoie encore HTTP 402 (crédits épuisés), testé à ~20 h 30 sur ép. 16. Rien rendu ni programmé pour le 12/11 (3e jour sans publication). Ép. 16 (mitigeur, 10 h) et ép. 17 (dentifrice, 18 h) restent prêts jusqu'au script ; dates à passer au 12/11 après recharge ai.studio, puis build.py + étapes 4 à 7 de soir.md. Aucune voix hors Gemini (charte).",
-    "BLOQUANT 11/11 : aucun post programmé dans Metricool pour aujourd'hui (4 créneaux manquants : 10:00 IG+TikTok, 12:00 story, 18:00 IG+TikTok, 19:00 story), 2e jour consécutif sans publication. Cause : Gemini TTS 402 (crédits épuisés). Action : recharger ai.studio, lancer build.py ép. 16 et 17, programmer 18:00/19:00 si possible ou publier à la main.",
-    "BLOQUANT 10/11 soir : Gemini TTS renvoie toujours HTTP 402 (crédits prépayés épuisés, testé à 20 h 30). Aucune vidéo rendue ni programmée pour le 11/11. Ép. 16 (mitigeur, 10 h) et ép. 17 (dentifrice, 18 h) prêts jusqu'au script, reportés au 11/11. Action : recharger ai.studio, puis build.py sur ép. 16 et 17 et étapes 4 à 7 de soir.md. Aucune voix de remplacement hors Gemini utilisée (charte).",
-    "BLOQUANT 09/11 : Gemini TTS renvoie HTTP 402 (crédits prépayés épuisés, à recharger sur ai.studio). Ép. 16 (mitigeur, 10 h) et ép. 17 (dentifrice, 18 h) préparés (faits, scripts, voix off, légendes, scènes, miniatures, stories) mais NON rendus ni programmés : rien n'est prévu dans Metricool pour le 10/11. Après recharge, lancer build.py sur chacun puis étapes 4 à 7 de soir.md.",
-    "TikTok : 0 vue sur toutes les vidéos via l'API Metricool depuis plusieurs jours (probable limite de l'API ou compte non Business) ; relevés manuels d'Ilan seuls fiables.",
-    "wikipedia.org, scienceabc.com, housedigest.com, monroeengineering.com injoignables depuis le cloud : faits des ép. 10 et 11 fondés sur des résumés de recherche et des pages grand public (aucune source primaire) ; à recouper.",
-    "Voix : le modèle Gemini TTS lisait la consigne de style à voix haute pour l'ép. 12 (12 essais en échec) ; contournement par la consigne courte « Say calmly: » (variable VOIX_STYLE dans tts.py), config/voix.json inchangé. À surveiller.",
-    "Faits des ép. 12 et 13 fondés sur des résumés de recherche (brevets, fiches, pages grand public) : fefco.org, paper-world.com, wikipedia.org injoignables ; à recouper.",
-    "Alignement : option ALIGN_MERGE ajoutée à align.py (fusion des pauses courtes), non utilisée au final.",
-    "Production du 08/11 : alignement par zones de parole + phrases (palign, script de la session) car faster-whisper ne peut pas télécharger son modèle (403 proxy) ; script ajouté : render/engine/palign.py (à lancer à la main puis copier dans work/<ép>/words.json).",
-    "Python : `python` du cloud est en 3.11 sans numpy ; build.py doit être lancé avec /usr/local/bin/python3.13 (pip install et numpy y sont).",
-    "Faits des ép. 14 et 15 fondés sur des résumés de recherche (bgr, computerhope, wikipedia, designingbuildings injoignables) ; épaisseur de paroi et « six feuilles A4 » : ordre de grandeur calculé, à recouper ; histoire des bosses F/J non utilisée (non sourcée).",
-    "Pic audio des ép. 14 et 15 à −0,4 et −0,8 dBFS (marge faible)."
+    "Info 12/11 : Gemini TTS rétabli ; ép. 16 et 17 produits et programmés pour le 13/11 (les 10/11, 11/11 et 12/11 sont restés sans publication). ép. 16 : légende sans le nom de l'objet (règle du pilier). TikTok illisible (captcha)."
   ],
   "historique": [
     {
@@ -539,20 +580,25 @@
       "date": "2026-11-12",
       "tache": "vérification du matin",
       "resume": "ALERTE : 0 post Metricool pour le 12/11 (Gemini 402, 3e jour sans publication). J+7 poutre 4762 vues IG (24,3 s), chasse 509 ; pas de J+1 ; ép.13/14/15 pas encore remontées ; TikTok 0 vue (API)."
+    },
+    {
+      "date": "2026-11-12",
+      "tache": "production du soir",
+      "resume": "Veille faite, ép. 16 mitigeur et ép. 17 dentifrice produits (57,5 s et 50,6 s, voix Enzo), hébergés, verify-media OK, 4 posts programmés pour le 13/11."
     }
   ],
-  "dernier_pilier": "forme_contre_intuitive",
+  "dernier_pilier": "fait_expres",
   "piliers": [
     "devine_construction",
     "fait_expres",
     "forme_contre_intuitive"
   ],
   "derniere_veille": {
-    "date": "2026-11-11 (soir)",
-    "metricool": "lu (IG Reels, 30 j) : forme_contre_intuitive ~1896 vues (poutre 4762, bouteille 1790, carton 798, hublots 235), fait_expres ~1377 (ballast 1967, pare-brise 1673, cadenas 1460, pistolet 405), devine_construction ~346 hors stylo (briquet 626, chasse 509, serrure 250), durée moyenne regardée 7 à 24 s ; devine nettement en dessous : changer d'angle, pas d'abandon ; ép. 13 à 15 pas encore remontées",
-    "web": "non relu (production bloquée)",
-    "tiktok": "illisible depuis le cloud le 11/11, aucun chiffre",
-    "decisions": "sujets inchangés : 10 h devine_construction (mitigeur ép. 16), 18 h fait_expres (dentifrice ép. 17), reportés au 12/11"
+    "date": "2026-11-12 (soir)",
+    "metricool": "lu (IG Reels 30 j) : forme_contre_intuitive en tête (poutre 4793), fait_expres ~1377, devine_construction nettement en dessous (7 à 11 s regardées) : changement d'angle, pas d'abandon ; ép. 13 à 15 pas encore remontées ; TikTok 0 vue (API)",
+    "web": "aucune vidéo concurrente trouvée pour le mitigeur ; dentifrice : rumeur démentie à l'écrit, pas de vidéo lue",
+    "tiktok": "illisible depuis le cloud le 12/11 (captcha, aucun chiffre)",
+    "decisions": "ép. 16 mitigeur (devine_construction, 10 h) et ép. 17 dentifrice (fait_expres, 18 h) pour le 13/11"
   },
   "programme_du_jour": {
     "date": "2026-11-12",
