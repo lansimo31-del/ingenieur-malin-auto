@@ -12,7 +12,7 @@ faits: texte-faits-verifies-dentifrice.md
 description: texte-description-episode-17-dentifrice.txt
 couverture: "CE N'EST PAS UN DÉFAUT : LE CARRÉ DU DENTIFRICE"
 couverture_entete: "CE N'EST PAS UN DÉFAUT"
-couverture_lignes: ["LE CARRÉ", "DU DENTIFRICE", "C'EST QUOI ?"]
-mot_cle_vert: "DU DENTIFRICE"
+couverture_lignes: ["LE CARRÉ", "DU TUBE", "C'EST QUOI ?"]
+mot_cle_vert: "DU TUBE"
 stories: stories.yaml
 heure_publication: "18:00"
