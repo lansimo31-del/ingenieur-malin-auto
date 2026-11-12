@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-11T20:45:00+01:00",
+  "mis_a_jour": "2026-11-12T07:45:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -53,9 +53,9 @@
     "verify_media": "run 42518246948 : 6 URL OK (HTTP 200, bon content-type, Range 206)"
   },
   "derniere_verification": {
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "resultat": "ALERTES (1 bloquante)",
-    "details": "Programme du jour ABSENT de Metricool : getScheduledPosts du 11/11 (00:00-23:59 Europe/Paris) renvoie 0 post. Aucune vidéo 10:00/18:00 (IG + TikTok), aucune story 12:00/19:00. Cause : Gemini TTS HTTP 402 (crédits épuisés) ; ép. 16 et 17 restent au statut script. verify-media non lancé (aucun média à vérifier). Rien programmé par cette tâche (interdit). Action : recharger ai.studio puis build.py sur ép. 16/17 et programmation manuelle ou publication à la main. Stats : aucune publication le 10/11 donc pas de J+1 ; ép. 14 et 15 (09/11) pas encore remontées ; J+7 (04/11) serrure 247 vues IG / 203 portée / 5 likes / 7,1 s, pistolet 405 vues / 321 portée / 7 likes / 8,7 s ; TikTok 0 vue (API). Mercredi : pas de relecture des créneaux."
+    "details": "Programme du jour ABSENT de Metricool : getScheduledPosts du 12/11 (00:00-23:59 Europe/Paris) renvoie 0 post (10:00 IG+TikTok, 12:00 story, 18:00 IG+TikTok, 19:00 story manquants). 3e jour consécutif sans publication ; ép. 16 et 17 toujours au statut script (Gemini TTS 402, crédits épuisés, dernier constat le 11/11 soir). verify-media non lancé (aucun média). Rien programmé par cette tâche (interdit). Stats : pas de J+1 (rien publié le 11/11) ; J+7 (05/11) poutre 4762 vues IG / 4157 portée / 50 likes / 6 partages / 16 enreg. / 24,3 s ; chasse d'eau 509 / 448 / 10 / 10 partages / 10,4 s ; TikTok 0 vue (API) ; ép. 13/14/15 toujours pas remontées. Jeudi : pas de relecture des créneaux."
   },
   "programme_metricool": [
     {
@@ -414,6 +414,7 @@
     "meilleur_concept": "forme_contre_intuitive (moy. 3145 vues IG sur 2 épisodes, devant fait_expres 1160 et devine_construction 442)"
   },
   "alertes": [
+    "BLOQUANT 12/11 : aucun post programmé dans Metricool pour aujourd'hui (4 créneaux manquants), 3e jour consécutif sans publication. Cause : Gemini TTS 402 (crédits épuisés). Action : recharger ai.studio, lancer build.py ép. 16 et 17 (dates à passer au 12/11), programmer 18:00/19:00 ou publier à la main.",
     "BLOQUANT 11/11 soir : Gemini TTS renvoie encore HTTP 402 (crédits épuisés), testé à ~20 h 30 sur ép. 16. Rien rendu ni programmé pour le 12/11 (3e jour sans publication). Ép. 16 (mitigeur, 10 h) et ép. 17 (dentifrice, 18 h) restent prêts jusqu'au script ; dates à passer au 12/11 après recharge ai.studio, puis build.py + étapes 4 à 7 de soir.md. Aucune voix hors Gemini (charte).",
     "BLOQUANT 11/11 : aucun post programmé dans Metricool pour aujourd'hui (4 créneaux manquants : 10:00 IG+TikTok, 12:00 story, 18:00 IG+TikTok, 19:00 story), 2e jour consécutif sans publication. Cause : Gemini TTS 402 (crédits épuisés). Action : recharger ai.studio, lancer build.py ép. 16 et 17, programmer 18:00/19:00 si possible ou publier à la main.",
     "BLOQUANT 10/11 soir : Gemini TTS renvoie toujours HTTP 402 (crédits prépayés épuisés, testé à 20 h 30). Aucune vidéo rendue ni programmée pour le 11/11. Ép. 16 (mitigeur, 10 h) et ép. 17 (dentifrice, 18 h) prêts jusqu'au script, reportés au 11/11. Action : recharger ai.studio, puis build.py sur ép. 16 et 17 et étapes 4 à 7 de soir.md. Aucune voix de remplacement hors Gemini utilisée (charte).",
@@ -533,6 +534,11 @@
       "date": "2026-11-11",
       "tache": "production du soir",
       "resume": "Bloquée : Gemini TTS HTTP 402 persistant. Veille Metricool faite, ép. 16 et 17 reportés au 12/11, rien produit ni programmé."
+    },
+    {
+      "date": "2026-11-12",
+      "tache": "vérification du matin",
+      "resume": "ALERTE : 0 post Metricool pour le 12/11 (Gemini 402, 3e jour sans publication). J+7 poutre 4762 vues IG (24,3 s), chasse 509 ; pas de J+1 ; ép.13/14/15 pas encore remontées ; TikTok 0 vue (API)."
     }
   ],
   "dernier_pilier": "forme_contre_intuitive",
@@ -549,7 +555,7 @@
     "decisions": "sujets inchangés : 10 h devine_construction (mitigeur ép. 16), 18 h fait_expres (dentifrice ép. 17), reportés au 12/11"
   },
   "programme_du_jour": {
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "statut": "absent",
     "details": "0 post programmé dans Metricool"
   }
