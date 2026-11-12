@@ -28,7 +28,7 @@ L'objet n'est **jamais nommé** avant la chute, ni dans la couverture, ni dans l
 - [x] **La chasse d'eau** (ép. 7, 5 nov. 18 h) (le flotteur, le clapet, le trop-plein ; aucune vidéo concurrente trouvée le 04/11)
 - [x] **Le briquet à pierre** (ép. 10, 7 nov. 10 h) (la molette, la pierre, la valve ; angle : réservoir, valve, pierre sur ressort, roue striée ; aucune vidéo concurrente lue le 06/11, TikTok illisible)
 - [x] **L'agrafeuse** (ép. 13, 8 nov. 18 h) (bande de barres, ressort, lame, plaque à rainures ; aucune vidéo concurrente trouvée le 07/11, TikTok illisible ; angle : le geste d'appuyer déclenche tout)
-- [ ] Le robinet mitigeur (la cartouche à disques céramique)
+- [x] **Le robinet mitigeur** (ép. 16, 13/11 10 h) (cartouche à disques céramique ; aucune vidéo concurrente trouvée le 12/11)
 - [ ] La pompe à vélo (le piston, le clapet)
 - [ ] Le tire-bouchon à ailes (la crémaillère, les deux pignons)
 - [ ] Le taille-crayon (la lame inclinée, le cône)
@@ -42,7 +42,7 @@ Accroche : « Ce n'est pas un défaut. » On montre le « défaut », on laisse 
 - [x] **Les points noirs sur le bord du pare-brise** (ép. 8, 6 nov. 10 h) (bande de céramique : protection de la colle contre les UV, cordon caché, dégradé ; très couvert par la presse française le 05/11, angle : la colle et le dégradé de points)
 - [x] **Le petit trou sous le cadenas** (ép. 11, 7 nov. 18 h) (laisse sortir l'eau : rouille, gel, lubrification ; beaucoup d'articles FR/EN, aucune vidéo lue le 06/11, TikTok illisible ; sources grand public seulement)
 - [x] **Les petites bosses des touches F et J du clavier** (ép. 14, 9 nov. 10 h) (repères pour les index, sans regarder ; très couvert par la presse FR, aucune vidéo lue le 08/11, TikTok illisible ; l'histoire des bosses n'est pas sourcée, non utilisée)
-- [ ] Les carrés de couleur au bout des tubes de dentifrice (repères pour la machine qui coupe et soude ; démonte une rumeur) · reclassé le 08/11 : rumeur très démentie à l'écrit (Paris Match, Tribunal du Net, Maldita), à garder en deuxième position
+- [x] **Les carrés de couleur au bout des tubes de dentifrice** (ép. 17, 13/11 18 h) (repères pour la machine qui coupe et soude ; démonte une rumeur) · reclassé le 08/11 : rumeur très démentie à l'écrit (Paris Match, Tribunal du Net, Maldita), à garder en deuxième position
 - [ ] Les stries sur la tranche de certaines pièces de monnaie (contre le rognage, et pour reconnaître la pièce au toucher) · 08/11 : très traité à l'écrit, aucune vidéo lue ; à sourcer (stries conservées surtout par héritage)
 - [ ] Les bandes rugueuses au bord des autoroutes (réveiller le conducteur qui dévie)
 - [ ] Les joints de dilatation des ponts (les « trous » qui empêchent le pont de se fissurer quand il fait chaud)

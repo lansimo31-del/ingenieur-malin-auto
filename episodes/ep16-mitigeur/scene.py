@@ -133,7 +133,7 @@ T_B = wt("pousse"); T_D = wt("décalele"); T_R = wt("mitigeur"); T_OFF = wt("rab
 T_N = wt("abonnetoi"); T_CK = we("abonnetoi") + 0.1
 BEATS = [0.0, T_C1, T_V, T_P, T_W, T_G, T_B, T_R, T_OFF, T_L, T_N, 999.0]
 EMPH = {nrm(x) for x in ["Devine", "construis.", "Réponse", "disque", "céramique,", "levier,", "chaude,", "froide.", "deviné", "mitigeur,", "évier.", "secret", "objet.", "Abonne-toi", "trous", "dessous"]}
-DC = (540, 960); RB = 235; RT = 170; RH = 80; HX = 95; HR = 52
+DC = (540, 890); RB = 235; RT = 170; RH = 80; HX = 95; HR = 52
 COLD = (90, 120, 160)
 def lerp(a, b, u): return a + (b - a) * u
 def top_pos(t, mini=False):
@@ -193,7 +193,7 @@ def piece(n, txt, t0):
     def f(c, t):
         rich(c, 520, [("PIÈCE " + str(n), RED)], 80, eo(prog(t, t0, t0 + 0.4)))
         obj(c, t)
-        label(c, CX, 1318, txt, 48, INK, eo(prog(t, t0 + 0.5, t0 + 0.9)))
+        label(c, CX, 618, txt, 48, INK, eo(prog(t, t0 + 0.5, t0 + 0.9)))
     return f
 sc_p1 = piece(1, "UN DISQUE PERCÉ DE DEUX TROUS", T_C1)
 sc_p2 = piece(2, "UN SECOND DISQUE QUI GLISSE", T_V)
@@ -212,7 +212,7 @@ def sc_push(c, t):
         rich(c, 520, [("ON DÉCALE", RED)], 84, eo(prog(t, T_D, T_D + 0.4))); lab = "UNE ARRIVÉE S'OUVRE PLUS QUE L'AUTRE"
     obj(c, t)
     t0 = T_B if t < T_D else T_D
-    label(c, CX, 1318, lab, 36, INK, eo(prog(t, t0 + 0.4, t0 + 0.8)), FM)
+    label(c, CX, 618, lab, 36, INK, eo(prog(t, t0 + 0.4, t0 + 0.8)), FM)
 
 def sc_reveal(c, t):
     t0 = T_R

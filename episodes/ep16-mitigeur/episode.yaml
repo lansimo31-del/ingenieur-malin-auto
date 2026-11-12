@@ -3,7 +3,7 @@ sujet: "Le robinet mitigeur (cartouche à disques en céramique)"
 concept: devine_construction
 statut: script
 creneau: "10:00"
-date_publication: "2026-11-11"
+date_publication: "2026-11-13"
 accroche: "Devine ce que je construis. Réponse à la fin."
 question_ouverte: "Quel objet se cache derrière ces deux disques percés, ce levier et ces deux arrivées d'eau ?"
 script: texte-script-episode-16-mitigeur.md

@@ -1,5 +1,11 @@
 # Concepts qui marchent sur TikTok
 
+## Veille du 12/11 (soir)
+- **Nos chiffres (Metricool, Reels Instagram, 30 j, lus le 12/11)** : forme_contre_intuitive en tête (poutre 4 793 vues, 24,3 s regardées ; bouteille 1 791 ; carton 804 ; hublots 235), fait_expres ensuite (ballast 1 967, pare-brise 1 675, cadenas 1 462, pistolet 406), devine_construction nettement en dessous (briquet 627, chasse 510, serrure 250 ; durée regardée 7 à 11 s). Ép. 13, 14 et 15 toujours non remontées. Abonnés Instagram gagnés : 22 le 05/11, 11 le 06/11, puis 0 à 4 par jour ; rien de publié depuis le 09/11. TikTok : 0 vue renvoyée par l'API Metricool.
+- **Web** : aucune vidéo concurrente trouvée pour « mitigeur cartouche céramique » (seulement fabricants et guides de remplacement) ; le carré de couleur du dentifrice reste une rumeur démentie à l'écrit (Paris Match BE, Maldita, Colgate), sans vidéo lue.
+- **TikTok** : illisible depuis le cloud le 12/11 (page de recherche en captcha, aucun chiffre lisible). Aucun chiffre inventé.
+- **Décisions** : pilier devine_construction toujours en dessous : on garde le mystère mais on resserre les indices ; pas d'abandon. Sujets du 13/11 : ép. 16 mitigeur (10:00) et ép. 17 dentifrice (18:00), déjà sourcés. Gemini TTS de nouveau disponible (200) le 12/11.
+
 ## Veille du 10/11
 - **Nos chiffres (Metricool, 11/10 au 10/11, lus)** : Instagram, vues moyennes par pilier : forme_contre_intuitive 2433 (poutre 4721, bouteille 1784, carton 793 ; durée regardée 24,3 / 20,5 / 9,2 s), fait_expres 1178 (pare-brise 1671, cadenas 1458, pistolet 405), devine_construction 460 (briquet 625, chasse d'eau 508, serrure 247). Les ép. 13, 14 et 15 ne sont pas encore remontées. Partages : 0 à 14 par Reel, trop faibles pour conclure. TikTok : pas de chiffre fiable via l'API.
 - **Web** et **TikTok** : non relus ce soir, production bloquée avant l'étape de choix (voix Gemini HTTP 402). TikTok illisible depuis le cloud le 10/11 : aucune tentative aboutie, aucun chiffre relevé.

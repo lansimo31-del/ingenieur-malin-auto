@@ -151,7 +151,7 @@ def sc_hook(c, t):
 
 def sc_look(c, t):
     p = eo(prog(t, T_Ret, T_Ret + 0.6))
-    tube(c, CX, 700, 380, 520, RED, 100, p)
+    tube(c, CX, 640, 380, 480, RED, 100, p)
     rich(c, 520, [("TOUT AU BOUT : ", INK), ("UN CARRÉ", RED)], 66, eo(prog(t, T_Ret, T_Ret + 0.4)))
     # lettres des couleurs
     for k, (nm, col) in enumerate(MARKS):
@@ -160,8 +160,8 @@ def sc_look(c, t):
         except Exception: tt = T_Ret + 1.0 + 0.4 * k
         a = eo(prog(t, tt - 0.1, tt + 0.3))
         x = 150 + k * 260
-        c.poly([(x - 36, 1290), (x + 36, 1290), (x + 36, 1362), (x - 36, 1362)], fill=mix(BG, col, a))
-        label(c, x, 1245, nm, 30, INK, a, FM)
+        c.poly([(x - 36, 1215), (x + 36, 1215), (x + 36, 1287), (x - 36, 1287)], fill=mix(BG, col, a))
+        label(c, x, 1175, nm, 30, INK, a, FM)
 
 def sc_what(c, t):
     tube(c, CX, 700, 380, 520, RED, 100)
