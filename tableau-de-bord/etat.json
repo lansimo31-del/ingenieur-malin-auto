@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-13T07:40:00+01:00",
+  "mis_a_jour": "2026-11-13T21:15:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -17,40 +17,40 @@
     }
   },
   "derniere_production": {
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "episodes": [
       {
-        "numero": 16,
-        "sujet": "Le robinet mitigeur",
-        "concept": "devine_construction",
+        "numero": 18,
+        "sujet": "Le cadre de vélo en triangles",
+        "concept": "forme_contre_intuitive",
         "creneau": "10:00",
-        "duree_s": 57.5,
-        "taille_mo": 8.79,
-        "voix": "Enzo (gemini-3.8-flash-tts, consigne courte « Say calmly: »)",
-        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep16-video.mp4",
-        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep16-miniature.png",
+        "duree_s": 57.2,
+        "taille_mo": 8.78,
+        "voix": "Enzo (gemini-3.8-flash-tts)",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep18-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep18-miniature.png",
         "stories": [
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep16-story.png"
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep18-story.png"
         ],
         "statut": "programmé"
       },
       {
-        "numero": 17,
-        "sujet": "Le carré de couleur du tube de dentifrice",
-        "concept": "fait_expres",
+        "numero": 19,
+        "sujet": "Le tire-bouchon à ailes",
+        "concept": "devine_construction",
         "creneau": "18:00",
-        "duree_s": 50.6,
-        "taille_mo": 9.05,
-        "voix": "Enzo (gemini-3.8-flash-tts, consigne courte « Say calmly: »)",
-        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep17-video.mp4",
-        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep17-miniature.png",
+        "duree_s": 55.2,
+        "taille_mo": 8.84,
+        "voix": "Enzo (gemini-3.8-flash-tts)",
+        "video": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep19-video.mp4",
+        "miniature": "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep19-miniature.png",
         "stories": [
-          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@4652bb6dad6cabb89c04b21861a00ec0b7be9037/ep17-story.png"
+          "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep19-story.png"
         ],
         "statut": "programmé"
       }
     ],
-    "verify_media": "run 43294884867 : succès (6 URL)"
+    "verify_media": "run 43498399654 : succès (6 URL)"
   },
   "derniere_verification": {
     "date": "2026-11-13",
@@ -452,6 +452,60 @@
         "metricool": "426154213"
       },
       "statut": "programmé"
+    },
+    {
+      "date": "2026-11-14",
+      "heure": "10:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 18,
+      "post_id": {
+        "instagram+tiktok": "427407079"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-14",
+      "heure": "12:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 18,
+      "post_id": {
+        "instagram": "427407094"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-14",
+      "heure": "18:00",
+      "type": "video",
+      "reseaux": [
+        "instagram",
+        "tiktok"
+      ],
+      "episode": 19,
+      "post_id": {
+        "instagram+tiktok": "427407116"
+      },
+      "statut": "programmé"
+    },
+    {
+      "date": "2026-11-14",
+      "heure": "19:00",
+      "type": "story",
+      "reseaux": [
+        "instagram"
+      ],
+      "episode": 19,
+      "post_id": {
+        "instagram": "427407138"
+      },
+      "statut": "programmé"
     }
   ],
   "stats": {
@@ -468,7 +522,7 @@
     "meilleur_concept": "forme_contre_intuitive (moy. 3145 vues IG sur 2 épisodes, devant fait_expres 1160 et devine_construction 442)"
   },
   "alertes": [
-    "Info 13/11 : programme du jour complet. Rappel : ép.13/14/15 toujours absentes des stats Metricool ; TikTok 0 vue (API) ; TikTok illisible depuis le cloud (captcha)."
+    "Info 13/11 : TikTok illisible depuis le cloud (captcha) ; ép. 13/14/15 toujours absentes des stats Metricool ; TikTok 45 à 61 vues par vidéo. Ép. 19 : « Tu as deviné ? » tombe à 44 % de la voix (au lieu des deux tiers), à resserrer."
   ],
   "historique": [
     {
@@ -590,20 +644,25 @@
       "date": "2026-11-13",
       "tache": "vérification du matin",
       "resume": "Programme du jour complet et conforme (4 créneaux, médias et miniatures OK, 6 URL en 200, run 43379552425). Pas de J+1 (rien publié le 12/11) ; J+7 pare-brise 1675 vues IG, bouteille 1791 ; ép.13/14/15 pas remontées ; TikTok 0 vue (API)."
+    },
+    {
+      "date": "2026-11-13",
+      "tache": "production du soir",
+      "resume": "Veille faite, ép. 18 cadre de vélo (57,2 s) et ép. 19 tire-bouchon à ailes (55,2 s) produits, voix Enzo, hébergés, verify-media OK (run 43498399654), 4 posts programmés pour le 14/11."
     }
   ],
-  "dernier_pilier": "fait_expres",
+  "dernier_pilier": "devine_construction",
   "piliers": [
     "devine_construction",
     "fait_expres",
     "forme_contre_intuitive"
   ],
   "derniere_veille": {
-    "date": "2026-11-12 (soir)",
-    "metricool": "lu (IG Reels 30 j) : forme_contre_intuitive en tête (poutre 4793), fait_expres ~1377, devine_construction nettement en dessous (7 à 11 s regardées) : changement d'angle, pas d'abandon ; ép. 13 à 15 pas encore remontées ; TikTok 0 vue (API)",
-    "web": "aucune vidéo concurrente trouvée pour le mitigeur ; dentifrice : rumeur démentie à l'écrit, pas de vidéo lue",
-    "tiktok": "illisible depuis le cloud le 12/11 (captcha, aucun chiffre)",
-    "decisions": "ép. 16 mitigeur (devine_construction, 10 h) et ép. 17 dentifrice (fait_expres, 18 h) pour le 13/11"
+    "date": "2026-11-13 (soir)",
+    "metricool": "lu (IG Reels 30 j) : forme_contre_intuitive en tête (poutre 4828), fait_expres ~1400, devine_construction nettement en dessous (7 à 11 s regardées) : changement d'angle, pas d'abandon ; carton 808 vues ; ép. 13 à 15 toujours non remontées ; TikTok 45 à 61 vues",
+    "web": "aucune vidéo concurrente trouvée (cadre de vélo en triangles, tire-bouchon à ailes)",
+    "tiktok": "illisible depuis le cloud le 13/11 (page 200 mais captcha, aucun chiffre)",
+    "decisions": "ép. 18 cadre de vélo (forme_contre_intuitive, 10 h) et ép. 19 tire-bouchon à ailes (devine_construction, 18 h) pour le 14/11 ; pompe à vélo descendue (deux sujets vélo le même jour)"
   },
   "programme_du_jour": {
     "date": "2026-11-13",

@@ -1,0 +1,28 @@
+numero: 19
+sujet: "Le tire-bouchon à ailes"
+concept: devine_construction
+statut: programme
+creneau: "18:00"
+date_publication: "2026-11-14"
+accroche: "Devine ce que je construis. Réponse à la fin."
+question_ouverte: "Devine ce que je construis"
+script: texte-script-episode-19-tire-bouchon.md
+voix_off: texte-voix-off-enzo-episode-19-tire-bouchon.txt
+faits: texte-faits-verifies-tire-bouchon.md
+description: texte-description-episode-19-tire-bouchon.txt
+couverture: "DEVINE CE QUE JE CONSTRUIS"
+couverture_entete: "DEVINE CE QUE JE CONSTRUIS"
+couverture_lignes: ["DEVINE CE QUE JE", "CONSTRUIS", "RÉPONSE À LA FIN"]
+mot_cle_vert: "CONSTRUIS"
+stories: stories.yaml
+heure_publication: "18:00"
+voix_retenue: "Enzo (gemini-3.8-flash-tts)"
+duree_s: 55.2
+taille_mo: 8.84
+medias:
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep19-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep19-miniature.png"
+  story: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep19-story.png"
+metricool:
+  video: 427407116
+  story: 427407138

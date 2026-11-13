@@ -1,0 +1,21 @@
+Cette forme a l'air absurde.
+
+Regarde un vélo : le cadre est fait de tubes qui dessinent des triangles. Pourquoi pas une boîte pleine ?
+
+Un cadre classique, ce sont deux triangles : un à l'avant, un à l'arrière.
+
+Fausse piste : ce serait pour faire joli. Non.
+
+Prends quatre bandes de carton et quatre attaches. Un quadrilatère se déforme : tu pousses, il s'écrase en losange.
+
+Avec trois bandes, rien à faire. Un triangle dont les côtés sont donnés ne peut pas se déformer.
+
+Ajoute une bande en diagonale dans ton carré : il ne bouge plus. Tout polygone se décompose en triangles.
+
+On obtient un treillis : une ossature légère, mais indéformable.
+
+Et le cadre en losange du vélo Rover de dix-huit cent quatre-vingt-cinq est resté la référence.
+
+Le triangle ne plie pas.
+
+Abonne-toi : il y a un secret d'ingénieur dans chaque objet.

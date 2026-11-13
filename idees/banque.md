@@ -29,8 +29,8 @@ L'objet n'est **jamais nommé** avant la chute, ni dans la couverture, ni dans l
 - [x] **Le briquet à pierre** (ép. 10, 7 nov. 10 h) (la molette, la pierre, la valve ; angle : réservoir, valve, pierre sur ressort, roue striée ; aucune vidéo concurrente lue le 06/11, TikTok illisible)
 - [x] **L'agrafeuse** (ép. 13, 8 nov. 18 h) (bande de barres, ressort, lame, plaque à rainures ; aucune vidéo concurrente trouvée le 07/11, TikTok illisible ; angle : le geste d'appuyer déclenche tout)
 - [x] **Le robinet mitigeur** (ép. 16, 13/11 10 h) (cartouche à disques céramique ; aucune vidéo concurrente trouvée le 12/11)
-- [ ] La pompe à vélo (le piston, le clapet)
-- [ ] Le tire-bouchon à ailes (la crémaillère, les deux pignons)
+- [ ] La pompe à vélo (le piston, le clapet) · descendue le 13/11 : deux sujets vélo le même jour (cadre en ép. 18) à éviter, à espacer d'au moins deux semaines
+- [x] **Le tire-bouchon à ailes** (ép. 19, 14/11 18 h) (vrille, crémaillère, corps, deux roues dentées ; brevet américain Rosati 1930 ; aucune vidéo concurrente trouvée le 13/11, TikTok illisible)
 - [ ] Le taille-crayon (la lame inclinée, le cône)
 - [ ] La souris d'ordinateur (la LED, le capteur, la molette)
 - [ ] Le cadenas (proche de la serrure : à espacer d'au moins deux semaines ; son petit trou est déjà traité en ép. 11, pilier `fait_expres`, donc à écarter ou à prendre sous un autre angle)
@@ -55,7 +55,7 @@ Une forme qui a l'air absurde, une fausse piste, puis un chiffre fort ou une exp
 - [x] **Le fond à cinq pieds des bouteilles de soda** (ép. 9, 6 nov. 18 h) (fond rond qui résiste à la pression + pieds pour tenir debout ; aucune vidéo concurrente trouvée le 05/11)
 - [x] **Le carton ondulé** (ép. 12, 8 nov. 10 h) (feuille en vagues entre deux feuilles plates : entretoise, arches ; sources grand public et brevets seulement, aucune vidéo concurrente lue le 07/11, TikTok illisible)
 - [x] **Les tours de refroidissement en forme de diabolo** (ép. 15, 9 nov. 18 h) (hyperboloïde brevetée en 1918, lignes droites, col étroit, paroi d'environ vingt centimètres ; angle : la paroi fine, différent de Practical Engineering ; sources secondaires)
-- [ ] Le cadre de vélo en triangles (le triangle ne se déforme pas) · monté le 08/11 (aucune vidéo concurrente lue)
+- [x] **Le cadre de vélo en triangles** (ép. 18, 14/11 10 h) (triangle indéformable, quadrilatère qui s'écrase, treillis ; aucune vidéo concurrente trouvée le 13/11, TikTok illisible)
 - [ ] Le profil en champignon des rails (une forme taillée pour la roue)
 - [ ] Le fond bombé des canettes (la pression, moins de métal ; 04/11 : aucune source trouvée par la recherche, à sourcer avant script)
 - [ ] Le nid d'abeille dans les portes et les avions (plein de vide, très rigide) · descendu le 07/11 : trop proche du carton ondulé (ép. 12), à espacer d'au moins deux semaines

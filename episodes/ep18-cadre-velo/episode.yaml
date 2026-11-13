@@ -1,0 +1,28 @@
+numero: 18
+sujet: "Le cadre de vélo en triangles"
+concept: forme_contre_intuitive
+statut: programme
+creneau: "10:00"
+date_publication: "2026-11-14"
+accroche: "Cette forme a l'air absurde."
+question_ouverte: "Pourquoi un cadre de vélo est-il fait de triangles ?"
+script: texte-script-episode-18-cadre-velo.md
+voix_off: texte-voix-off-enzo-episode-18-cadre-velo.txt
+faits: texte-faits-verifies-cadre-velo.md
+description: texte-description-episode-18-cadre-velo.txt
+couverture: "FORME CONTRE-INTUITIVE : LE CADRE DE VÉLO"
+couverture_entete: "FORME CONTRE-INTUITIVE"
+couverture_lignes: ["LE CADRE", "DE VÉLO", "DES TRIANGLES ?"]
+mot_cle_vert: "DE VÉLO"
+stories: stories.yaml
+heure_publication: "10:00"
+voix_retenue: "Enzo (gemini-3.8-flash-tts)"
+duree_s: 57.2
+taille_mo: 8.78
+medias:
+  video: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep18-video.mp4"
+  miniature: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep18-miniature.png"
+  story: "https://cdn.jsdelivr.net/gh/lansimo31-del/ingenieur-malin-auto@fdef982c9a9b1f65f8c85ee2f90f84bcd4923129/ep18-story.png"
+metricool:
+  video: 427407079
+  story: 427407094
