@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-13T21:15:00+01:00",
+  "mis_a_jour": "2026-11-14T07:40:00+01:00",
   "pipeline_actif": false,
   "programmation_active": true,
   "prochaine_production": null,
@@ -53,9 +53,9 @@
     "verify_media": "run 43498399654 : succès (6 URL)"
   },
   "derniere_verification": {
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "resultat": "OK",
-    "details": "Programme du jour complet et conforme : getScheduledPosts du 13/11 renvoie 4 posts (10:00 Reel IG + TikTok ép.16 mitigeur, 12:00 story IG, 18:00 Reel IG + TikTok ép.17 dentifrice, 19:00 story IG), bonnes heures, médias présents, miniatures présentes. verify-media run 43379552425 : succès, 6 URL en 200 (bons content-type). Épisodes 16 et 17 statut programme, 57,5 s et 50,6 s. J+1 : rien publié le 12/11. J+7 (06/11) : ép.8 pare-brise 1675 vues IG, portée 1456, 21 likes, 2 comm., 1 enreg., 18,4 s ; ép.9 bouteille 1791 vues, portée 1601, 19 likes, 3 enreg., 20,4 s. TikTok 0 vue (API). Ép.13/14/15 toujours non remontées. Vendredi : pas de relecture des créneaux."
+    "details": "Programme du jour complet et conforme : getScheduledPosts du 14/11 renvoie 4 posts (10:00 Reel IG + TikTok ép.18 cadre de vélo, 12:00 story IG, 18:00 Reel IG + TikTok ép.19 tire-bouchon, 19:00 story IG), bonnes heures, médias présents, miniatures présentes. verify-media run 43566990666 : succès. Épisodes 18 et 19 statut programme, 57,2 s et 55,2 s. J+1 (13/11, ép.16/17) : pas encore remonté. J+7 (07/11) : ép.10 briquet 627 vues IG, portée 542, 11 likes, 3 enreg., 11,1 s ; ép.11 cadenas 1462 vues, portée 1326, 25 likes, 15,5 s. TikTok non lisible via API. Samedi : pas de relecture des créneaux."
   },
   "programme_metricool": [
     {
@@ -509,10 +509,10 @@
     }
   ],
   "stats": {
-    "periode": "2026-11-06 au 2026-11-12 (lecture 13/11 matin)",
+    "periode": "2026-11-07 au 2026-11-13 (lecture 14/11 matin)",
     "instagram": {
-      "vues_moy": 964,
-      "detail": "7-8 nov : cadenas 1462, carton 804, briquet 627 (moy. 964) ; J+7 pare-brise 1675, bouteille 1791 ; ép.13/14/15 pas encore remontées ; rien publié du 10 au 12/11"
+      "vues_moy": 967,
+      "detail": "7-8 nov : cadenas 1462, carton 808, briquet 627 (moy. 966) ; ép.13/14/15/16/17 pas encore remontées"
     },
     "tiktok": {
       "vues_moy": 0,
@@ -649,6 +649,11 @@
       "date": "2026-11-13",
       "tache": "production du soir",
       "resume": "Veille faite, ép. 18 cadre de vélo (57,2 s) et ép. 19 tire-bouchon à ailes (55,2 s) produits, voix Enzo, hébergés, verify-media OK (run 43498399654), 4 posts programmés pour le 14/11."
+    },
+    {
+      "date": "2026-11-14",
+      "tache": "vérification du matin",
+      "resume": "Programme du jour complet et conforme (4 créneaux, médias et miniatures OK, verify-media succès run 43566990666). J+1 ép.16/17 pas encore remontées ; J+7 briquet 627 vues IG, cadenas 1462 ; TikTok 0 vue (API)."
     }
   ],
   "dernier_pilier": "devine_construction",
@@ -665,8 +670,8 @@
     "decisions": "ép. 18 cadre de vélo (forme_contre_intuitive, 10 h) et ép. 19 tire-bouchon à ailes (devine_construction, 18 h) pour le 14/11 ; pompe à vélo descendue (deux sujets vélo le même jour)"
   },
   "programme_du_jour": {
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "statut": "complet",
-    "details": "4 posts conformes (10:00 IG+TikTok, 12:00 story, 18:00 IG+TikTok, 19:00 story), médias et miniatures OK, 6 URL en 200"
+    "details": "4 posts conformes (10:00 IG+TikTok, 12:00 story, 18:00 IG+TikTok, 19:00 story), médias et miniatures OK, verify-media succès (run 43566990666)"
   }
 }
